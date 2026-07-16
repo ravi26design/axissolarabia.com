@@ -1,0 +1,7 @@
+# internal docs
+*.docx
+
+# backup copies
+index copy.html
+index copy 2.html
+.DS_Store
