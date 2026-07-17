@@ -707,3 +707,25 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 .icard .icard-body { flex: 1; }
 .icard .icard-body p { font-size: 13px; line-height: 1.55; }
 @media (max-width: 600px) { .hscroll.auto .icard { width: 300px; flex-basis: 300px; } }
+
+/* ============================================================
+   Manufacturing flow — friendlier connected process
+   ============================================================ */
+.flow { gap: 22px 48px; }
+.fstep { min-height: 182px; }
+.fstep-txt { position: relative; z-index: 1; }
+.fstep-txt h4 { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: -.01em; }
+.fstep-txt p { color: var(--muted); font-size: 13.5px; line-height: 1.5; margin-top: 8px; }
+
+/* Connector arrow linking steps left-to-right */
+.flow .fstep::after { content: "→"; position: absolute; right: -34px; top: 50%; transform: translateY(-50%); color: var(--accent); font-weight: 700; font-size: 22px; opacity: .5; z-index: 3; transition: transform .3s ease, opacity .3s ease; }
+.flow .fstep:hover::after { opacity: 1; transform: translateY(-50%) translateX(4px); }
+.flow .fstep:nth-child(3n)::after, .flow .fstep:last-child::after { content: none; }
+
+@media (max-width: 860px) {
+  .flow .fstep:nth-child(3n)::after { content: "→"; }
+  .flow .fstep:nth-child(2n)::after, .flow .fstep:last-child::after { content: none; }
+}
+@media (max-width: 600px) {
+  .flow .fstep::after { content: none !important; }
+}
