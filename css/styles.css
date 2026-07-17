@@ -703,7 +703,7 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 
 /* Industries cards — full-paragraph content */
 .hscroll.auto .hscroll-track { align-items: stretch; animation-duration: 90s; }
-.hscroll.auto .icard { width: 360px; flex-basis: 360px; display: flex; flex-direction: column; }
+.hscroll.auto .icard { width: 420px; flex-basis: 420px; display: flex; flex-direction: column; }
 .icard .icard-body { flex: 1; }
 .icard .icard-body p { font-size: 13px; line-height: 1.55; }
 @media (max-width: 600px) { .hscroll.auto .icard { width: 300px; flex-basis: 300px; } }
