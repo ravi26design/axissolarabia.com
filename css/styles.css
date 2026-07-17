@@ -772,3 +772,5 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 .hscroll.cs { cursor: grab; }
 .hscroll.cs:active { cursor: grabbing; }
 .hscroll.cs .project .thumb img { pointer-events: none; }
+
+.cert img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
