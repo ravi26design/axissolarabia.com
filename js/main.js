@@ -97,18 +97,24 @@
     track.innerHTML += track.innerHTML;
   });
 
-  // Horizontal scroll arrows
+  // Horizontal scroll arrows (case studies etc.)
   document.querySelectorAll('[data-hscroll]').forEach(scroller => {
-    const head = scroller.previousElementSibling;
-    const nav = head && head.querySelector('.hscroll-nav');
-    if (!nav) return;
-    const card = scroller.querySelector('.icard');
-    const step = card ? card.offsetWidth + 20 : 320;
-    nav.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        scroller.scrollBy({ left: btn.dataset.scroll === 'next' ? step : -step, behavior: 'smooth' });
-      });
-    });
+    const prev = scroller.previousElementSibling;
+    const buttons = prev ? prev.querySelectorAll('[data-scroll]') : [];
+    const card = scroller.querySelector('.project, .icard');
+    const step = card ? card.offsetWidth + 22 : 340;
+    buttons.forEach(btn => btn.addEventListener('click', () => {
+      scroller.scrollBy({ left: btn.dataset.scroll === 'next' ? step : -step, behavior: 'smooth' });
+    }));
+
+    // Drag / swipe to scroll
+    let down = false, startX = 0, startL = 0, moved = false;
+    scroller.addEventListener('pointerdown', e => { down = true; moved = false; startX = e.clientX; startL = scroller.scrollLeft; scroller.setPointerCapture(e.pointerId); });
+    scroller.addEventListener('pointermove', e => { if (!down) return; const dx = e.clientX - startX; if (Math.abs(dx) > 4) moved = true; scroller.scrollLeft = startL - dx; });
+    const end = () => { down = false; };
+    scroller.addEventListener('pointerup', end);
+    scroller.addEventListener('pointercancel', end);
+    scroller.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
   });
 
   // Magnetic effect on primary buttons (desktop only)

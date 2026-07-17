@@ -753,3 +753,22 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 .flow .fstep:nth-child(3n)::after, .flow .fstep:last-child::after { content: none; }
 @media (max-width: 860px) { .flow .fstep:nth-child(3n)::after { content: ""; } .flow .fstep:nth-child(2n)::after, .flow .fstep:last-child::after { content: none; } }
 @media (max-width: 600px) { .flow .fstep::after { content: none !important; } }
+
+/* ============================================================
+   Case studies — user-controlled horizontal scroll
+   ============================================================ */
+.cs-nav { display: flex; gap: 10px; justify-content: flex-end; margin-bottom: 18px; }
+.cs-nav button { width: 46px; height: 46px; border-radius: 50%; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); display: grid; place-items: center; cursor: pointer; transition: border-color .2s, color .2s, transform .2s; }
+.cs-nav button:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+.hscroll.cs { overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 6px 0 18px; margin: 0 -24px; padding-left: 24px; }
+.hscroll.cs::-webkit-scrollbar { height: 8px; }
+.hscroll.cs::-webkit-scrollbar-track { background: transparent; }
+.hscroll.cs::-webkit-scrollbar-thumb { background: #262e36; border-radius: 10px; }
+.hscroll.cs .hscroll-track { display: flex; gap: 22px; width: max-content; padding-right: 24px; }
+.hscroll.cs .project { flex: 0 0 380px; width: 380px; scroll-snap-align: start; }
+@media (max-width: 600px) { .hscroll.cs .project { flex-basis: 300px; width: 300px; } .cs-nav { display: none; } }
+
+.hscroll.cs { cursor: grab; }
+.hscroll.cs:active { cursor: grabbing; }
+.hscroll.cs .project .thumb img { pointer-events: none; }
