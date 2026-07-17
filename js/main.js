@@ -65,6 +65,29 @@
     }));
   }
 
+  // Interactive process showcase (manufacturing)
+  document.querySelectorAll('.proc').forEach(proc => {
+    const steps = Array.from(proc.querySelectorAll('.proc-step'));
+    const panels = Array.from(proc.querySelectorAll('.proc-panel'));
+    if (!steps.length) return;
+    let idx = 0, timer = null;
+    const show = i => {
+      idx = i;
+      steps.forEach((s, j) => s.classList.toggle('active', j === i));
+      panels.forEach((p, j) => p.classList.toggle('active', j === i));
+    };
+    const advance = () => show((idx + 1) % steps.length);
+    const start = () => { if (!reduceMotion) { clearInterval(timer); timer = setInterval(advance, 3600); } };
+    const stop = () => clearInterval(timer);
+    steps.forEach((s, i) => {
+      s.addEventListener('click', () => { show(i); start(); });
+      s.addEventListener('mouseenter', () => show(i));
+    });
+    proc.addEventListener('mouseenter', stop);
+    proc.addEventListener('mouseleave', start);
+    start();
+  });
+
   // Contact form (demo — no backend)
   const form = document.getElementById('contactForm');
   if (form) {

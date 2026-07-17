@@ -838,3 +838,41 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
   .tl-item:nth-child(odd) .tl-node, .tl-item:nth-child(even) .tl-node { left: 0; right: auto; }
   .tl-node { top: 14px; width: 52px; height: 52px; }
 }
+
+/* ============================================================
+   Manufacturing — interactive process showcase
+   ============================================================ */
+.proc { display: grid; grid-template-columns: 0.92fr 1.28fr; gap: 26px; align-items: stretch; }
+.proc-list { display: flex; flex-direction: column; gap: 6px; }
+.proc-step { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; padding: 15px 18px; border-radius: 12px; border: 1px solid transparent; background: transparent; color: var(--muted); font-family: inherit; font-weight: 600; cursor: pointer; transition: background .25s, color .25s, border-color .25s; }
+.proc-step b { font-size: 13px; color: var(--muted-2); min-width: 22px; transition: color .25s; }
+.proc-step span { flex: 1; font-size: 16px; letter-spacing: -.01em; }
+.proc-step .chev { color: var(--accent); opacity: 0; transform: translateX(-6px); transition: opacity .25s, transform .25s; }
+.proc-step:hover { color: #fff; background: rgba(255,255,255,.04); }
+.proc-step.active { background: linear-gradient(90deg, rgba(245,130,31,.14), transparent); border-color: rgba(245,130,31,.30); color: #fff; }
+.proc-step.active b { color: var(--accent); }
+.proc-step.active .chev { opacity: 1; transform: none; }
+
+.proc-stage { position: relative; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; min-height: 400px; background: linear-gradient(160deg, var(--surface), #0d1217); }
+.proc-stage::before { content: ""; position: absolute; inset: 0; z-index: 0; background-image: radial-gradient(circle at 80% 24%, rgba(245,130,31,.20), transparent 55%), linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: auto, 30px 30px, 30px 30px; }
+.proc-panel { position: absolute; inset: 0; z-index: 1; padding: 46px; display: flex; flex-direction: column; justify-content: flex-end; opacity: 0; transform: translateY(16px); pointer-events: none; transition: opacity .5s ease, transform .5s ease; }
+.proc-panel.active { opacity: 1; transform: none; pointer-events: auto; }
+.proc-ghost { position: absolute; top: 14px; right: 30px; font-size: 150px; line-height: 1; font-weight: 800; letter-spacing: -.04em; background: linear-gradient(180deg, rgba(245,130,31,.30), rgba(245,130,31,0) 78%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+.proc-ic { width: 62px; height: 62px; border-radius: 16px; background: var(--accent-soft); color: var(--accent-deep); display: grid; place-items: center; box-shadow: inset 0 0 0 1px rgba(245,130,31,.28), 0 10px 26px -10px rgba(245,130,31,.5); margin-bottom: 22px; }
+.proc-ic svg { width: 28px; height: 28px; }
+.proc-panel h3 { font-size: clamp(24px, 3vw, 32px); font-weight: 800; letter-spacing: -.02em; color: #fff; margin-bottom: 10px; }
+.proc-panel p { color: var(--muted); font-size: 16px; max-width: 480px; }
+.proc-meta { margin-top: 24px; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-deep); font-weight: 700; }
+
+@media (max-width: 860px) {
+  .proc { grid-template-columns: 1fr; gap: 20px; }
+  .proc-list { flex-direction: row; overflow-x: auto; gap: 8px; padding-bottom: 6px; }
+  .proc-step { flex: 0 0 auto; }
+  .proc-step span { white-space: nowrap; }
+  .proc-step .chev { display: none; }
+  .proc-stage { min-height: 340px; }
+}
+@media (max-width: 600px) {
+  .proc-panel { padding: 30px 24px; }
+  .proc-ghost { font-size: 110px; right: 18px; }
+}
