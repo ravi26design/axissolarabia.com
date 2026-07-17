@@ -883,3 +883,9 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 .proc-panel::after { content: ""; position: absolute; inset: 0; z-index: 0; background: linear-gradient(180deg, rgba(11,14,17,.35) 0%, rgba(11,14,17,.72) 55%, rgba(11,14,17,.94) 100%), linear-gradient(90deg, rgba(11,14,17,.5), transparent 60%); }
 .proc-panel > * { position: relative; z-index: 1; }
 .proc-stage::before { opacity: .5; }
+
+/* Process showcase — image-forward panels (no number/icon) */
+.proc-panel.active .proc-img { opacity: 1; }
+.proc-panel::after { background: linear-gradient(180deg, rgba(11,14,17,.12) 0%, rgba(11,14,17,.5) 52%, rgba(11,14,17,.93) 100%); }
+.proc-panel { justify-content: flex-end; padding: 40px; }
+.proc-stage::before { opacity: .22; }
