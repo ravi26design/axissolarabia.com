@@ -788,3 +788,23 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
   .cert-row.marquee:hover { animation-play-state: paused; }
 }
 @keyframes certMarquee { to { transform: translateX(-50%); } }
+
+/* ============================================================
+   Global presence — rebalanced layout
+   ============================================================ */
+.global-grid { grid-template-columns: 1.05fr 1fr; align-items: center; gap: 56px; }
+.global-left .big-num { line-height: .9; }
+.global-left .big-sub { color: rgba(255,255,255,.72); font-size: 16px; max-width: 380px; margin-top: 10px; }
+.global-left .gstats { margin-top: 34px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,.1); }
+.global-left .region-legend { justify-content: flex-start; margin-top: 30px; }
+
+.globe-wrap { display: flex; justify-content: center; }
+.globe { max-width: 430px; width: 100%; }
+.globe::before { inset: 6%; background: radial-gradient(circle at 52% 46%, rgba(245,130,31,.40), transparent 60%); filter: blur(22px); }
+
+@media (max-width: 860px) {
+  .global-grid { grid-template-columns: 1fr; gap: 44px; }
+  .globe-wrap { order: -1; }
+  .globe { max-width: 340px; }
+  .global-left .big-sub { max-width: none; }
+}
