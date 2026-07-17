@@ -83,6 +83,17 @@
     row.classList.add('marquee');
   }
 
+  // Auto marquee for certification logos
+  document.querySelectorAll('.cert-row').forEach(cr => {
+    if (reduceMotion) return;
+    const wrap = document.createElement('div');
+    wrap.className = 'cert-marquee';
+    cr.parentNode.insertBefore(wrap, cr);
+    wrap.appendChild(cr);
+    cr.innerHTML += cr.innerHTML; // duplicate for seamless loop
+    cr.classList.add('marquee');
+  });
+
   // Card spotlight — track cursor position as CSS vars
   document.querySelectorAll('.scard, .pcat, .project, .why-item, .fstep').forEach(card => {
     card.addEventListener('mousemove', (e) => {

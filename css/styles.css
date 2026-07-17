@@ -774,3 +774,15 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 .hscroll.cs .project .thumb img { pointer-events: none; }
 
 .cert img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+
+/* ============================================================
+   Certifications — auto smooth-scroll marquee
+   ============================================================ */
+.cert-marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.cert-row.marquee { flex-wrap: nowrap; width: max-content; gap: 0; margin-bottom: 0; align-items: stretch; }
+.cert-row.marquee .cert { flex: 0 0 auto; margin-right: 18px; }
+@media (prefers-reduced-motion: no-preference) {
+  .cert-row.marquee { animation: certMarquee 40s linear infinite; }
+  .cert-row.marquee:hover { animation-play-state: paused; }
+}
+@keyframes certMarquee { to { transform: translateX(-50%); } }
