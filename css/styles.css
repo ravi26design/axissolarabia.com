@@ -773,7 +773,8 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 .hscroll.cs:active { cursor: grabbing; }
 .hscroll.cs .project .thumb img { pointer-events: none; }
 
-.cert img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.cert { overflow: hidden; }
+.cert img { max-width: 100%; max-height: 54px; width: auto; height: auto; object-fit: contain; display: block; }
 
 /* ============================================================
    Certifications — auto smooth-scroll marquee
