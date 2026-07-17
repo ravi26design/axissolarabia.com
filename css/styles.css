@@ -695,3 +695,8 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
   .trust-row { gap: 18px; }
   .icard { flex-basis: 220px; width: 220px; }
 }
+
+/* Footer social icons */
+.social { display: flex; gap: 12px; margin-top: 22px; }
+.social a { width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--line); display: grid; place-items: center; color: var(--muted); transition: color .2s, border-color .2s, transform .2s, background .2s; }
+.social a:hover { color: #fff; border-color: var(--accent); background: rgba(245,130,31,.12); transform: translateY(-2px); }
