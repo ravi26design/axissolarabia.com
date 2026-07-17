@@ -84,7 +84,7 @@
   }
 
   // Card spotlight — track cursor position as CSS vars
-  document.querySelectorAll('.scard, .pcat, .project, .why-item').forEach(card => {
+  document.querySelectorAll('.scard, .pcat, .project, .why-item, .fstep').forEach(card => {
     card.addEventListener('mousemove', (e) => {
       const r = card.getBoundingClientRect();
       card.style.setProperty('--mx', ((e.clientX - r.left) / r.width) * 100 + '%');

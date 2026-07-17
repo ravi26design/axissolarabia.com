@@ -729,3 +729,27 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 @media (max-width: 600px) {
   .flow .fstep::after { content: none !important; }
 }
+
+/* ============================================================
+   Manufacturing steps — awwwards premium pass
+   ============================================================ */
+.fstep { --mx: 50%; --my: 0%; background: linear-gradient(160deg, var(--surface), #0f141a); transition: transform .32s cubic-bezier(.2,.8,.2,1), box-shadow .32s ease, border-color .32s ease, background .3s ease; }
+.fstep:hover { transform: translateY(-6px); border-color: rgba(245,130,31,.5); box-shadow: 0 30px 62px -30px rgba(0,0,0,.9), 0 0 48px -16px rgba(245,130,31,.32); background: radial-gradient(340px circle at var(--mx) var(--my), rgba(245,130,31,.14), transparent 55%), linear-gradient(160deg, var(--surface-2), #10161c); }
+
+/* Gradient ghost numbers */
+.fstep .n, .fstep .num { background: linear-gradient(180deg, rgba(245,130,31,.36), rgba(245,130,31,0) 80%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; transition: filter .35s ease, transform .35s ease; }
+.fstep:hover .n, .fstep:hover .num { filter: drop-shadow(0 0 16px rgba(245,130,31,.55)); transform: translateY(-3px) scale(1.05); }
+
+/* Icon node glow + motion */
+.fstep .fico, .fstep .ic { box-shadow: inset 0 0 0 1px rgba(245,130,31,.28), 0 8px 22px -10px rgba(245,130,31,.5); transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease; }
+.fstep:hover .fico, .fstep:hover .ic { transform: translateY(-2px) scale(1.08) rotate(-4deg); box-shadow: inset 0 0 0 1px rgba(245,130,31,.55), 0 14px 30px -8px rgba(245,130,31,.6); }
+
+/* Gradient top accent bar */
+.fstep::before { height: 3px; background: linear-gradient(90deg, var(--accent), #ffcfa0); }
+
+/* Connector chevron between steps */
+.flow .fstep::after { content: ""; width: 12px; height: 12px; right: -30px; top: 50%; border-top: 2px solid var(--accent); border-right: 2px solid var(--accent); transform: translateY(-50%) rotate(45deg); opacity: .55; background: none; color: transparent; font-size: 0; transition: transform .3s ease, opacity .3s ease; }
+.flow .fstep:hover::after { opacity: 1; transform: translateY(-50%) rotate(45deg) translate(3px,-3px); }
+.flow .fstep:nth-child(3n)::after, .flow .fstep:last-child::after { content: none; }
+@media (max-width: 860px) { .flow .fstep:nth-child(3n)::after { content: ""; } .flow .fstep:nth-child(2n)::after, .flow .fstep:last-child::after { content: none; } }
+@media (max-width: 600px) { .flow .fstep::after { content: none !important; } }
