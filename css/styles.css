@@ -947,3 +947,5 @@ body { top: 0 !important; }
 html[dir="rtl"] .nav-links, html[dir="rtl"] .hero-actions { direction: rtl; }
 
 @media (max-width: 480px) { .lang-switch { display: none; } }
+
+.foot-col .foot-addr { color: var(--muted); font-size: 14.5px; line-height: 1.6; margin-bottom: 14px; max-width: 260px; }
