@@ -177,6 +177,20 @@
     if (currentLang() === 'ar') setLang('ar', false);
   }
 
+  // Testimonial avatars — initials fallback when there's no photo
+  document.querySelectorAll('.quote .who').forEach(who => {
+    const av = who.querySelector('.av');
+    const name = who.querySelector('b');
+    if (av && name && !av.querySelector('img') && !av.textContent.trim()) {
+      const words = name.textContent.trim().split(/\s+/).filter(Boolean);
+      if (words.length) {
+        const first = words[0][0] || '';
+        const last = words.length > 1 ? words[words.length - 1][0] : (words[0][1] || '');
+        av.textContent = (first + last).toUpperCase();
+      }
+    }
+  });
+
   // Contact form (demo — no backend)
   const form = document.getElementById('contactForm');
   if (form) {

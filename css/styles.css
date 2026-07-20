@@ -955,3 +955,5 @@ html[dir="rtl"] .nav-links, html[dir="rtl"] .hero-actions { direction: rtl; }
 .foot-contact a.fc-row { transition: color .2s; }
 .foot-contact a.fc-row:hover { color: var(--accent-deep); }
 .foot-contact .fc-row svg { flex: 0 0 auto; color: var(--accent-deep); margin-top: 2px; }
+
+.quote .av { display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 15px; letter-spacing: .02em; flex: 0 0 auto; }
