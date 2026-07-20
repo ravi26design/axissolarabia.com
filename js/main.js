@@ -90,6 +90,75 @@
     start();
   });
 
+  // Header search
+  const searchToggle = document.querySelector('.search-toggle');
+  if (searchToggle) {
+    const INDEX = [
+      { t: 'Home', d: 'Engineering solutions for Saudi Arabia’s sustainable future', u: 'index.html' },
+      { t: 'About Axis', d: 'Company, milestones, manufacturing area, global presence', u: 'about.html' },
+      { t: 'Engineering Solutions', d: 'Analyzer shelters, CEMS, AAQMS, SWAS, EQMS, HVAC, chlorine dosing', u: 'solutions.html' },
+      { t: 'Products', d: 'Process analytics, industrial HVAC, enclosures, automation, water monitoring', u: 'products.html' },
+      { t: 'Industries', d: 'Oil & gas, power, water, cement, pharma, marine, data centers and more', u: 'industries.html' },
+      { t: 'Projects & Case Studies', d: 'Proven delivery across critical industries', u: 'projects.html' },
+      { t: 'Manufacturing', d: 'Precision manufacturing process from engineering to commissioning', u: 'manufacturing.html' },
+      { t: 'Resources', d: 'Brochures, catalogues, datasheets, case studies', u: 'resources.html' },
+      { t: 'Certifications', d: 'IECEx, ATEX, ISO, RoHS, ECAS, TUV India and more', u: 'about.html' },
+      { t: 'Contact / RFQ', d: 'Request a proposal or technical consultation', u: 'contact.html' }
+    ];
+    const modal = document.createElement('div');
+    modal.className = 'search-modal';
+    modal.innerHTML = '<button class="search-close" aria-label="Close search"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>'
+      + '<div class="search-box"><div class="search-field"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>'
+      + '<input type="text" placeholder="Search products, solutions, industries…" aria-label="Search"></div><div class="search-results"></div></div>';
+    document.body.appendChild(modal);
+    const input = modal.querySelector('input');
+    const results = modal.querySelector('.search-results');
+    const render = (q) => {
+      const query = q.trim().toLowerCase();
+      const list = !query ? INDEX : INDEX.filter(x => (x.t + ' ' + x.d).toLowerCase().includes(query));
+      results.innerHTML = list.length
+        ? list.map(x => `<a class="sr-item" href="${x.u}"><b>${x.t}</b><span>${x.d}</span></a>`).join('')
+        : '<div class="search-empty">No results found.</div>';
+    };
+    const open = () => { modal.classList.add('open'); document.body.style.overflow = 'hidden'; render(''); setTimeout(() => input.focus(), 50); };
+    const close = () => { modal.classList.remove('open'); document.body.style.overflow = ''; input.value = ''; };
+    searchToggle.addEventListener('click', open);
+    modal.querySelector('.search-close').addEventListener('click', close);
+    modal.addEventListener('click', e => { if (e.target === modal) close(); });
+    input.addEventListener('input', () => render(input.value));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  }
+
+  // Language switch (EN / AR) via Google website translator
+  const langButtons = document.querySelectorAll('.lang-switch button');
+  if (langButtons.length) {
+    if (!document.getElementById('google_translate_element')) {
+      const gd = document.createElement('div');
+      gd.id = 'google_translate_element';
+      gd.style.display = 'none';
+      document.body.appendChild(gd);
+      window.googleTranslateElementInit = function () {
+        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,ar', autoDisplay: false }, 'google_translate_element');
+      };
+      const gs = document.createElement('script');
+      gs.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      document.body.appendChild(gs);
+    }
+    const setLang = (lang) => {
+      const tries = [0, 300, 700, 1200, 2000];
+      tries.forEach(ms => setTimeout(() => {
+        const combo = document.querySelector('.goog-te-combo');
+        if (combo) { combo.value = lang === 'en' ? 'en' : lang; combo.dispatchEvent(new Event('change')); }
+      }, ms));
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+      try { localStorage.setItem('axisLang', lang); } catch (e) {}
+    };
+    langButtons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
+    try { const saved = localStorage.getItem('axisLang'); if (saved === 'ar') setLang('ar'); } catch (e) {}
+  }
+
   // Contact form (demo — no backend)
   const form = document.getElementById('contactForm');
   if (form) {
