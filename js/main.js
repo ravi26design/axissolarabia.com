@@ -129,14 +129,14 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
   }
 
-  // Language switch (EN / AR) via Google website translator (cookie-based)
+  // Language switch (EN / AR) via Google website translator
   const langButtons = document.querySelectorAll('.lang-switch button');
   if (langButtons.length) {
-    // Inject the (hidden) translate element + script once
+    // Inject the translate element (off-screen, NOT display:none) + script once
     if (!document.getElementById('google_translate_element')) {
       const gd = document.createElement('div');
       gd.id = 'google_translate_element';
-      gd.style.cssText = 'position:absolute;left:-9999px;top:-9999px;';
+      gd.style.cssText = 'position:fixed;left:-9999px;top:0;width:1px;height:1px;overflow:hidden;';
       document.body.appendChild(gd);
       window.googleTranslateElementInit = function () {
         new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,ar', autoDisplay: false }, 'google_translate_element');
@@ -145,28 +145,36 @@
       gs.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
       document.body.appendChild(gs);
     }
-    const currentLang = () => {
-      const m = document.cookie.match(/googtrans=\/en\/(\w+)/);
-      return m ? m[1] : 'en';
-    };
     const setCookie = (val, remove) => {
       const attr = remove ? '; max-age=0' : '; max-age=' + (365 * 86400);
       document.cookie = 'googtrans=' + val + '; path=/' + attr;
       document.cookie = 'googtrans=' + val + '; path=/; domain=' + location.hostname + attr;
     };
-    const applyDir = (lang) => {
-      langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+    const currentLang = () => {
+      const m = document.cookie.match(/googtrans=\/en\/(\w+)/);
+      return m ? m[1] : 'en';
+    };
+    // Poll for Google's hidden <select>, then set it and fire change (translates in place)
+    const drive = (lang, tries) => {
+      const combo = document.querySelector('.goog-te-combo');
+      if (combo) {
+        combo.value = lang === 'en' ? '' : lang;
+        combo.dispatchEvent(new Event('change'));
+        return;
+      }
+      if (tries > 0) setTimeout(() => drive(lang, tries - 1), 250);
+    };
+    const setLang = (lang, reloadForEn) => {
+      if (lang === 'ar') setCookie('/en/ar', false); else setCookie('', true);
       document.documentElement.lang = lang;
       document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+      if (lang === 'en' && reloadForEn) { location.reload(); return; }
+      drive(lang, 40);
     };
-    langButtons.forEach(b => b.addEventListener('click', () => {
-      const lang = b.dataset.lang;
-      if (lang === currentLang()) return;
-      if (lang === 'ar') setCookie('/en/ar', false);
-      else setCookie('', true);
-      location.reload();
-    }));
-    applyDir(currentLang());
+    langButtons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang, true)));
+    // Re-apply saved language on new page loads
+    if (currentLang() === 'ar') setLang('ar', false);
   }
 
   // Contact form (demo — no backend)
