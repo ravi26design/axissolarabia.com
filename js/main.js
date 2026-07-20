@@ -3,10 +3,12 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const finePointer = window.matchMedia('(pointer: fine)').matches;
 
-  // TEMP: disable navigation to other pages (keep in-page #anchors, mailto, tel)
+  // TEMP: disable navigation to other pages (about.html is enabled; keep #anchors, mailto, tel)
   document.querySelectorAll('a[href]').forEach(a => {
     const href = a.getAttribute('href') || '';
-    if (/\.html(\?|#|$)/i.test(href)) {
+    const isHtml = /\.html(\?|#|$)/i.test(href);
+    const isAbout = /(^|\/)about\.html(\?|#|$)/i.test(href);
+    if (isHtml && !isAbout) {
       a.addEventListener('click', e => e.preventDefault());
       a.style.cursor = 'default';
     }
