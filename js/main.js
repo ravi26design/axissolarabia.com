@@ -129,13 +129,14 @@
     document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
   }
 
-  // Language switch (EN / AR) via Google website translator
+  // Language switch (EN / AR) via Google website translator (cookie-based)
   const langButtons = document.querySelectorAll('.lang-switch button');
   if (langButtons.length) {
+    // Inject the (hidden) translate element + script once
     if (!document.getElementById('google_translate_element')) {
       const gd = document.createElement('div');
       gd.id = 'google_translate_element';
-      gd.style.display = 'none';
+      gd.style.cssText = 'position:absolute;left:-9999px;top:-9999px;';
       document.body.appendChild(gd);
       window.googleTranslateElementInit = function () {
         new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,ar', autoDisplay: false }, 'google_translate_element');
@@ -144,19 +145,28 @@
       gs.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
       document.body.appendChild(gs);
     }
-    const setLang = (lang) => {
-      const tries = [0, 300, 700, 1200, 2000];
-      tries.forEach(ms => setTimeout(() => {
-        const combo = document.querySelector('.goog-te-combo');
-        if (combo) { combo.value = lang === 'en' ? 'en' : lang; combo.dispatchEvent(new Event('change')); }
-      }, ms));
+    const currentLang = () => {
+      const m = document.cookie.match(/googtrans=\/en\/(\w+)/);
+      return m ? m[1] : 'en';
+    };
+    const setCookie = (val, remove) => {
+      const attr = remove ? '; max-age=0' : '; max-age=' + (365 * 86400);
+      document.cookie = 'googtrans=' + val + '; path=/' + attr;
+      document.cookie = 'googtrans=' + val + '; path=/; domain=' + location.hostname + attr;
+    };
+    const applyDir = (lang) => {
+      langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
       document.documentElement.lang = lang;
       document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-      langButtons.forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
-      try { localStorage.setItem('axisLang', lang); } catch (e) {}
     };
-    langButtons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
-    try { const saved = localStorage.getItem('axisLang'); if (saved === 'ar') setLang('ar'); } catch (e) {}
+    langButtons.forEach(b => b.addEventListener('click', () => {
+      const lang = b.dataset.lang;
+      if (lang === currentLang()) return;
+      if (lang === 'ar') setCookie('/en/ar', false);
+      else setCookie('', true);
+      location.reload();
+    }));
+    applyDir(currentLang());
   }
 
   // Contact form (demo — no backend)
