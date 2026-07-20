@@ -889,3 +889,25 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 .proc-panel::after { background: linear-gradient(180deg, rgba(11,14,17,.12) 0%, rgba(11,14,17,.5) 52%, rgba(11,14,17,.93) 100%); }
 .proc-panel { justify-content: flex-end; padding: 40px; }
 .proc-stage::before { opacity: .22; }
+
+/* ============================================================
+   About — milestones timeline + manufacturing area
+   ============================================================ */
+.mstones { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; padding-top: 4px; }
+.mstones::before { content: ""; position: absolute; top: 62px; left: 8%; right: 8%; height: 2px; background: linear-gradient(90deg, transparent, rgba(245,130,31,.5) 8%, rgba(245,130,31,.5) 92%, transparent); }
+.mstone { position: relative; text-align: center; }
+.mstone .my-year { font-size: clamp(26px, 3vw, 34px); font-weight: 800; letter-spacing: -.02em; background: linear-gradient(135deg, #ffcf9f, var(--accent)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; margin-bottom: 20px; }
+.mstone .my-node { width: 20px; height: 20px; border-radius: 50%; background: var(--surface-2); border: 2px solid var(--accent); box-shadow: 0 0 0 6px #0b0e11, 0 0 22px -4px rgba(245,130,31,.6); margin: 0 auto 22px; position: relative; z-index: 2; transition: transform .3s ease, box-shadow .3s ease; }
+.mstone:hover .my-node { transform: scale(1.2); box-shadow: 0 0 0 6px #0b0e11, 0 0 30px -2px rgba(245,130,31,.85); }
+.mstone .my-label { font-size: 15px; font-weight: 600; color: var(--ink-2); }
+
+.ma-visual { border-radius: var(--radius); overflow: hidden; min-height: 380px; border: 1px solid var(--line); }
+.ma-visual img { width: 100%; height: 100%; min-height: 380px; object-fit: cover; }
+
+@media (max-width: 760px) {
+  .mstones { grid-template-columns: repeat(2, 1fr); gap: 34px 18px; }
+  .mstones::before { display: none; }
+  .ma-visual { min-height: 260px; }
+  .ma-visual img { min-height: 260px; }
+}
+@media (max-width: 440px) { .mstones { grid-template-columns: 1fr; } }
