@@ -949,3 +949,9 @@ html[dir="rtl"] .nav-links, html[dir="rtl"] .hero-actions { direction: rtl; }
 @media (max-width: 480px) { .lang-switch { display: none; } }
 
 .foot-col .foot-addr { color: var(--muted); font-size: 14.5px; line-height: 1.6; margin-bottom: 14px; max-width: 260px; }
+
+/* Footer contact rows with icons */
+.foot-contact .fc-row { display: flex; align-items: flex-start; gap: 10px; color: var(--muted); font-size: 14.5px; line-height: 1.55; margin-bottom: 12px; }
+.foot-contact a.fc-row { transition: color .2s; }
+.foot-contact a.fc-row:hover { color: var(--accent-deep); }
+.foot-contact .fc-row svg { flex: 0 0 auto; color: var(--accent-deep); margin-top: 2px; }
