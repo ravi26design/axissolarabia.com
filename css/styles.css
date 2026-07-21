@@ -998,3 +998,16 @@ a.pcat { display: block; cursor: pointer; }
 .skeleton-ov.gone { opacity: 0; }
 @keyframes skshimmer { 0% { background-position: 220% 0; } 100% { background-position: -220% 0; } }
 @media (prefers-reduced-motion: reduce) { .skeleton-ov::before { animation: none; } }
+
+/* ============================================================
+   Preloader (branded loading screen)
+   ============================================================ */
+.preloader { position: fixed; inset: 0; z-index: 10000; background: #0b0e11; display: grid; place-items: center; transition: opacity .6s ease, visibility .6s ease; }
+.preloader.hidden { opacity: 0; visibility: hidden; }
+.pl-inner { display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.pl-logo { height: 52px; width: auto; animation: plPulse 1.6s ease-in-out infinite; }
+@keyframes plPulse { 0%,100% { opacity: .55; transform: scale(.97); } 50% { opacity: 1; transform: scale(1); } }
+.pl-bar { width: 170px; height: 3px; border-radius: 3px; background: rgba(255,255,255,.1); overflow: hidden; position: relative; }
+.pl-bar span { position: absolute; top: 0; left: 0; height: 100%; width: 42%; border-radius: 3px; background: linear-gradient(90deg, transparent, var(--accent), transparent); animation: plSlide 1.15s linear infinite; }
+@keyframes plSlide { 0% { transform: translateX(-110%); } 100% { transform: translateX(360%); } }
+@media (prefers-reduced-motion: reduce) { .pl-logo { animation: none; } .pl-bar span { animation-duration: 2s; } }

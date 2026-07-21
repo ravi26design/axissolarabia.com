@@ -14,6 +14,16 @@
     }
   });
 
+  // Preloader — hide once the page has loaded
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    let hidden = false;
+    const hide = () => { if (hidden) return; hidden = true; preloader.classList.add('hidden'); setTimeout(() => preloader.remove(), 700); };
+    if (document.readyState === 'complete') setTimeout(hide, 500);
+    else window.addEventListener('load', () => setTimeout(hide, 400));
+    setTimeout(hide, 3500); // safety fallback
+  }
+
   // Header background on scroll + scroll progress
   const header = document.getElementById('header');
   const progress = document.createElement('div');
