@@ -146,7 +146,7 @@ header.scrolled .menu-toggle { color: var(--ink); }
 .scard .more { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; color: var(--accent-deep); font-weight: 600; font-size: 13px; }
 
 /* Product categories */
-.pcats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+.pcats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .pcat { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); }
 .pcat .head { padding: 22px; background: linear-gradient(160deg, rgba(245,130,31,0.16), var(--surface-2)); border-bottom: 1px solid var(--line); }
 .pcat .head .ic { color: var(--accent-deep); margin-bottom: 10px; }
