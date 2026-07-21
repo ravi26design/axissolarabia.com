@@ -957,3 +957,8 @@ html[dir="rtl"] .nav-links, html[dir="rtl"] .hero-actions { direction: rtl; }
 .foot-contact .fc-row svg { flex: 0 0 auto; color: var(--accent-deep); margin-top: 2px; }
 
 .quote .av { display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 15px; letter-spacing: .02em; flex: 0 0 auto; }
+
+/* Numbers in a clean sans-serif */
+.stat .num, .big-num, .gstat b, .hl .big, .my-year, .global .big-num {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
