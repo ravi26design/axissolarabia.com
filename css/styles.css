@@ -979,3 +979,10 @@ a.pcat { display: block; cursor: pointer; }
 @media (max-width: 1000px) { .pd-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 700px) { .pd-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 440px) { .pd-grid { grid-template-columns: 1fr; } }
+
+/* Product grid pagination */
+.pd-pager { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 44px; flex-wrap: wrap; }
+.pd-pager button { min-width: 44px; height: 44px; padding: 0 12px; border-radius: 11px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer; transition: border-color .2s, color .2s, background .2s; }
+.pd-pager button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.pd-pager button.active { background: var(--accent); color: #2a1500; border-color: var(--accent); }
+.pd-pager button:disabled { opacity: .4; cursor: default; }

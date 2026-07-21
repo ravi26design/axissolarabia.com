@@ -177,6 +177,30 @@
     if (currentLang() === 'ar') setLang('ar', false);
   }
 
+  // Product grid pagination (20 per page)
+  document.querySelectorAll('.pd-grid').forEach(grid => {
+    const cards = Array.from(grid.children).filter(c => c.classList.contains('pd-card'));
+    const SIZE = 20;
+    if (cards.length <= SIZE) return;
+    const pages = Math.ceil(cards.length / SIZE);
+    let cur = 1;
+    const pager = document.createElement('div');
+    pager.className = 'pd-pager';
+    grid.after(pager);
+    const scrollUp = () => window.scrollTo({ top: grid.getBoundingClientRect().top + window.scrollY - 110, behavior: 'smooth' });
+    const render = () => {
+      cards.forEach((c, i) => { c.style.display = (i >= (cur - 1) * SIZE && i < cur * SIZE) ? '' : 'none'; });
+      let h = `<button class="pg-nav" data-nav="prev"${cur === 1 ? ' disabled' : ''} aria-label="Previous">‹</button>`;
+      for (let p = 1; p <= pages; p++) h += `<button data-p="${p}"${p === cur ? ' class="active"' : ''}>${p}</button>`;
+      h += `<button class="pg-nav" data-nav="next"${cur === pages ? ' disabled' : ''} aria-label="Next">›</button>`;
+      pager.innerHTML = h;
+      pager.querySelectorAll('[data-p]').forEach(b => b.addEventListener('click', () => { cur = +b.dataset.p; render(); scrollUp(); }));
+      pager.querySelector('[data-nav="prev"]').addEventListener('click', () => { if (cur > 1) { cur--; render(); scrollUp(); } });
+      pager.querySelector('[data-nav="next"]').addEventListener('click', () => { if (cur < pages) { cur++; render(); scrollUp(); } });
+    };
+    render();
+  });
+
   // Testimonial avatars — initials fallback when there's no photo
   document.querySelectorAll('.quote .who').forEach(who => {
     const av = who.querySelector('.av');
