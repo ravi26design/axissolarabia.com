@@ -962,3 +962,6 @@ html[dir="rtl"] .nav-links, html[dir="rtl"] .hero-actions { direction: rtl; }
 .stat .num, .big-num, .gstat b, .hl .big, .my-year, .global .big-num {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+/* Product illustration panel — square */
+.pcat-illus { height: auto; aspect-ratio: 1 / 1; }
