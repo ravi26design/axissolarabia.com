@@ -7,7 +7,7 @@
   document.querySelectorAll('a[href]').forEach(a => {
     const href = a.getAttribute('href') || '';
     const isHtml = /\.html(\?|#|$)/i.test(href);
-    const isEnabled = /(^|\/)(index|about|products)\.html(\?|#|$)/i.test(href);
+    const isEnabled = /(^|\/)(index|about|products|process-analytics)\.html(\?|#|$)/i.test(href);
     if (isHtml && !isEnabled) {
       a.addEventListener('click', e => e.preventDefault());
       a.style.cursor = 'default';
