@@ -201,6 +201,18 @@
     render();
   });
 
+  // Skeleton loading overlays for content images
+  document.querySelectorAll('.pd-img, .icard-img, .project .thumb, .ma-visual').forEach(el => {
+    const img = el.querySelector('img');
+    if (!img) return;
+    const sk = document.createElement('span');
+    sk.className = 'skeleton-ov';
+    el.appendChild(sk);
+    const done = () => { sk.classList.add('gone'); setTimeout(() => sk.remove(), 500); };
+    if (img.complete && img.naturalWidth) done();
+    else { img.addEventListener('load', done, { once: true }); img.addEventListener('error', done, { once: true }); }
+  });
+
   // Testimonial avatars — initials fallback when there's no photo
   document.querySelectorAll('.quote .who').forEach(who => {
     const av = who.querySelector('.av');
