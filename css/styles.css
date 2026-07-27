@@ -1032,3 +1032,74 @@ a.pd-card { display: block; }
 .pdx-specs tr td:first-child { color: var(--muted); font-weight: 600; width: 42%; background: rgba(255,255,255,.02); }
 .pdx-specs tr:last-child td { border-bottom: 0; }
 @media (max-width: 860px) { .pdx-grid { grid-template-columns: 1fr; gap: 30px; } .pdx-media .pd-img { max-width: 420px; } }
+
+/* ── Request form modal ─────────────────────────────── */
+.modal-overlay { position: fixed; inset: 0; z-index: 1200; display: flex; align-items: center; justify-content: center; padding: 24px;
+  background: rgba(6,9,12,.72); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  opacity: 0; visibility: hidden; transition: opacity .25s ease, visibility .25s ease; }
+.modal-overlay.open { opacity: 1; visibility: visible; }
+.modal { position: relative; width: 100%; max-width: 540px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: 0 40px 90px -30px rgba(0,0,0,.7); padding: 34px 34px 30px;
+  transform: translateY(16px) scale(.98); opacity: 0; transition: transform .3s cubic-bezier(.2,.8,.2,1), opacity .3s; max-height: 90vh; overflow-y: auto; }
+.modal-overlay.open .modal { transform: none; opacity: 1; }
+.modal-close { position: absolute; top: 14px; right: 16px; width: 34px; height: 34px; border: none; border-radius: 50%;
+  background: var(--surface-2); color: var(--muted); font-size: 22px; line-height: 1; cursor: pointer; transition: background .2s, color .2s; }
+.modal-close:hover { background: var(--accent); color: #10151a; }
+.modal h3 { font-size: 22px; letter-spacing: -.01em; }
+.modal-sub { color: var(--accent-deep); font-weight: 600; font-size: 14px; margin: 4px 0 22px; }
+.rfq-form { display: flex; flex-direction: column; gap: 14px; }
+.rfq-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.rfq-form label { display: flex; flex-direction: column; gap: 6px; font-size: 12.5px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+.rfq-form label span { color: var(--accent); }
+.rfq-form input, .rfq-form textarea { background: var(--surface-2); border: 1px solid var(--line); border-radius: 11px;
+  padding: 12px 14px; color: var(--ink); font-family: inherit; font-size: 15px; text-transform: none; letter-spacing: normal; font-weight: 400; transition: border-color .2s, box-shadow .2s; }
+.rfq-form input:focus, .rfq-form textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(245,130,31,.16); }
+.rfq-form textarea { resize: vertical; min-height: 74px; }
+.rfq-submit { margin-top: 6px; justify-content: center; }
+.rfq-success { text-align: center; padding: 20px 6px 6px; }
+.rfq-check { width: 62px; height: 62px; margin: 0 auto 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  background: rgba(245,130,31,.14); color: var(--accent); }
+.rfq-success h3 { font-size: 22px; }
+.rfq-success p { color: var(--muted); font-size: 15px; margin: 8px 0 22px; }
+@media (max-width: 560px) { .modal { padding: 28px 20px 24px; } .rfq-row { grid-template-columns: 1fr; } }
+
+/* ── Product detail — visual polish ─────────────────── */
+.page-hero .pd-code-lg { display: inline-block; margin-top: 16px; padding: 7px 15px; font-size: 13px; font-weight: 700;
+  letter-spacing: .12em; color: var(--accent); background: rgba(245,130,31,.12); border: 1px solid rgba(245,130,31,.35);
+  border-radius: 999px; }
+.pdx-grid { grid-template-columns: 0.95fr 1.05fr; gap: 52px; }
+.pdx-media { position: sticky; top: 100px; }
+.pdx-media .pd-img { border: 1px solid var(--line); border-radius: 22px; padding: 46px;
+  background: radial-gradient(120% 120% at 50% 0%, rgba(245,130,31,.10), transparent 60%), var(--surface);
+  box-shadow: 0 40px 80px -50px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.03); overflow: hidden; }
+.pdx-media .pd-img::after { content: ""; position: absolute; left: 50%; bottom: -30%; width: 80%; height: 55%;
+  transform: translateX(-50%); background: radial-gradient(closest-side, rgba(245,130,31,.16), transparent 70%);
+  filter: blur(10px); pointer-events: none; }
+.pd-badge { position: absolute; top: 16px; left: 16px; z-index: 2; padding: 6px 13px; font-size: 12px; font-weight: 700;
+  letter-spacing: .08em; color: var(--accent); background: rgba(245,130,31,.13); border: 1px solid rgba(245,130,31,.32);
+  border-radius: 999px; backdrop-filter: blur(4px); }
+.pdx-sec-label { font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-deep);
+  display: flex; align-items: center; gap: 10px; margin: 0 0 14px; }
+.pdx-sec-label::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line), transparent); }
+.pdx-info .pdx-sec-label + p, .pdx-info .pdx-features { margin-bottom: 30px; }
+.pdx-info .pdx-features + .pdx-sec-label, .pdx-info .pdx-overview + .pdx-sec-label { margin-top: 4px; }
+.pdx-overview { color: var(--ink-2); font-size: 17px; line-height: 1.8; }
+.pdx-features { grid-template-columns: 1fr 1fr; gap: 12px 22px; }
+.pdx-features li { background: var(--surface); border: 1px solid var(--line); border-radius: 11px; padding: 12px 14px 12px 40px;
+  transition: border-color .2s, transform .2s; }
+.pdx-features li::before { left: 13px; top: 13px; }
+.pdx-features li:hover { border-color: rgba(245,130,31,.4); transform: translateY(-2px); }
+.pdx-specs { margin-top: 64px; }
+.pdx-sec-head { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
+.pdx-sec-head h2 { font-size: 24px; font-weight: 800; letter-spacing: -.02em; white-space: nowrap; }
+.pdx-sec-head::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line), transparent); }
+.pdx-spec-wrap { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); }
+.pdx-specs table { border: 0; border-radius: 0; }
+.pdx-specs tr { transition: background .18s; }
+.pdx-specs tbody tr:hover { background: rgba(245,130,31,.05); }
+.pdx-specs td:first-child { letter-spacing: .01em; }
+@media (max-width: 860px) {
+  .pdx-media { position: static; }
+  .pdx-features { grid-template-columns: 1fr; }
+  .pdx-media .pd-img { padding: 34px; }
+}

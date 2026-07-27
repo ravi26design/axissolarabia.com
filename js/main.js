@@ -196,21 +196,57 @@
       document.title = p.name + ' — Axis';
       const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
       set('pd-title', p.name); set('pd-crumb', p.name); set('pd-code', p.code || '');
+      { const codeEl = document.getElementById('pd-code'); if (codeEl && !p.code) codeEl.style.display = 'none'; }
       const catLink = document.getElementById('pd-cat-link');
       if (catLink) { catLink.textContent = p.cat || 'Process Analytics'; catLink.href = p.caturl || 'process-analytics.html'; }
       const feats = (p.features || []).map(f => `<li>${f}</li>`).join('');
       const specs = (p.specs && p.specs.length)
-        ? `<div class="pdx-specs"><h3>Technical Specifications</h3><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div>`
+        ? `<div class="pdx-specs"><div class="pdx-sec-head"><h2>Technical Specifications</h2></div><div class="pdx-spec-wrap"><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div></div>`
         : '';
       pdBody.innerHTML =
         `<div class="pdx-grid">
-           <div class="pdx-media"><div class="pd-img"><img src="${p.img}" alt="${p.name}"></div></div>
+           <div class="pdx-media">
+             <div class="pd-img">${p.code ? `<span class="pd-badge">${p.code}</span>` : ''}<img src="${p.img}" alt="${p.name}"></div>
+           </div>
            <div class="pdx-info">
-             ${p.overview ? `<p class="pdx-overview">${p.overview}</p>` : ''}
-             ${feats ? `<h3>Key Features</h3><ul class="pdx-features">${feats}</ul>` : ''}
-             <div class="pdx-cta"><a href="contact.html" class="btn btn-primary">Request Quotation →</a><a href="contact.html" class="btn btn-outline">Request Datasheet</a></div>
+             ${p.overview ? `<div class="pdx-sec-label">Product Overview</div><p class="pdx-overview">${p.overview}</p>` : ''}
+             ${feats ? `<div class="pdx-sec-label">Key Features</div><ul class="pdx-features">${feats}</ul>` : ''}
+             <div class="pdx-cta"><button type="button" class="btn btn-primary" data-rfq="quote">Request Quotation →</button><button type="button" class="btn btn-outline" data-rfq="datasheet">Request Datasheet</button></div>
            </div>
          </div>${specs}`;
+
+      // Request form modal
+      const modal = document.getElementById('rfqModal');
+      if (modal) {
+        const form = document.getElementById('rfqForm');
+        const success = document.getElementById('rfqSuccess');
+        const prodName = p.name + (p.code ? ' (' + p.code + ')' : '');
+        const openModal = (type) => {
+          const isDs = type === 'datasheet';
+          document.getElementById('rfqTitle').textContent = isDs ? 'Request Datasheet' : 'Request Quotation';
+          document.getElementById('rfqSub').textContent = prodName;
+          form.reset();
+          document.getElementById('rfqType').value = isDs ? 'Datasheet' : 'Quotation';
+          document.getElementById('rfqProduct').value = prodName;
+          form.hidden = false; success.hidden = true;
+          modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+          setTimeout(() => { const f = form.querySelector('input'); if (f) f.focus(); }, 60);
+        };
+        const closeModal = () => {
+          modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        };
+        pdBody.querySelectorAll('[data-rfq]').forEach(b =>
+          b.addEventListener('click', () => openModal(b.dataset.rfq)));
+        modal.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', closeModal));
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          form.hidden = true; success.hidden = false;
+        });
+      }
     } else {
       pdBody.innerHTML = '<p style="color:var(--muted);font-size:16px">Product not found. <a href="process-analytics.html" style="color:var(--accent-deep);font-weight:600">Back to products →</a></p>';
     }
