@@ -1195,3 +1195,7 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 .pdx-detail .pdx-features { margin-bottom: 30px; }
 .pdx-detail .pdx-features:last-child { margin-bottom: 0; }
 @media (max-width: 640px) { .pdx-detail { margin-top: 34px; } .pdx-detail .pdx-feat-wide { grid-template-columns: 1fr; } }
+
+/* Features/Advantages now sit after the CTA — spacing */
+.pdx-info .pdx-cta + .pdx-sec-label { margin-top: 36px; }
+.pdx-info .pdx-features:last-child { margin-bottom: 0; }
