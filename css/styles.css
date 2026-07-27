@@ -1162,3 +1162,11 @@ a.pd-card { display: block; }
 .pd-hero .hero-glow, .pd-hero .hero-grid { display: none !important; }
 .pd-hero { background: var(--bg) !important; }
 body.pd-page { background: var(--bg) !important; }
+
+/* Category listing pages: reduce gap between hero and product grid */
+.page-hero:has(+ .section-pad .pd-grid) { padding-bottom: 30px; }
+.page-hero + .section-pad:has(.pd-grid) { padding-top: 36px; }
+@media (max-width: 640px) {
+  .page-hero:has(+ .section-pad .pd-grid) { padding-bottom: 20px; }
+  .page-hero + .section-pad:has(.pd-grid) { padding-top: 26px; }
+}
