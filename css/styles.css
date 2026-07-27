@@ -1161,4 +1161,4 @@ a.pd-card { display: block; }
 /* Product detail: truly single flat background — remove hero glow/grid overlays */
 .pd-hero .hero-glow, .pd-hero .hero-grid { display: none !important; }
 .pd-hero { background: var(--bg) !important; }
-body { background: var(--bg); }
+body.pd-page { background: var(--bg) !important; }
