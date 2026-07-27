@@ -1103,3 +1103,8 @@ a.pd-card { display: block; }
   .pdx-features { grid-template-columns: 1fr; }
   .pdx-media .pd-img { padding: 34px; }
 }
+
+/* Product detail hero — tighten space so content starts right after the code badge */
+.pd-hero { padding-bottom: 46px; }
+.pd-hero + .section-pad { padding-top: 46px; }
+@media (max-width: 640px) { .pd-hero { padding-bottom: 34px; } .pd-hero + .section-pad { padding-top: 34px; } }
