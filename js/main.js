@@ -201,8 +201,9 @@
       if (catLink) { catLink.textContent = p.cat || 'Process Analytics'; catLink.href = p.caturl || 'process-analytics.html'; }
       const feats = (p.features || []).map(f => `<li>${f}</li>`).join('');
       const advs = (p.advantages || []).map(a => `<li>${a}</li>`).join('');
+      const acc = (title, inner, open) => `<div class="pdx-acc${open ? ' open' : ''}"><button type="button" class="pdx-acc-head" aria-expanded="${open ? 'true' : 'false'}"><span>${title}</span><svg class="pdx-acc-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="pdx-acc-body"><div class="pdx-acc-inner">${inner}</div></div></div>`;
       const specs = (p.specs && p.specs.length)
-        ? `<div class="pdx-specs"><div class="pdx-sec-head"><h2>Technical Specifications</h2></div><div class="pdx-spec-wrap"><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div></div>`
+        ? `<div class="pdx-specs">${acc('Technical Specifications', `<div class="pdx-spec-wrap"><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div>`, false)}</div>`
         : '';
       const _cat = p.caturl || 'process-analytics.html';
       const relCards = Object.keys(window.PRODUCTS)
@@ -221,10 +222,17 @@
              ${p.code ? `<div class="pdx-code">${p.code}</div>` : ''}
              ${p.overview ? `<div class="pdx-sec-label">Product Overview</div><p class="pdx-overview">${p.overview}</p>` : ''}
              <div class="pdx-cta"><button type="button" class="btn btn-primary" data-rfq="quote">Request Quotation →</button><button type="button" class="btn btn-outline" data-rfq="datasheet">Request Datasheet</button></div>
-             ${feats ? `<div class="pdx-sec-label">Key Features</div><ul class="pdx-features">${feats}</ul>` : ''}
-             ${advs ? `<div class="pdx-sec-label">Advantages</div><ul class="pdx-features pdx-adv">${advs}</ul>` : ''}
+             ${feats ? acc('Key Features', `<ul class="pdx-features">${feats}</ul>`, true) : ''}
+             ${advs ? acc('Advantages', `<ul class="pdx-features pdx-adv">${advs}</ul>`, false) : ''}
            </div>
          </div>${specs}${relatedHtml}`;
+
+      // Accordion toggles (Key Features / Advantages / Specifications)
+      pdBody.querySelectorAll('.pdx-acc-head').forEach(h => h.addEventListener('click', () => {
+        const item = h.closest('.pdx-acc');
+        const open = item.classList.toggle('open');
+        h.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }));
 
       // Request form modal
       const modal = document.getElementById('rfqModal');

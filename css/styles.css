@@ -1199,3 +1199,19 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 /* Features/Advantages now sit after the CTA — spacing */
 .pdx-info .pdx-cta + .pdx-sec-label { margin-top: 36px; }
 .pdx-info .pdx-features:last-child { margin-bottom: 0; }
+
+/* ── Collapsible sections (Key Features / Advantages / Specifications) ── */
+.pdx-acc { border-top: 1px solid var(--line); }
+.pdx-acc-head { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  background: none; border: 0; cursor: pointer; padding: 18px 2px; text-align: left; font: inherit; }
+.pdx-acc-head span { font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-deep); }
+.pdx-acc-head:hover span { color: var(--accent); }
+.pdx-acc-chev { color: var(--muted); transition: transform .3s ease; flex: none; }
+.pdx-acc.open .pdx-acc-chev { transform: rotate(180deg); color: var(--accent); }
+.pdx-acc-body { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .32s cubic-bezier(.4,0,.2,1); }
+.pdx-acc.open .pdx-acc-body { grid-template-rows: 1fr; }
+.pdx-acc-inner { overflow: hidden; }
+.pdx-acc-inner .pdx-features, .pdx-acc-inner .pdx-spec-wrap { margin-bottom: 20px; }
+.pdx-specs .pdx-acc-head span { font-size: 12px; }
+.pdx-specs { margin-top: 8px; }
+.pdx-specs .pdx-acc { border-top: 1px solid var(--line); }
