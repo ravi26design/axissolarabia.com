@@ -220,11 +220,9 @@
              <h1 class="pdx-name">${p.name}</h1>
              ${p.code ? `<div class="pdx-code">${p.code}</div>` : ''}
              ${p.overview ? `<div class="pdx-sec-label">Product Overview</div><p class="pdx-overview">${p.overview}</p>` : ''}
-             ${feats ? `<div class="pdx-sec-label">Key Features</div><ul class="pdx-features">${feats}</ul>` : ''}
-             ${advs ? `<div class="pdx-sec-label">Advantages</div><ul class="pdx-features pdx-adv">${advs}</ul>` : ''}
              <div class="pdx-cta"><button type="button" class="btn btn-primary" data-rfq="quote">Request Quotation →</button><button type="button" class="btn btn-outline" data-rfq="datasheet">Request Datasheet</button></div>
            </div>
-         </div>${specs}${relatedHtml}`;
+         </div>${(feats || advs) ? `<div class="pdx-detail">${feats ? `<div class="pdx-sec-label">Key Features</div><ul class="pdx-features pdx-feat-wide">${feats}</ul>` : ''}${advs ? `<div class="pdx-sec-label">Advantages</div><ul class="pdx-features pdx-adv pdx-feat-wide">${advs}</ul>` : ''}</div>` : ''}${specs}${relatedHtml}`;
 
       // Request form modal
       const modal = document.getElementById('rfqModal');

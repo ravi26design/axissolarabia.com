@@ -1187,3 +1187,11 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 /* Remove the right-side divider lines on section titles, and the Similar Products top line */
 .pdx-sec-label::after, .pdx-sec-head::after { content: none !important; display: none !important; }
 .pdx-related { border-top: none; padding-top: 0; margin-top: 50px; }
+
+/* Full-width Key Features + Advantages below the top section */
+.pdx-detail { margin-top: 46px; }
+.pdx-detail .pdx-sec-label { margin-bottom: 14px; }
+.pdx-detail .pdx-feat-wide { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px 20px; }
+.pdx-detail .pdx-features { margin-bottom: 30px; }
+.pdx-detail .pdx-features:last-child { margin-bottom: 0; }
+@media (max-width: 640px) { .pdx-detail { margin-top: 34px; } .pdx-detail .pdx-feat-wide { grid-template-columns: 1fr; } }
