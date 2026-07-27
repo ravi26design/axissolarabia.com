@@ -1170,3 +1170,7 @@ body.pd-page { background: var(--bg) !important; }
   .page-hero:has(+ .section-pad .pd-grid) { padding-bottom: 20px; }
   .page-hero + .section-pad:has(.pd-grid) { padding-top: 26px; }
 }
+
+/* Products family: single flat base bg (no banding/seam), keep soft glow ambiance */
+body.flat-bg { background: var(--bg) !important; }
+body.flat-bg .page-hero { background: var(--bg) !important; }
