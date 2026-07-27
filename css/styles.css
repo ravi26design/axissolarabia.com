@@ -1119,3 +1119,27 @@ a.pd-card { display: block; }
 .pd-hero { padding-top: 130px; padding-bottom: 38px; }
 .pdx-name { margin: 0; }
 @media (max-width: 640px) { .pd-hero { padding-top: 104px; padding-bottom: 28px; } }
+
+/* ── Product detail — tighter spacing + polish (v d) ── */
+.pd-hero { padding-top: 114px; padding-bottom: 22px; }
+.pd-hero + .section-pad { padding-top: 28px; padding-bottom: 84px; }
+@media (max-width: 640px) { .pd-hero { padding-top: 100px; padding-bottom: 16px; } .pd-hero + .section-pad { padding-top: 22px; padding-bottom: 60px; } }
+
+.pdx-grid { gap: 46px; }
+.pdx-media { top: 92px; }
+.pdx-media .pd-img { padding: 38px; border-radius: 20px; }
+
+.pdx-name { font-size: clamp(24px, 2.4vw, 33px); line-height: 1.1; }
+.pdx-code { margin-top: 10px; }
+.pdx-name + .pdx-sec-label, .pdx-code + .pdx-sec-label { margin-top: 22px; }
+.pdx-sec-label { margin-bottom: 12px; }
+.pdx-overview { font-size: 16px; line-height: 1.7; }
+.pdx-info .pdx-sec-label + p, .pdx-info .pdx-features { margin-bottom: 24px; }
+.pdx-features { gap: 10px 18px; }
+.pdx-features li { padding: 11px 13px 11px 38px; font-size: 14.5px; }
+.pdx-features li::before { top: 12px; }
+.pdx-cta { margin-top: 24px; }
+.pdx-specs { margin-top: 44px; }
+.pdx-sec-head { margin-bottom: 18px; }
+.pdx-sec-head h2 { font-size: 22px; }
+.pdx-specs td { padding: 13px 20px; }
