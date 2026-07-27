@@ -1220,3 +1220,7 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 .pdx-info .pdx-cta { margin-top: 28px; margin-bottom: 14px; }
 .pdx-specs { margin-top: 26px; }
 .pdx-acc-head { padding: 17px 2px; }
+
+/* Remove accordion divider lines; show list items one per row */
+.pdx-acc, .pdx-specs .pdx-acc { border-top: none !important; }
+.pdx-features { grid-template-columns: 1fr !important; }
