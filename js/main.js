@@ -200,9 +200,17 @@
       const catLink = document.getElementById('pd-cat-link');
       if (catLink) { catLink.textContent = p.cat || 'Process Analytics'; catLink.href = p.caturl || 'process-analytics.html'; }
       const feats = (p.features || []).map(f => `<li>${f}</li>`).join('');
+      const advs = (p.advantages || []).map(a => `<li>${a}</li>`).join('');
       const specs = (p.specs && p.specs.length)
         ? `<div class="pdx-specs"><div class="pdx-sec-head"><h2>Technical Specifications</h2></div><div class="pdx-spec-wrap"><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div></div>`
         : '';
+      const _cat = p.caturl || 'process-analytics.html';
+      const relCards = Object.keys(window.PRODUCTS)
+        .filter(k => k !== key && (window.PRODUCTS[k].caturl || 'process-analytics.html') === _cat)
+        .slice(0, 4)
+        .map(k => { const q = window.PRODUCTS[k]; return `<a class="pd-card" href="product.html?p=${k}"><div class="pd-img"><img src="${q.img}" alt="${q.name}" loading="lazy"></div><div class="pd-body"><h3>${q.name}</h3><span>${q.code || ''}</span></div></a>`; })
+        .join('');
+      const relatedHtml = relCards ? `<div class="pdx-related"><div class="pdx-sec-head"><h2>Similar Products</h2></div><div class="pd-grid">${relCards}</div></div>` : '';
       pdBody.innerHTML =
         `<div class="pdx-grid">
            <div class="pdx-media">
@@ -213,9 +221,10 @@
              ${p.code ? `<div class="pdx-code">${p.code}</div>` : ''}
              ${p.overview ? `<div class="pdx-sec-label">Product Overview</div><p class="pdx-overview">${p.overview}</p>` : ''}
              ${feats ? `<div class="pdx-sec-label">Key Features</div><ul class="pdx-features">${feats}</ul>` : ''}
+             ${advs ? `<div class="pdx-sec-label">Advantages</div><ul class="pdx-features pdx-adv">${advs}</ul>` : ''}
              <div class="pdx-cta"><button type="button" class="btn btn-primary" data-rfq="quote">Request Quotation →</button><button type="button" class="btn btn-outline" data-rfq="datasheet">Request Datasheet</button></div>
            </div>
-         </div>${specs}`;
+         </div>${specs}${relatedHtml}`;
 
       // Request form modal
       const modal = document.getElementById('rfqModal');

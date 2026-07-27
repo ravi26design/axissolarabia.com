@@ -5,14 +5,12 @@ window.PRODUCTS = {
   "img": "images/products/analytics/sgp1.png",
   "overview": "The Sample Gas Probe (SGP1) handles the demanding sample take-off stage of gas conditioning, built to endure harsh environments at a competitive price. It strips out aerosols, dust, and moisture to keep downstream analyzers safe, and its filter element can be swapped without any tools. An optional heated version is available with either a 110V or 230V supply.",
   "features": [
-   "Used in gas analyzer conditioning systems",
+   "Used in Gas Analyzer Conditioning",
    "Stainless steel construction",
-   "Optional calibration/pulsating purge port",
-   "Flange mount",
-   "Temperature regulation up to 130°C or 180°C",
-   "Tool-free filter element replacement",
-   "Compact with fast response time",
-   "Dust and water protected"
+   "Optional Calibration / Pulsating Purge Port",
+   "Flange Mount",
+   "Available Probe Regulation Temperature up to 130°C / 180°C",
+   "Dust & Water Protected"
   ],
   "specs": [
    [
@@ -35,6 +33,13 @@ window.PRODUCTS = {
     "Ambient Temperature",
     "0°C to 80°C"
    ]
+  ],
+  "advantages": [
+   "Economical",
+   "Ease of Maintenance & Operation",
+   "Outdoor and Indoor application",
+   "Replacement of filter element without any tool",
+   "Less volume & Fast response time"
   ]
  },
  "sgp1-bb": {
@@ -43,14 +48,14 @@ window.PRODUCTS = {
   "img": "images/products/analytics/sgp1-bb.png",
   "overview": "The Blow-Back Sample Gas Probe (SGP1-BB) extracts gas at the challenging take-off point for continuous emissions monitoring systems in harsh conditions. It removes aerosols, dust, and humidity to protect analyzers and allows tool-free filter changes. An optional automatic blowback function, driven by a smart programmable controller, keeps the filter clear.",
   "features": [
-   "Used in gas analyzer conditioning",
+   "Used in Gas Analyzer Conditioning",
    "Stainless steel construction",
-   "Optional auto blowback with smart programmable controller",
-   "Flange mount",
-   "Probe temperature above 130°C",
-   "Low-temperature alarm",
-   "Tool-free filter element replacement",
-   "Compact with fast response time"
+   "Optional Calibration / Optional Auto Blowback",
+   "Flange Mount",
+   "Probe Temperature more than 130°C",
+   "Low-Temperature Alarm",
+   "Smart Programmable Blowback Controller",
+   "Dust And Water Protection"
   ],
   "specs": [
    [
@@ -73,6 +78,13 @@ window.PRODUCTS = {
     "Protective Case",
     "Fiberglass"
    ]
+  ],
+  "advantages": [
+   "Economical",
+   "Ease of Maintenance & Operation",
+   "Outdoor and Indoor application",
+   "Replacement of filter element without any tool",
+   "Less Volume & Fast Response time"
   ]
  },
  "probex": {
@@ -81,14 +93,14 @@ window.PRODUCTS = {
   "img": "images/products/analytics/probex.png",
   "overview": "The Ex-proof Sample Gas Probe (PROBEX) is designed for the tough sample take-off stage in hazardous, explosive atmospheres while remaining cost-effective. It removes aerosols, dust, and humidity to protect analyzers, with the filter element replaceable at the probe head without tools. It is rated for use in Zone 1 and Zone 2 hazardous areas.",
   "features": [
-   "Used in analyzer gas conditioning",
-   "Stainless steel construction",
-   "Optional pulsating purge port",
-   "Flange mount, various flange and extension tube sizes",
-   "Self-limiting heating up to 120°C / 180°C",
-   "Rated for Zone 1 & 2 hazardous areas",
-   "Tool-free filter element replacement",
-   "Compact with fast response time"
+   "Used in Analyzer Gas Conditioning",
+   "Stainless Steel construction",
+   "Optional Pulsating Purge Port",
+   "Flange Mount",
+   "Available in various flange sizes and probe Ext. Tubes sizes",
+   "Optimum operational reliability",
+   "Self-limiting up to 120°C / 180°C",
+   "Used in Zone 1 & 2 hazardous area"
   ],
   "specs": [
    [
@@ -111,6 +123,13 @@ window.PRODUCTS = {
     "Ambient Temperature",
     "0°C to 80°C"
    ]
+  ],
+  "advantages": [
+   "Economical",
+   "Ease of Maintenance & Operation",
+   "Outdoor and indoor application",
+   "Replacement of filter element without any tools",
+   "Less Volume & Fast Response time"
   ]
  },
  "af1": {
@@ -120,13 +139,9 @@ window.PRODUCTS = {
   "overview": "The Aerosol Filter (AF1) delivers dust-, particulate-, and moisture-free sample gas, essential for reliable long-term operation of process analyzers. It is a non-reusable filter that should be replaced once contamination chokes the outlet flow. It suits gas analysis systems, wastewater incineration, biogas plants, ambient monitoring, and the cement, glass, steel, and paper industries.",
   "features": [
    "Economical",
-   "Lightweight",
-   "Maintenance-free",
-   "Easy installation",
-   "Protects against condensate and dust",
-   "Low pressure drop across the process",
-   "Reliable in continuous operation",
-   "Corrosion-resistant material"
+   "Light in weight",
+   "No maintenance",
+   "Easy for installation"
   ],
   "specs": [
    [
@@ -149,6 +164,12 @@ window.PRODUCTS = {
     "Maximum Flow Rate",
     "400 LPH"
    ]
+  ],
+  "advantages": [
+   "Secure protection against condensate & dust",
+   "Less process drop",
+   "Highly reliable in continuous operation",
+   "Corrosive resistive material"
   ]
  },
  "uss1": {
@@ -157,13 +178,9 @@ window.PRODUCTS = {
   "img": "images/products/analytics/uss1.png",
   "overview": "The Universal Safety Scrubber (USS1) protects analyzers from corrosion caused by acidic components in the gas stream, particularly sulphur trioxide, hydrochloric acid, sulphuric acid, and hydrofluoric acid. Its efficient media removes SO3, HF, and HCL with a very high removal rate and no impact on sample composition. It is suited to lime-fired and coal-fired boilers and waste incinerators.",
   "features": [
-   "Compact design",
+   "Compact Design",
    "Efficient media to remove SO3 / HF / HCL",
-   "Low maintenance",
-   "Easy media replacement without affecting sample composition",
-   "No moving parts",
-   "Excellent corrosion resistance",
-   "Removal efficiency up to 99.99%"
+   "Low maintenance"
   ],
   "specs": [
    [
@@ -182,6 +199,12 @@ window.PRODUCTS = {
     "Dimensions",
     "Approx. 42 mm Ø x 281 mm (L)"
    ]
+  ],
+  "advantages": [
+   "Easy media replacement, no influence on measuring sample compositions",
+   "No moving parts",
+   "Excellent corrosion resistance",
+   "High Disposition rate of 99.99%"
   ]
  },
  "gwf1": {
@@ -190,14 +213,10 @@ window.PRODUCTS = {
   "img": "images/products/analytics/gwf1.png",
   "overview": "The Glass Wool Filter (GWF1) supplies process analyzers with dust-, particulate-, and moisture-free sample gas, critical for reliable long-term analyzer operation. Its folded filter element and matched components make installation and servicing simple, and a transparent housing lets operators keep an eye on the filtration process.",
   "features": [
-   "Easy to maintain",
-   "Transparent cover for process visibility",
-   "Lightweight",
-   "Used in analyzer gas conditioning",
-   "Cost-effective",
-   "Full and easy service access",
-   "Leak-free O-ring seal",
-   "Compact design"
+   "Ease of maintenance",
+   "Transparent cover for better process visibility",
+   "Light in weight",
+   "Used in analyzer gas conditioning"
   ],
   "specs": [
    [
@@ -220,6 +239,12 @@ window.PRODUCTS = {
     "Sample Inlet",
     "1/4\" NPT (F)"
    ]
+  ],
+  "advantages": [
+   "Cost-effective",
+   "User-friendly with full & easy service access",
+   "Leak-free O-ring seal",
+   "Compact design"
   ]
  },
  "if1": {
@@ -228,14 +253,11 @@ window.PRODUCTS = {
   "img": "images/products/analytics/if1.png",
   "overview": "The Inline Filter (IF1) conditions the gas stream in a sample handling system, delivering particulate- and moisture-free gas to the analyzer. It is engineered for fine filtration with low dead volume, easy handling, and flexible placement, and works well as a guard filter where space is tight.",
   "features": [
-   "Anti-clog optimized design",
-   "Efficient fine filtration",
+   "The optimum design prevents clogging",
+   "Efficient Filtration",
    "Stainless steel construction",
-   "Fits into constrained spaces",
-   "Works as a guard filter",
-   "Easy to maintain",
-   "Improves sample quality",
-   "Reduces downtime and cost"
+   "Used where space is a constraint",
+   "Used as a guard filter"
   ],
   "specs": [
    [
@@ -258,6 +280,11 @@ window.PRODUCTS = {
     "Sample Inlet",
     "1/4\" NPT (F)"
    ]
+  ],
+  "advantages": [
+   "Ease of maintenance",
+   "Improved Sample Quality",
+   "Reduced downtime & cost"
   ]
  },
  "sgf1": {
@@ -267,13 +294,10 @@ window.PRODUCTS = {
   "overview": "The Sample Gas Filter (SGF1) provides analyzers with clean, dry, particulate-free sample gas essential for dependable long-term operation. Its folded filter construction offers a large surface area for fast response and allows tool-free element replacement. It can serve as a separator, liquid filter, or absorption cartridge and handles hot and acidic gases.",
   "features": [
    "Used in analyzer gas conditioning",
-   "Doubles as a volume chamber",
+   "Used as a volume chamber also",
    "Optional condensate drain port",
    "Optional moisture detector port",
-   "Wall mountable",
-   "Tool-free filter element replacement",
-   "Compatible with hot and acidic gases",
-   "Multiple housing options"
+   "Wall mount"
   ],
   "specs": [
    [
@@ -296,6 +320,14 @@ window.PRODUCTS = {
     "Sample Inlet",
     "1/4\" NPT (F)"
    ]
+  ],
+  "advantages": [
+   "Ease of maintenance",
+   "Housing options available",
+   "Compatible with Hot & Acidic Gases",
+   "Folded Construction",
+   "The filter element can be replaced without any tool",
+   "More surface area for fast response"
   ]
  },
  "coolerex": {
@@ -304,14 +336,13 @@ window.PRODUCTS = {
   "img": "images/products/analytics/coolerex.png",
   "overview": "The Ex-proof Sample Gas Cooler (COOLEREX) is a compressor-based cooler with efficient heat exchangers that holds a stable sample dew point for reliable analyzer conditioning. Its compact, top-insulated housing minimizes ambient influence and is rated for use in Zone 1 and 2, IIC hazardous areas via separate flameproof junction boxes.",
   "features": [
-   "Used in analyzer gas conditioning",
-   "Robust high-quality build",
-   "Operates up to 50°C ambient",
-   "Cooling capacity up to 320 KJ",
-   "Sample flow up to 550 LPH",
-   "Rated for Zone 1 & 2, IIC hazardous areas",
-   "Single or dual-path heat exchanger",
-   "High dew point stability"
+   "Used in Analyzer Gas Conditioning",
+   "High-quality robust design",
+   "Suitable up to 50°C Ambient Temperature",
+   "Cooling Capacity up to 320 KJ",
+   "Optimum operational reliability",
+   "Sample flow rate 550 LPH Max",
+   "Used in Zone 1 & 2, IIC hazardous area"
   ],
   "specs": [
    [
@@ -334,6 +365,14 @@ window.PRODUCTS = {
     "Weight",
     "Approx. 40 Kg"
    ]
+  ],
+  "advantages": [
+   "Economical",
+   "Ease of Maintenance & Operation",
+   "Indoor application",
+   "Optional Alarm contact",
+   "Single and dual-path heat exchanger options",
+   "High Dewpoint Stability"
   ]
  },
  "sgc1": {
@@ -342,14 +381,13 @@ window.PRODUCTS = {
   "img": "images/products/analytics/sgc1.png",
   "overview": "The Sample Gas Cooler (SGC1 & SGC2) is a compressor cooler with heat exchangers that maintains a stable sample dew point, ensuring accurate analyzer performance. It uses direct rather than mechanical temperature control and offers single or dual coil configurations, with wall, base, and 19-inch rackmount options.",
   "features": [
-   "Robust high-quality design",
-   "Easy installation",
-   "Operates up to 50°C ambient",
-   "Operating pressure 1.5 bar",
-   "Cooling capacity 320 KJ",
-   "Flow rate 550 LPH",
-   "19\" rackmount available",
-   "Single and dual coil heat exchanger"
+   "High-quality robust design",
+   "Easy Installation",
+   "Suitable for Ambient up to 50°C",
+   "Operating Pressure 1.5 bar",
+   "Cooling Capacity 320 KJ",
+   "Flow Rate 550 LPH",
+   "19\" Rackmount available"
   ],
   "specs": [
    [
@@ -372,6 +410,14 @@ window.PRODUCTS = {
     "Sample Inlet",
     "1/4\" Tube"
    ]
+  ],
+  "advantages": [
+   "Ease of Maintenance",
+   "Optional Alarm Contacts",
+   "Single & Dual Coil Heat Exchanger",
+   "High Dew Point Stability",
+   "Housing options available",
+   "Mounting options available in same housing"
   ]
  },
  "sgce": {
@@ -380,12 +426,11 @@ window.PRODUCTS = {
   "img": "images/products/analytics/sgce.png",
   "overview": "The Sample Gas Cooler-E keeps an analyzer's sample at a stable dew point, critical for dependable long-term operation of the analysis system. It uses efficient heat exchangers housed in a compact, top-insulated enclosure to reduce ambient influence, and can be configured for single or dual sample paths.",
   "features": [
-   "Easy installation",
-   "Rated for ambient up to 50°C",
-   "Single and dual path options",
-   "Optional alarm contacts",
-   "Low-maintenance design",
-   "Choice of housing and mounting options"
+   "Easy Installation",
+   "Suitable for Ambient up to 50°C",
+   "Operating Pressure 1.5 bar",
+   "Cooling Capacity 320 KJ",
+   "Flow Rate 550 LPH"
   ],
   "specs": [
    [
@@ -416,6 +461,14 @@ window.PRODUCTS = {
     "Weight",
     "Approx. 19 Kg"
    ]
+  ],
+  "advantages": [
+   "Ease of Maintenance",
+   "Optional Alarm Contacts",
+   "Single & Dual Path",
+   "Average Dew Point Stability",
+   "Housing options available",
+   "Mounting options available in the same housing"
   ]
  },
  "pc1": {
@@ -424,13 +477,12 @@ window.PRODUCTS = {
   "img": "images/products/analytics/pc1.png",
   "overview": "The Peltier Sample Gas Cooler holds a sample at a steady dew point by thermoelectrically removing condensation, supporting reliable operation of gas analysis systems. Because it relies on the Peltier effect rather than a compressor or refrigerant, it runs quietly with little maintenance and can handle high-ambient conditions.",
   "features": [
-   "Compact for integration into gas cooling systems",
-   "No compressor or refrigerant",
-   "Low operating noise",
+   "Compact design for installation into a gas cooling system",
    "Cost-effective",
-   "Easy to install",
-   "Version available for high ambient temperatures",
-   "Adjustable outlet dew point"
+   "Easy for installation",
+   "Low operating noise",
+   "No Compressor",
+   "Model for high ambient temperature"
   ],
   "specs": [
    [
@@ -457,6 +509,15 @@ window.PRODUCTS = {
     "Weight",
     "Approx. 12 Kg"
    ]
+  ],
+  "advantages": [
+   "Adjustable outlet dew point",
+   "Nominal capacity 90 kJ/h",
+   "Dew point stability 0.1 °C",
+   "MCD400 display module for separate installation",
+   "High dew point stability",
+   "Environmentally friendly and safe",
+   "Ensures high condensate removal"
   ]
  },
  "heatless-dryer": {
@@ -466,11 +527,9 @@ window.PRODUCTS = {
   "overview": "The Heatless Dryer is a desiccant-based air dryer designed for low-flow drying, delivering outlet dew points as low as -40°C. It regenerates through pressure swing adsorption, so it works fully automatically and mechanically without any heat or electrical supply, making it well suited to protecting pneumatic equipment.",
   "features": [
    "Fully automatic operation",
-   "Entirely mechanical, no electricity required",
-   "Maintenance-free",
-   "Stable dew point down to -40°C",
-   "Ideal for low-flow air drying",
-   "Easy to install"
+   "Fully mechanical design",
+   "No electricity",
+   "Ease of installation"
   ],
   "specs": [
    [
@@ -493,6 +552,11 @@ window.PRODUCTS = {
     "Air Inlet Port",
     "1/4\" BSP (F)"
    ]
+  ],
+  "advantages": [
+   "Maintenance free",
+   "Good stability of dew point up to -40°C",
+   "Ideal for low-flow air-drying operations"
   ]
  },
  "ngc1": {
@@ -501,12 +565,9 @@ window.PRODUCTS = {
   "img": "images/products/analytics/ngc1.png",
   "overview": "The NOx Gas Converter supports exhaust monitoring by converting nearly all of the NO2 in a sample gas into NO so total NOx can be measured. It uses a tool-free, replaceable reactor cartridge, runs at a relatively low temperature with minimal gas interference, and typically lasts over 12 months under normal use.",
   "features": [
-   "High conversion rate (>97%)",
-   "Tool-free cartridge replacement",
-   "External temperature controller",
-   "Long service life (12+ months)",
-   "Cost-effective operation",
-   "Optional 19\" rack mounting"
+   "High conversion rate > 97%",
+   "External Temperature Controller for easy operation",
+   "Housing option available"
   ],
   "specs": [
    [
@@ -529,6 +590,14 @@ window.PRODUCTS = {
     "Sample Gas Flow",
     "Up to 120 l/h (2 LPM)"
    ]
+  ],
+  "advantages": [
+   "Long lifetime",
+   "Cost-Effective",
+   "Easy replacement of converter cartridge without tools",
+   "Ease of maintenance",
+   "High NO conversion capability",
+   "19\" Rack Mount available"
   ]
  },
  "eductor": {
@@ -537,12 +606,10 @@ window.PRODUCTS = {
   "img": "images/products/analytics/eductor.png",
   "overview": "The Eductor (venturi pump) moves sample gas using only a driving fluid stream, which accelerates through a venturi nozzle to drop pressure and generate vacuum. With no electrical supply or moving mechanical parts, it transports samples reliably and is well suited to hazardous areas and harsh environments.",
   "features": [
-   "Venturi-based operation, no moving parts",
-   "No electrical power needed",
-   "Vacuum/suction up to 400 mm Hg",
-   "Anti-corrosive Teflon housing",
-   "Easy to maintain",
-   "Suitable for hazardous and extreme environments"
+   "Venturi pump",
+   "Ease of Maintenance",
+   "Effective Vacuum / Suction up to 400 mm Hg",
+   "Anti-corrosive Teflon Housing"
   ],
   "specs": [
    [
@@ -565,6 +632,16 @@ window.PRODUCTS = {
     "Air Inlet Port",
     "1/8\" NPT (F)"
    ]
+  ],
+  "advantages": [
+   "Complete engineered package",
+   "User Friendly with full & easy service access",
+   "Mechanical Components for regular service",
+   "Minimum servicing except routine cleaning or general maintenance",
+   "Works within harsh environment & high ambient of 8°C to 80°C",
+   "Vacuum-tight and leak-free O-ring seal",
+   "Compact design",
+   "Only Mechanical Design"
   ]
  },
  "liquid-drainer": {
@@ -573,14 +650,12 @@ window.PRODUCTS = {
   "img": "images/products/analytics/liquid-drainer.png",
   "overview": "The Liquid Drainer (LD1) separates condensate from sample gas in the upstream conditioning stage of emission and process monitoring systems, helping deliver dust-free, moisture-free gas to the analyzer. It uses a float-buoyancy principle to drain condensate automatically and needs above-atmospheric pressure to work. It comes in a stainless steel version for high-pressure duty and a PVDF version for low-pressure, acidic streams.",
   "features": [
-   "Float-buoyancy draining principle",
-   "Compact, economical construction",
-   "Very low maintenance",
-   "Easy clamp installation",
-   "Available in SS 316 or PVDF",
-   "High draining ratio",
-   "Corrosion-resistant materials",
-   "Reliable in continuous operation"
+   "Economical",
+   "Compact construction",
+   "Floating – buoyancy principle",
+   "Very Less maintenance",
+   "Easy for installation via clamp",
+   "Used in upstream Analyzer Gas conditioning"
   ],
   "specs": [
    [
@@ -599,6 +674,14 @@ window.PRODUCTS = {
     "Weight",
     "1.0 kg, 1.2 kg, 0.1 kg"
    ]
+  ],
+  "advantages": [
+   "Safe condensate removal",
+   "High Draining ratio",
+   "Highly reliable in continuous operation",
+   "Corrosion resistive material",
+   "Available in 2 different materials",
+   "Long life performance"
   ]
  },
  "condensate-separator": {
@@ -607,12 +690,11 @@ window.PRODUCTS = {
   "img": "images/products/analytics/condensate-separator.png",
   "overview": "The Condensate Separator (CS1) removes condensation from the downstream side of a sample gas conditioning system, making it well suited to streams carrying high condensate loads. Efficient separation here protects the analyzer and supports long-term, reliable operation. It is offered in a stainless steel version for high-pressure systems and a glass version for low-pressure applications.",
   "features": [
-   "Compact, economical design",
+   "Economical",
+   "Compact construction",
    "Low maintenance",
-   "Easy clamp installation",
-   "Handles high-condensate content",
-   "Available in stainless steel or glass",
-   "Safe, reliable condensate removal"
+   "Easy for installation via clamp",
+   "Used in Analyzer Gas conditioning"
   ],
   "specs": [
    [
@@ -635,6 +717,12 @@ window.PRODUCTS = {
     "Weight",
     "2.5 kg, 1.0 kg"
    ]
+  ],
+  "advantages": [
+   "Safe condensate removal",
+   "High reliability",
+   "Used for high-condensate content",
+   "Available in 2 different materials"
   ]
  },
  "catch-pot": {
@@ -643,12 +731,10 @@ window.PRODUCTS = {
   "img": "images/products/analytics/catch-pot.png",
   "overview": "The Condensate Catch Pot (CCP1) collects condensate drained from separators or filter drains, acting as a volume chamber that helps protect the analyzer. Its folded design with matching end caps and a transparent acrylic body makes installation, servicing and process viewing easy, and a leak-free O-ring seal keeps the assembly sealed during operation.",
   "features": [
-   "Transparent body for process visibility",
-   "Easy servicing and maintenance",
-   "Lightweight, compact design",
-   "Leak-free O-ring seal",
-   "Cost-effective",
-   "Used in analyzer gas conditioning"
+   "Ease of maintenance",
+   "Transparent cover for better process visibility",
+   "Light in weight",
+   "Used in Analyzer gas conditioning"
   ],
   "specs": [
    [
@@ -671,6 +757,12 @@ window.PRODUCTS = {
     "Sample Inlet",
     "1/4\" NPT (F)"
    ]
+  ],
+  "advantages": [
+   "Cost-effective",
+   "User-friendly with full & easy service access",
+   "Leak-free O-ring seal",
+   "Compact design"
   ]
  },
  "scrubber": {
@@ -679,14 +771,11 @@ window.PRODUCTS = {
   "img": "images/products/analytics/scrubber.png",
   "overview": "The Air Scrubber (ASCR1) shields analyzers from corrosion caused by acidic components such as NO, NO2, SO2, H2S, HF, O3, VOCs, CO2 and CO. It works by chemisorption, using chemical beads that capture contaminants and convert them into harmless byproducts. Service life depends on the concentration of aggressive gases, flow rate and exposure time, and a color change indicates when the media is spent.",
   "features": [
-   "Chemisorption media removes toxic gases",
-   "Color change signals scrubber life",
-   "Easy media replacement",
-   "No moving parts",
-   "Non-toxic and non-hazardous",
-   "Excellent corrosion resistance",
-   "Does not affect sample composition",
-   "Compact, low-maintenance design"
+   "Compact Design",
+   "Efficient media to remove toxic gases from the air",
+   "Low maintenance",
+   "Non-Toxic",
+   "Non-Hazardous"
   ],
   "specs": [
    [
@@ -709,6 +798,13 @@ window.PRODUCTS = {
     "Ambient Temperature",
     "-20°C to +50°C (max.)"
    ]
+  ],
+  "advantages": [
+   "Easy media replacement",
+   "No influence on measuring sample compositions",
+   "No moving parts",
+   "Excellent corrosion resistance",
+   "Identification of scrubber life by color change"
   ]
  },
  "demister": {
@@ -717,12 +813,11 @@ window.PRODUCTS = {
   "img": "images/products/analytics/demister.png",
   "overview": "The Demister cools hot sample gas down to ambient temperature and condenses the liquid back out to the source, delivering moisture-free gas that keeps the analyzer performing precisely and safely. Its robust build suits all kinds of ambient conditions and it must be mounted vertically. It needs no filter maintenance or drain port upkeep and produces zero sample waste.",
   "features": [
-   "Cools sample gas to ambient temperature",
-   "No maintenance required",
-   "Zero sample waste",
-   "Robust, high-quality build",
-   "Easy installation",
-   "Suitable for all ambient conditions"
+   "High-quality robust design",
+   "Easy Installation",
+   "No Maintenance",
+   "Zero Sample Waste",
+   "Suitable for all types of ambient conditions"
   ],
   "specs": [
    [
@@ -733,7 +828,8 @@ window.PRODUCTS = {
     "Mounting",
     "Vertical"
    ]
-  ]
+  ],
+  "advantages": []
  },
  "dilution-probe": {
   "name": "Dilution Probe",
@@ -741,13 +837,9 @@ window.PRODUCTS = {
   "img": "images/products/analytics/dilution-probe.png",
   "overview": "The Dilution Probe (DP-1) supports analytical processes where the sample gas must be diluted before measurement. It draws the sample through filters and an orifice using an air-driven aspirator, then dilutes it to bring the dew point close to ambient temperature, and can carry the sample up to around 90 feet without any heated line.",
   "features": [
+   "Low cost - Installation, operation and Maintenance",
    "No moving parts",
-   "Excellent corrosion resistance",
-   "Low-cost install, operation and maintenance",
-   "Long filter life from low flow rate",
-   "Suited to high-temperature sample lines",
-   "Works in hazardous environments",
-   "No heated sample line needed"
+   "Excellent corrosion resistance"
   ],
   "specs": [
    [
@@ -758,6 +850,13 @@ window.PRODUCTS = {
     "Body Material",
     "SS-316"
    ]
+  ],
+  "advantages": [
+   "A low flow rate gives longer filter life",
+   "Used in the high-temperature sample line",
+   "Used in Hazardous Environments",
+   "No requirement for heating",
+   "Sample pump not required if the distance is less than 90 meters"
   ]
  },
  "dilution-controller": {
@@ -766,14 +865,15 @@ window.PRODUCTS = {
   "img": "images/products/analytics/dilution-controller.png",
   "overview": "The Dilution Probe Controller (DPC001) manages the dilution of stack emission samples with zero air before they reach the analyzer, making it well suited to coal-fired power plants. It regulates the zero-air pressure, blends it with the stack sample at a set dilution ratio, and monitors probe vacuum while delivering the diluted sample through flow meters and a needle valve.",
   "features": [
-   "19-inch rack-mount design",
-   "Precision regulator for dilution air",
+   "Calibration gas solenoid valves with manual/remote control",
+   "Highly accurate, low maintenance, and easy to operate",
+   "Quick and Easy Integration with all types of Dilution Probe",
+   "19\" Rack-mount",
    "Pressure and vacuum gauges for monitoring",
+   "Precision pressure regulator for dilution air control",
    "Flow meters for sample and calibration gas",
-   "Calibration-gas solenoid valves with manual/remote control",
-   "Integrates with any dilution probe",
-   "Uncontaminated wetted materials",
-   "Customizable to specific needs"
+   "Uncontaminated Material of all the components",
+   "Customizable with other features to meet specific requirements"
   ],
   "specs": [
    [
@@ -796,7 +896,8 @@ window.PRODUCTS = {
     "Operating Temperature",
     "10 - 40 °C"
    ]
-  ]
+  ],
+  "advantages": []
  },
  "peristaltic-pump": {
   "name": "Peristaltic Pump",
@@ -804,14 +905,14 @@ window.PRODUCTS = {
   "img": "images/products/analytics/peristaltic-pump.png",
   "overview": "The Peristaltic Pump (PP-01) is used to drain condensate from a sample gas cooler. Because it has no valves, glands or seals and the fluid only ever touches the tube, it needs very little maintenance and no internal cleaning.",
   "features": [
-   "Compact structure, low noise and vibration",
-   "No valves, glands or seals",
-   "Non-siphoning design prevents backflow",
-   "Fluid contacts only the tube",
-   "Easily replaceable tube element",
-   "Santoprene tube for acidic media",
-   "Suited to vacuum systems",
-   "Includes mounting clamp"
+   "Attractive appearance, compact structure",
+   "Ease of Maintenance",
+   "Low Noise and Vibration",
+   "Easy to operate and economical cost",
+   "Accepts many kinds of motors to drive",
+   "Several colours of appearance, ideal for analytical instruments",
+   "Best for Vacuum systems",
+   "Highly compatible Santoprene tube for challenging acidic applications"
   ],
   "specs": [
    [
@@ -834,6 +935,13 @@ window.PRODUCTS = {
     "Tube Material",
     "Santoprene"
    ]
+  ],
+  "advantages": [
+   "Non-Siphoning, hence no backflow of Condensate",
+   "Fluid contacts only the tube, so no cleaning required",
+   "Easily replaceable tube",
+   "With Mounting Clamp",
+   "Economical"
   ]
  },
  "coalescing-filter": {
@@ -842,13 +950,9 @@ window.PRODUCTS = {
   "img": "images/products/analytics/coalescing-filter.png",
   "overview": "The Sample Gas Coalescing Filter (SGCF1) protects process analyzers by removing liquid aerosols and water droplets from the sample gas. Coalesced droplets collect and drain out through a dedicated port, helping keep the sample stream dry and clean.",
   "features": [
-   "Removes liquid aerosols and water droplets",
-   "Dedicated condensate drain port",
-   "Folded, high-surface-area element",
-   "Tool-free filter element replacement",
-   "Compatible with hot and acidic gases",
-   "Wall-mounting design",
-   "Easy maintenance"
+   "Used in analyzer gas conditioning",
+   "Wall mount",
+   "Condensate drain port"
   ],
   "specs": [
    [
@@ -871,6 +975,13 @@ window.PRODUCTS = {
     "Filter body",
     "SS 316"
    ]
+  ],
+  "advantages": [
+   "Ease of maintenance",
+   "Folded Construction",
+   "The filter element can be replaced without any tool",
+   "High-quality filtration",
+   "Compatible with Hot & Acidic Gases"
   ]
  },
  "sgf2": {
@@ -879,11 +990,9 @@ window.PRODUCTS = {
   "img": "images/products/analytics/sgf2.png",
   "overview": "The Sample Gas Filter (SGF2) removes dust and solid particulate so that the sample reaching a process analyzer stays clean. It is a 19-inch rack housing with front-panel mounting and rear sample connections, designed so the filter element can be changed easily without any tools.",
   "features": [
-   "Front-panel / 19-inch rack mounting",
-   "Large filtration surface area",
-   "Tool-free access and element change",
-   "Easy maintenance",
-   "For analyzer gas conditioning"
+   "Panel installation",
+   "Used in analyzer gas conditioning",
+   "Large surface area"
   ],
   "specs": [
    [
@@ -906,6 +1015,11 @@ window.PRODUCTS = {
     "Ambient/Media Temperature",
     "80°C"
    ]
+  ],
+  "advantages": [
+   "Ease of maintenance",
+   "Easy element replacement",
+   "Can be opened without tools"
   ]
  },
  "zag": {
@@ -914,14 +1028,12 @@ window.PRODUCTS = {
   "img": "images/products/analytics/zag.png",
   "overview": "The Zero Air Generator (ZAG) turns ambient air into high-purity zero air by stripping out CO, CO2, NOx, SOx, VOCs, water vapor, acid vapors, ozone, ammonia, chlorine and dust. It provides clean air for instrument calibration and removes the need for hazardous zero-air cylinders in labs and industrial settings.",
   "features": [
-   "Removes CO, CO2, NOx, SOx, VOCs and more",
-   "Eliminates zero-air cylinders",
-   "High flow rate of zero air",
-   "Compact, rugged stand-alone unit",
-   "Zero noise and vibration",
-   "Long-lasting scrubber",
-   "Scrubber life indicated by color change",
-   "Easy install and low maintenance"
+   "Stand-Alone unit",
+   "Ease of Maintenance",
+   "Zero Noise & vibration",
+   "Eliminates inconvenient and dangerous zero-air cylinders",
+   "Zero air at a high flow rate",
+   "Compact & rugged"
   ],
   "specs": [
    [
@@ -944,6 +1056,13 @@ window.PRODUCTS = {
     "Weight",
     "12 kg approx."
    ]
+  ],
+  "advantages": [
+   "100% tested",
+   "Produces high-purity air",
+   "Easy to use & quick install",
+   "Long lasting scrubber",
+   "Identification of scrubber life by color change"
   ]
  },
  "hvac-vortex": {
@@ -952,14 +1071,10 @@ window.PRODUCTS = {
   "img": "images/products/hvac/vortex-cooler.png",
   "overview": "The Axis Vortex Cooler (VC2) and Vortex Tube (VT1) use compressed air and the vortex tube effect to generate a steady stream of cold air, keeping industrial control panels from overheating and cooling cutting tools on manual and CNC machines. With no moving parts or electricity needed, they suit harsh settings such as refineries, power plants, chemical and pharmaceutical facilities. Their sealed operation also blocks dust ingress, helping cut system downtime.",
   "features": [
-   "No electricity required",
-   "No moving parts",
-   "Easy installation",
-   "Low maintenance",
    "Cost effective",
-   "Compact footprint",
-   "Prevents panel overheating",
-   "Suited to harsh conditions"
+   "Easy for installation",
+   "Less maintenance",
+   "No electricity required"
   ],
   "specs": [
    [
@@ -984,7 +1099,13 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial HVAC",
-  "caturl": "industrial-hvac.html"
+  "caturl": "industrial-hvac.html",
+  "advantages": [
+   "Less space for installation",
+   "Provides cold air to stop industrial panel overheating",
+   "No moving parts",
+   "Suitable for harsh conditions"
+  ]
  },
  "hvac-peltier-ac": {
   "name": "Peltier Air Conditioning Unit",
@@ -992,14 +1113,10 @@ window.PRODUCTS = {
   "img": "images/products/hvac/peltier-ac.png",
   "overview": "The Axis Peltier Air Conditioning Unit (PAC1 and PAC2) provides continuous cooling to industrial panels using the Peltier thermoelectric effect driven by electronic circuitry. Because it runs without a compressor or refrigerant, it is compact, environmentally safe, and well suited to enclosed or mobile applications. Electronic control of the Peltier element allows precise cooling even where conventional systems struggle.",
   "features": [
-   "No compressor",
-   "Refrigerant-free operation",
-   "Precise electronic control",
-   "Virtually maintenance free",
-   "Compact footprint",
-   "Environmentally safe",
    "Cost effective",
-   "Easy installation"
+   "Easy for installation",
+   "Virtually maintenance free",
+   "No compressor"
   ],
   "specs": [
    [
@@ -1020,7 +1137,13 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial HVAC",
-  "caturl": "industrial-hvac.html"
+  "caturl": "industrial-hvac.html",
+  "advantages": [
+   "Less space for installation",
+   "Environmentally friendly and safe",
+   "Precise control as final element is electronic (Peltier)",
+   "Handles applications where other cooling devices fail"
+  ]
  },
  "hvac-cooling-units": {
   "name": "Air Conditioning Unit",
@@ -1028,14 +1151,12 @@ window.PRODUCTS = {
   "img": "images/products/hvac/cooling-units.png",
   "overview": "The Axis Air Conditioning Units (ACU1 and ACU2) are rugged panel cooling systems built for reliable, trouble-free operation in remote sites and extreme climates. Constructed from MS CRCA or SS 304/SS 316 with strong thermal insulation and efficient dust filtration, they are widely used across power, chemical, steel, pharmaceutical, food and manufacturing industries. Servicing is minimal, generally limited to routine filter and condenser cleaning.",
   "features": [
-   "Low noise and vibration",
-   "Effective fresh-air cooling",
-   "Efficient dust-protection filter",
-   "Strong thermal insulation",
-   "MS CRCA / SS 304 / SS 316 construction",
-   "Easy-maintenance design",
-   "Easy service access",
-   "Handles 8 C to 50 C ambient"
+   "Low noise and vibrations",
+   "Easy maintenance design",
+   "Effective fresh cooling",
+   "Efficient filter for dust protection",
+   "MS CRCA or SS 304/SS 316 as required",
+   "Excellent thermal insulation"
   ],
   "specs": [
    [
@@ -1052,7 +1173,13 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial HVAC",
-  "caturl": "industrial-hvac.html"
+  "caturl": "industrial-hvac.html",
+  "advantages": [
+   "100% performance-tested for onsite load conditions",
+   "User-friendly design with easy service access",
+   "Minimum servicing beyond routine cleaning",
+   "Works in harsh environments, 8°C to 50°C"
+  ]
  },
  "hvac-exproof-ac": {
   "name": "Ex-Proof Air Conditioning Unit",
@@ -1060,14 +1187,13 @@ window.PRODUCTS = {
   "img": "images/products/hvac/exproof-ac.png",
   "overview": "The Axis explosion-proof / safe-area air conditioning unit (ACUX) is engineered for control panel cooling in remote, harsh and extreme-weather locations. Rated for Zone 1 & 2, IIC + H2 hazardous areas or safe areas, it delivers continuous operation across oil, gas, refinery and petrochemical industries. It features MS CRCA or SS 304/SS 316 construction, flameproof Ex d enclosures and motors, and CFC-free refrigerant compliant with the Montreal Protocol.",
   "features": [
-   "Zone 1 & 2, IIC + H2 or safe area",
-   "Flameproof Ex d enclosure",
-   "Flameproof electrical motors",
-   "CFC-free refrigerant",
-   "Stainless steel drain pan",
-   "Efficient dust filter",
+   "Suitable to Zone 1 & 2, IIC + H2 hazardous area or safe area",
+   "Low noise and vibrations",
+   "Ease of maintenance",
+   "Efficient filter against dust",
+   "High quality MS CRCA or SS 304/SS 316",
    "Excellent thermal insulation",
-   "Low noise and vibration"
+   "Stainless steel drain pan"
   ],
   "specs": [
    [
@@ -1088,7 +1214,16 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial HVAC",
-  "caturl": "industrial-hvac.html"
+  "caturl": "industrial-hvac.html",
+  "advantages": [
+   "100% performance-tested for onsite load conditions",
+   "Compressor complies with IEC standards",
+   "CFC-free refrigerant, Montreal Protocol compliant",
+   "Flameproof Ex d or safe area weatherproof enclosure",
+   "Flameproof or safe area electrical motors",
+   "Works in harsh environments",
+   "Minimum servicing beyond routine cleaning"
+  ]
  },
  "hvac-split-ac": {
   "name": "Ex-Proof Split Air Conditioning Unit",
@@ -1096,14 +1231,13 @@ window.PRODUCTS = {
   "img": "images/products/hvac/split-ac.png",
   "overview": "The Axis explosion-proof / safe-area split air conditioner (ACUX-S) is purpose-built for control panel cooling at remote and demanding sites with extreme weather. Rated for Zone 1 & 2, IIB + H2 hazardous areas or safe areas, it runs trouble-free 24/7 in oil, gas, refinery and petrochemical plants. Built from MS CRCA or SS 304/SS 316 with flameproof Ex d enclosures, IEC-compliant compressors and CFC-free refrigerant.",
   "features": [
-   "Zone 1 & 2, IIB + H2 or safe area",
-   "Flameproof Ex d enclosure",
-   "Flameproof electrical motors",
-   "CFC-free refrigerant",
-   "Stainless steel drain pan",
-   "Efficient dust filter",
+   "Suitable to Zone 1 & 2, IIB + H2 hazardous area or safe area",
+   "Low noise and vibrations",
+   "Ease of maintenance",
+   "Efficient filter against dust",
+   "High quality MS CRCA or SS 304/SS 316",
    "Excellent thermal insulation",
-   "Low noise and vibration"
+   "Stainless steel drain pan"
   ],
   "specs": [
    [
@@ -1124,7 +1258,16 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial HVAC",
-  "caturl": "industrial-hvac.html"
+  "caturl": "industrial-hvac.html",
+  "advantages": [
+   "100% performance-tested",
+   "Compressor complies with IEC standards",
+   "CFC-free refrigerant, Montreal Protocol compliant",
+   "Flameproof Ex d or safe area weatherproof enclosure",
+   "Flameproof or safe area electrical motors",
+   "8°C to 55°C operating range",
+   "Minimum servicing beyond routine cleaning"
+  ]
  },
  "hvac-hvac": {
   "name": "Explosion-Proof HVAC Unit",
@@ -1132,14 +1275,14 @@ window.PRODUCTS = {
   "img": "images/products/hvac/hvac-unit.png",
   "overview": "The Axis explosion-proof HVAC system is a statutory-grade solution paired with shelters to make them installable within a given area classification for hazardous zones. Engineered for continuous 24/7 duty in oil, gas, refinery and petrochemical environments, it delivers dependable temperature and humidity control even in high ambient conditions. It uses IEC-compliant certified compressors, CFC-free refrigerants and flameproof Ex d electrical enclosures and motors.",
   "features": [
-   "Flameproof Ex d electrical enclosure",
-   "Flameproof electrical motors",
-   "High-efficiency filters",
+   "High efficiency filters",
    "Stainless steel drain pan",
-   "CFC-free refrigerant",
-   "Redundant blower option",
-   "Adjustable air-balancing dampers",
-   "Low noise and vibration"
+   "Low noise and vibrations",
+   "Ease of maintenance",
+   "Effective fresh and return air mixing",
+   "HVAC/VAC configurations",
+   "Insulated panels as required",
+   "Redundant blower and unit option"
   ],
   "specs": [
    [
@@ -1160,7 +1303,17 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial HVAC",
-  "caturl": "industrial-hvac.html"
+  "caturl": "industrial-hvac.html",
+  "advantages": [
+   "Compressors comply with IEC standards",
+   "CFC-free refrigerants, Montreal Protocol compliant",
+   "User-friendly design with easy service access",
+   "High moisture removal for temperature and humidity control",
+   "Flameproof & weatherproof Ex d electrical enclosure",
+   "Flame-proof electrical motors",
+   "Adjustable dampers for air balancing",
+   "Complete engineered HVAC solutions with site integration"
+  ]
  },
  "hvac-chiller": {
   "name": "Chiller Unit",
@@ -1168,14 +1321,12 @@ window.PRODUCTS = {
   "img": "images/products/hvac/chiller.png",
   "overview": "The Axis closed-loop chiller units (CUSA and CUEX) supply chilled water through an external heat exchanger to lower and hold sample temperature for reliable analyzer performance. A single unit can serve one or several analyzers and runs 24/7 across power plants, refineries and petrochemical sites in both safe and hazardous areas. Individual electrical components are ATEX/PESO certified, and CFC-free refrigerant keeps it compliant with the Montreal Protocol.",
   "features": [
-   "Safe area or Zone 1 & 2 IIB + H2 rated",
-   "ATEX / PESO certified components",
-   "CFC-free refrigerant",
-   "Efficient cooling capacity",
+   "Safe area or suitable to Zone 1 & 2, IIB + H2 hazardous area",
+   "Ease of maintenance",
    "Low noise and vibration",
-   "CRCA / SS 304 / SS 316 construction",
-   "Easy maintenance",
-   "100% performance tested"
+   "Efficient cooling capacity",
+   "High quality CRCA or SS 304/SS 316",
+   "ATEX / PESO certified electrical components"
   ],
   "specs": [
    [
@@ -1204,7 +1355,15 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial HVAC",
-  "caturl": "industrial-hvac.html"
+  "caturl": "industrial-hvac.html",
+  "advantages": [
+   "100% performance-tested for onsite ambient conditions",
+   "Compressor complies with IEC standards",
+   "CFC-free refrigerant, Montreal Protocol compliant",
+   "Minimum servicing beyond routine maintenance",
+   "Works from 8°C to 50°C",
+   "SS material option for high reliability"
+  ]
  },
  "pr-relief-valve": {
   "name": "Relief Valve - Adjustable (RV1)",
@@ -1214,9 +1373,8 @@ window.PRODUCTS = {
   "features": [
    "Economical",
    "Inline installation",
-   "Low maintenance",
-   "Uni-directional safety relief",
-   "Reliable for continuous duty"
+   "Less maintenance",
+   "Uni-directional safety relief"
   ],
   "specs": [
    [
@@ -1249,7 +1407,12 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Used up to 20 bar and 220°C media temperature",
+   "Highly reliable for continuous operation",
+   "Designed for precise control"
+  ]
  },
  "pr-pressure-regulator": {
   "name": "Single Stage Pressure Regulator (PRG1 & PRG3)",
@@ -1258,11 +1421,9 @@ window.PRODUCTS = {
   "overview": "The PRG1 and PRG3 are single stage regulators built for continuous, precise pressure control in gas sample handling systems. They serve oil, refinery, power, and chemical industries, with the PRG3 variant also handling water applications. The units withstand pressures up to 300 bar and media temperatures up to 170 degC.",
   "features": [
    "Economical",
-   "Wall or line mount",
-   "Low maintenance",
-   "Simple installation",
-   "Compact horizontal footprint",
-   "Reliable for continuous duty"
+   "Wall / Line Mount",
+   "Less maintenance",
+   "Easy to install"
   ],
   "specs": [
    [
@@ -1295,7 +1456,13 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Less space occupied due to horizontal installation",
+   "Used up to 300 bar and 170°C media temperature",
+   "Highly reliable for continuous operation",
+   "Designed for precise control"
+  ]
  },
  "pr-non-return-valve": {
   "name": "Non Return Valve (NRV1)",
@@ -1305,8 +1472,8 @@ window.PRODUCTS = {
   "features": [
    "Economical",
    "Inline installation",
-   "Low maintenance",
-   "Uni-directional flow control"
+   "Less maintenance",
+   "Uni-directional safety relief"
   ],
   "specs": [
    [
@@ -1339,7 +1506,12 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Used up to 413.6 bar and 170°C media temperature",
+   "Highly reliable for continuous operation",
+   "Designed for precise control"
+  ]
  },
  "pr-inline-relief-valve": {
   "name": "Inline Relief Valve (IRV1)",
@@ -1349,9 +1521,8 @@ window.PRODUCTS = {
   "features": [
    "Economical",
    "Inline installation",
-   "Low maintenance",
-   "Uni-directional safety relief",
-   "Reliable for continuous duty"
+   "Less maintenance",
+   "Uni-directional safety relief"
   ],
   "specs": [
    [
@@ -1384,7 +1555,12 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Used up to 10.3 bar and 170°C media temperature",
+   "Highly reliable for continuous operation",
+   "Designed for precise control"
+  ]
  },
  "pr-dual-stage-cylinder-regulator": {
   "name": "Dual Stage Cylinder Pressure Regulator (PRG2)",
@@ -1393,10 +1569,9 @@ window.PRODUCTS = {
   "overview": "The PRG2 is a two-stage regulator that delivers stable outlet pressure from a gas cylinder to downstream systems. The first stage sets a fixed intermediate pressure while the second stage lets the user fine-tune the final delivery pressure via a knob. It is used across process industries and in welding and laser cutting, handling inlet pressures up to 300 bar and temperatures up to 170 degC.",
   "features": [
    "Economical",
-   "Cylinder mount",
-   "Low maintenance",
-   "Easy to install",
-   "Two-stage regulation"
+   "Cylinder Mount",
+   "Less maintenance",
+   "Easy to install"
   ],
   "specs": [
    [
@@ -1425,7 +1600,13 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Direct install on cylinder",
+   "Used up to 300 bar and 170°C media temperature",
+   "Highly reliable for continuous operation",
+   "Designed for precise control"
+  ]
  },
  "pr-auto-change-over-regulator": {
   "name": "Auto Change Over Regulator (ACR1)",
@@ -1434,11 +1615,10 @@ window.PRODUCTS = {
   "overview": "The ACR1 automatically switches between gas cylinders to maintain an uninterrupted, stable supply as one cylinder depletes. Its two-stage design holds a fixed first-stage pressure and allows knob adjustment of the delivery pressure, reducing the effect of falling supply pressure. It is ideal for feeding carrier gas to analyzers and gas chromatographs as well as welding and laser cutting.",
   "features": [
    "Economical",
-   "Wall mount",
-   "Low maintenance",
+   "Wall Mount",
+   "Less maintenance",
    "Easy to install",
-   "Compact design",
-   "Automatic cylinder changeover"
+   "Compact design"
   ],
   "specs": [
    [
@@ -1471,7 +1651,14 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Less space occupied due to horizontal installation",
+   "Used up to 300 bar and 170°C media temperature",
+   "Designed for uninterrupted gas flow for stored gas cylinders",
+   "Eliminates costly system downtime and maintenance",
+   "High Performance"
+  ]
  },
  "pr-dome-loaded-pressure-regulator": {
   "name": "Dome Loaded Pressure Regulator (DLPG)",
@@ -1480,11 +1667,11 @@ window.PRODUCTS = {
   "overview": "The DLPG is a single-stage dome-loaded regulator that delivers continuous, precise downstream pressure control. Its large dome and balanced poppet give stable performance with a near 1:1 dome-to-outlet pressure ratio. It supports a wide range of gas media including oxygen, nitrogen, argon, hydrogen, acetylene, CO2, and N2O across oil, gas, power, and chemical industries.",
   "features": [
    "Diaphragm sensing",
-   "Large dome for stability",
-   "Low maintenance",
-   "Near 1:1 dome-to-outlet ratio",
+   "Large dome for improved stability",
+   "Less maintenance",
+   "Dome-to-outlet pressure ratio approximately 1:1",
    "Balanced poppet design",
-   "Pilot regulator option"
+   "Pilot regulator for improved performance"
   ],
   "specs": [
    [
@@ -1509,7 +1696,12 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Used up to 400 bar and 170°C media temperature",
+   "Highly reliable for continuous operation",
+   "Designed for precise control output"
+  ]
  },
  "pr-pilot-operated-pressure-regulator": {
   "name": "Pilot Operated Pressure Regulator (PPRV)",
@@ -1517,12 +1709,11 @@ window.PRODUCTS = {
   "img": "images/products/pressure/pr-pilot-operated-pressure-regulator.png",
   "overview": "The PPRV is a downstream, pilot-controlled regulator built for medium- and high-pressure natural gas duty. Self-operated on inlet gas energy, it offers quiet operation, tight shutoff, and long service life, with a top-entry design that allows servicing without dismantling the body. It suits gas transmission and distribution networks, power plants, city gates, and utility systems.",
   "features": [
-   "Self-operated on inlet gas energy",
+   "Self-operated using the inlet gas pressure energy",
    "Fully balanced control valve",
-   "Very high rangeability",
-   "Suited to high-pressure reduction",
-   "Optional internal silencer",
-   "Top-entry serviceable design"
+   "Extremely high rangeability",
+   "Suitable for high-pressure reduction applications",
+   "Available with an internal silencer"
   ],
   "specs": [
    [
@@ -1535,7 +1726,13 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Designed for non-corrosive and filtered natural gas",
+   "Body specifically designed for high capacity",
+   "Low noise generation",
+   "Long Life"
+  ]
  },
  "pr-pressure-regulator-prg4": {
   "name": "Piston Type Pressure Regulator (PRG4HP)",
@@ -1544,10 +1741,9 @@ window.PRODUCTS = {
   "overview": "The PRG4HP is a single-stage, piston-type regulator engineered for continuous and precise high-pressure control. It is chiefly used in instrumentation sample handling for all types of gas media in oil, refinery, power, chemical, and general process industries. It operates up to 400 bar and media temperatures up to 170 degC.",
   "features": [
    "Economical",
-   "Wall or line mount",
-   "Low maintenance",
-   "Easy to install",
-   "Piston-type high-pressure design"
+   "Wall / Line Mount",
+   "Less maintenance",
+   "Easy to install"
   ],
   "specs": [
    [
@@ -1580,7 +1776,13 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Less space occupied due to horizontal installation",
+   "Used up to 400 bar and 170°C media temperature",
+   "Highly reliable for continuous operation",
+   "Designed for precise control"
+  ]
  },
  "pr-pressure-regulator-prg5": {
   "name": "High Precision Pressure Regulator (PRG5)",
@@ -1589,10 +1791,9 @@ window.PRODUCTS = {
   "overview": "The PRG5 is a high-precision regulator that holds a steady outlet pressure even as inlet pressure varies. It is well suited to oil refineries, power generation, chemical processing, and general industry, and works with water, gas, and steam. It handles pressures up to 300 bar and media temperatures up to 170 degC.",
   "features": [
    "Economical",
-   "Wall or line mount",
-   "Low maintenance",
-   "Easy to install",
-   "High-precision outlet stability"
+   "Wall / Line Mount",
+   "Less maintenance",
+   "Easy to install"
   ],
   "specs": [
    [
@@ -1625,7 +1826,13 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Pressure Regulator Series",
-  "caturl": "pressure-regulators.html"
+  "caturl": "pressure-regulators.html",
+  "advantages": [
+   "Less space occupied due to horizontal installation",
+   "Used up to 300 bar and 170°C media temperature",
+   "Highly reliable for continuous operation",
+   "Designed for precise control"
+  ]
  },
  "au-interface-media-converter": {
   "name": "Interface & Media Converter",
@@ -1667,13 +1874,13 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-oil-in-water-sensor.png",
   "overview": "The SMART ABOW is an immersion-style sensor that detects oil and hydrocarbons in water using the UV fluorescence principle. By reading the fluorescence signature of PAH compounds, it offers greater sensitivity to trace hydrocarbons than infrared-based methods. It suits wastewater, drinking water, surface water and seawater monitoring.",
   "features": [
-   "UV fluorescence detection with xenon flash lamp (254nm) and photodiode (360nm)",
-   "RS485 Modbus RTU plus 4-20 mA output",
-   "316L stainless steel housing, IP68 submersible",
-   "Optional automated mechanical wiper for self-cleaning",
-   "Factory pre-calibrated with field calibration",
-   "CE marked for EMC compliance",
-   "PC software support for setup and logging"
+   "Xenon flash lamp + filter (254nm) source, photo diode + filter (360nm) detector",
+   "RS485 Modbus RTU interface",
+   "4-20 mA output",
+   "316L stainless steel housing (titanium optional), IP68 submersible",
+   "2\" diameter, 9\" length",
+   "6 lbs with 30\" cable",
+   "CE certified per EN 61326-1:2013 EMC"
   ],
   "specs": [
    [
@@ -1702,7 +1909,14 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Reliable, low-maintenance UV fluorescence measurement",
+   "Optional automated wiper for cleaning and bubble removal",
+   "Robust waterproof design with digital Modbus RS-485",
+   "Factory pre-calibration with field calibration",
+   "PC software compatible for setup and data logging"
+  ]
  },
  "wm-turbidity-analyzer": {
   "name": "Turbidity Sensor (SMART ABTS)",
@@ -1710,13 +1924,11 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-turbidity-analyzer.png",
   "overview": "The SMART ABTS pairs a near-infrared LED light source with a photodetector to measure light scattered by suspended particles. It follows the 90-degree scattered-light method under ISO 1027/EN 27027 for accurate turbidity readings. A built-in mechanical wiper keeps the optics clean and clears air bubbles to reduce maintenance.",
   "features": [
-   "Near-infrared LED (880/850nm) with 90-degree scatter detection",
-   "Complies with ISO 1027/EN 27027",
-   "Automated wiper removes fouling and air bubbles",
-   "IP68 waterproof digital design",
-   "Modbus RS-485 connectivity",
-   "Factory pre-calibrated, field calibratable",
-   "Works with View PC software"
+   "Near-infrared LED (880/850nm), 90° scattered light per ISO 7027/EN 27027",
+   "Automated mechanical wiper for cleaning and bubble removal",
+   "Robust, waterproof (IP68) digital sensor, Modbus RS-485",
+   "Factory pre-calibration with field calibration",
+   "Compatible with View PC software for setup and data logging"
   ],
   "specs": [
    [
@@ -1737,7 +1949,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-chlorine-analyzer": {
   "name": "Chlorine Sensor (ABCL)",
@@ -1745,12 +1958,11 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-chlorine-analyzer.png",
   "overview": "The ABCL is an amperometric free-chlorine sensor that uses the potentiostatic amperometry method with integrated electronics and a microprocessor. It needs no reagents or membranes, lowering running costs and upkeep. A rugged waterproof housing, isolated power and output, and RS-485 Modbus-RTU communication make it suitable for industrial deployment.",
   "features": [
-   "No reagent or membrane needed",
-   "Works with any RS485 terminal",
-   "Dust and water-proof housing",
+   "No reagent or membrane, lowers operating cost and maintenance",
+   "Compatible with all terminals receiving RS485 signals",
+   "Dust and water resistant structure",
    "Temperature and pH compensation",
-   "Factory pre-calibrated, field calibratable",
-   "Internal memory for calibration data"
+   "Pre-calibrated at factory, supports field calibration"
   ],
   "specs": [
    [
@@ -1771,7 +1983,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-ammonium-nitrate-sensor": {
   "name": "Ammonium/Nitrate Sensor (SMART ABAM/ABNO)",
@@ -1779,13 +1992,14 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-ammonium-nitrate-sensor.png",
   "overview": "This ion-selective sensor family measures dissolved ammonia nitrogen (ABAM) and nitrate nitrogen (ABNO) directly in water. A rear 1-1/2 inch NPT thread eases installation, and the submersible IP68 build includes a removable electrode guard for servicing. Internal digital signal conditioning allows communication up to 300 meters from the controller.",
   "features": [
-   "Ammonia ISE with K+, pH and temperature electrodes",
-   "Nitrate ISE with Cl- and temperature electrodes",
-   "Full compensation for accurate readings",
-   "Optional combined ammonia/nitrate measurement",
-   "IP68 waterproof design",
-   "Integral spray-head cleaner",
-   "RS485 Modbus for long-distance signaling"
+   "ABAM: Ammonia ISE with K+, pH, temperature sensors, compensated for pH and K+",
+   "ABNO: Nitrate ISE with Cl- and temperature sensors, compensated for Cl-",
+   "Dual-sensor option for simultaneous ammonia and nitrate",
+   "Robust and waterproof (IP68)",
+   "Factory pre-calibration with field calibration",
+   "Rugged PVC design, removable electrode guard",
+   "Integral spray head cleaner for in-situ cleaning",
+   "RS485 Modbus digital signals up to 300 m"
   ],
   "specs": [
    [
@@ -1806,7 +2020,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-ph-orp-sensor": {
   "name": "pH/ORP Sensor (SMART ABpH)",
@@ -1815,9 +2030,9 @@ window.PRODUCTS = {
   "overview": "The SMART ABpH uses an electrochemical ion-selective method that converts changes in water ion concentration into continuous electrical signals. Its rugged IP68-rated enclosure withstands demanding water applications. Low power draw and one-second real-time measurement make it well suited to online monitoring.",
   "features": [
    "Low power consumption",
-   "1-second real-time online measurement",
-   "Rugged, waterproof IP68 build",
-   "Factory pre-calibrated, field calibratable",
+   "1-sec online realtime measurement",
+   "Robust and waterproof (IP68)",
+   "Factory pre-calibration and field calibration",
    "RS485 Modbus output"
   ],
   "specs": [
@@ -1839,7 +2054,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-dissolved-oxygen-sensor": {
   "name": "Dissolved Oxygen Sensor (BAS-SMART ABDO)",
@@ -1847,13 +2063,11 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-dissolved-oxygen-sensor.png",
   "overview": "The rugged BAS-SMART ABDO measures dissolved oxygen using lifetime-based optical fluorescence with dynamic luminescence quenching. With no membranes, stirring or cleaning required, it stays stable and low-maintenance and can run for months without recalibration. Its solid-state optics are unaffected by ambient light.",
   "features": [
-   "Optical fluorescence sensing via luminescence quenching",
-   "Immune to ambient light interference",
-   "Accurate at very low oxygen levels",
-   "No membrane, stirring or cleaning needed",
-   "Solid-state optics, no moving parts",
-   "Factory pre-calibrated, field calibratable",
-   "PC software compatible"
+   "Fluorophore membrane optical sensor, dynamic luminescence quenching",
+   "316L stainless steel or titanium construction",
+   "Modbus RTU digital interface",
+   "24VDC power supply (18-36VDC)",
+   "2.2 lbs with SS housing and 33ft cable"
   ],
   "specs": [
    [
@@ -1878,7 +2092,15 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Optical sensor resists ambient light damage",
+   "Precise measurements at low oxygen concentrations",
+   "Factory pre-calibrated with field calibration",
+   "Compatible with PC software for setup and data logging",
+   "High-salinity compatible stainless steel housing",
+   "Solid-state optics and electronics, no moving parts"
+  ]
  },
  "wm-conductivity-salinity-sensor": {
   "name": "Conductivity/Salinity Sensor (SMART ABCS)",
@@ -1886,13 +2108,13 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-conductivity-salinity-sensor.png",
   "overview": "The SMART ABCS places parallel plates in the sample and applies a sine-wave voltage to measure the resulting current for conductivity and salinity. It comes in two-pole and four-pole versions with optional self-cleaning, and internal diagnostics keep readings reliable. It fits sewage treatment, water plants, surface water and industrial uses.",
   "features": [
-   "4-electrode design (2 graphite, 2 platinum)",
+   "4-electrode conductivity sensor (2 graphite, 2 platinum)",
    "Lightning and surge protection for power and RS485",
    "Temperature compensation",
-   "Rugged, waterproof IP68 build",
-   "Factory pre-calibrated, field calibratable",
-   "Standard Modbus RTU for PLC/HMI",
-   "Compatible with View PC software"
+   "Robust and waterproof (IP68)",
+   "Factory pre-calibration with field calibration",
+   "Standard Modbus RTU, direct connect to PLC/HMI",
+   "Compatible with View PC software for setup and data logging"
   ],
   "specs": [
    [
@@ -1913,7 +2135,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-smart-uv-vis-probe": {
   "name": "COD, BOD & TSS Sensor - UV-vis Probe",
@@ -1921,13 +2144,13 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-smart-uv-vis-probe.png",
   "overview": "This immersion probe reads the full absorption spectrum from 190 to 750 nm to track many parameters at once, including COD, BOD, TOC, DOC, NO3-N, SAC25, TSS, turbidity, colour and ozone. Built-in spectrum compensation corrects for light-absorbing particles and turbidity so dissolved organics can be monitored without sample pre-treatment.",
   "features": [
-   "Multi-parameter immersion spectral analysis",
-   "Xenon flash source with very long life",
-   "Multiple optical path lengths for different ranges",
-   "316L stainless housing for high-salinity water",
-   "Turbidity compensation built in",
-   "Automatic air-pressure cleaning (optional wiper)",
-   "Factory pre-calibrated, field calibratable"
+   "Online multi-parameter immersion spectra analyzing sensor",
+   "Xenon flash light, 50 years theoretical life",
+   "Different optical path lengths for various ranges",
+   "316L stainless steel housing for high-salinity water",
+   "Factory pre-calibration and field calibration",
+   "Turbidity compensation",
+   "Automatic air pressure cleaning (optional mechanical wiper)"
   ],
   "specs": [
    [
@@ -1944,7 +2167,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-universal-transmitter-smart-controller": {
   "name": "Smart Transmitter - Single/Dual Parameter Controller",
@@ -1952,13 +2176,13 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-universal-transmitter-smart-controller.png",
   "overview": "This single- and multi-channel transmitter measures and controls pH, ORP, conductivity, turbidity and chlorine across chemical, pharmaceutical and water-treatment applications. Its universal design lets one unit pair with any supported sensor and communication module. Plug-and-play sensors and one-button calibration simplify setup and maintenance.",
   "features": [
-   "Low-power, high-performance transmitter",
-   "Universal support for pH, ORP, conductivity, turbidity, chlorine",
-   "Plug-and-play sensors reduce inventory",
-   "Security access blocks unauthorized changes",
-   "One-button sensor calibration",
-   "Intrinsically-safe, non-incendive design",
-   "Optional SD card storage up to 4 GB"
+   "Low-power, high-performance transmitter for safe area applications",
+   "Universal, compatible with pH, ORP, conductivity, turbidity, chlorine sensors",
+   "Plug-and-play sensors minimize stock holding, maximize uptime",
+   "Security access prevents unauthorized configuration/calibration changes",
+   "One-button sensor calibration saves maintenance time",
+   "Intrinsically-safe, non-incendive design for hazardous areas",
+   "SD card storage up to 4 GB"
   ],
   "specs": [
    [
@@ -1979,7 +2203,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-multiparameter-controller": {
   "name": "Multi Parameter Controller / Transmitter",
@@ -1987,12 +2212,12 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-multiparameter-controller.png",
   "overview": "These single- and multi-channel controllers measure and control pH, ORP, conductivity, turbidity and chlorine for chemical, pharma, pulp & paper, mining and water-treatment plants. One unit works with a range of sensor and communication modules and holds up under harsh process conditions. The IP67 enclosure supports wall, pipe or panel mounting.",
   "features": [
-   "Low-power, high-performance transmitter",
-   "Universal support for multiple sensor types",
-   "Plug-and-play sensors maximize uptime",
-   "Security access prevents tampering",
-   "One-button sensor calibration",
-   "Intrinsically-safe, non-incendive design",
+   "Low-power, high-performance transmitter for safe area applications",
+   "Universal, compatible with pH, ORP, conductivity, turbidity, chlorine sensors",
+   "Plug-and-play sensors reduce inventory, enhance uptime",
+   "Security access prevents unauthorized configuration changes",
+   "One-button sensor calibration streamlines maintenance",
+   "Intrinsically-safe, non-incendive design for hazardous areas",
    "Optional SD card storage up to 4 GB"
   ],
   "specs": [
@@ -2014,7 +2239,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-online-water-analyzer-cod-bod-ph-tss": {
   "name": "Online Water Analyzer (COD, BOD, pH, TSS)",
@@ -2022,13 +2248,15 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-online-water-analyzer-cod-bod-ph-tss.png",
   "overview": "The P7111 Series performs wet-chemistry analysis using UV absorption, fluorescence, colorimetry, titrimetry and ion-selective electrode methods. It is a fully automated system for continuous, routine water-quality measurement that meets ASTM and U.S. EPA requirements. Automatic cleaning, self-calibration and a touchscreen interface keep operation simple and reagent-free.",
   "features": [
-   "UV-Vis absorption spectroscopy to regulatory norms",
+   "Based on UV-Vis absorption spectroscopy per regulatory norms",
    "Automatic cleaning and self-calibration",
    "Adjustable measuring cycle time",
-   "Self-diagnosis with easy calibration",
-   "7-inch LCD colour touchscreen interface",
-   "Reagent-free, low running cost",
-   "Automatic low/high alarms"
+   "Self-diagnosis with intuitive calibration setup",
+   "Touchscreen graphical interface",
+   "Highly stable and accurate with wide measuring range",
+   "7\" LCD color touch panel display",
+   "Reagent-free operation, reducing costs",
+   "Automated low/high reading alerts"
   ],
   "specs": [
    [
@@ -2049,7 +2277,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": []
  },
  "wm-stream-sequencer-unit": {
   "name": "Stream Sequencer Unit (SSU1)",
@@ -2057,11 +2286,12 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-stream-sequencer-unit.png",
   "overview": "The SSU1 is an 8-bit microcontroller-based unit that selects one of eight sample streams by synchronization. Streams can be chosen from analyzer pulse triggers or preprogrammed timing sequences, with settings entered via a front keypad and display. It handles relay switching sequences and provides analog sampling with continuous display.",
   "features": [
-   "Purpose-built for sample stream sequencing",
-   "Suited to long operation in safe areas",
-   "Simple installation and configuration",
-   "Lightweight construction",
-   "Front keypad and display for easy operation"
+   "Designed for sample sequencing selection",
+   "Suitable for longer service in a safe area",
+   "Easy to install",
+   "Easy to configure via keypad and display",
+   "Light weighted",
+   "Easy to operate and user friendly"
   ],
   "specs": [
    [
@@ -2082,7 +2312,17 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Supports 6 sample streams",
+   "Multiple outputs per stream",
+   "Analog and digital input capability",
+   "6 analog output channels",
+   "Front keypad for setup",
+   "Common alarm contact included",
+   "Maintenance-free operation",
+   "Low power consumption"
+  ]
  },
  "wm-strainer": {
   "name": "Strainer (STR)",
@@ -2090,12 +2330,10 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-strainer.png",
   "overview": "AXIS Y-type strainers shield downstream equipment such as gauges, analyzers, flowmeters and back-pressure regulators from rust, scale, sediment and particulates. Machined seats align and lock the screen so sediment cannot bypass it. The rugged threaded design suits high-pressure, high-temperature water conditioning service.",
   "features": [
-   "Rugged bodies for high-pressure, high-temperature use",
-   "Easy assembly via NPT threaded gasketed cap",
-   "Extra-heavy bore, no-crush screen chamber",
-   "Cleaning port for maintenance",
-   "Large element area with low pressure drop",
-   "Accurate reassembly after servicing"
+   "Suited for indelible service in high pressure and temperature",
+   "Easy assembly with NPT threaded, gasketed cap",
+   "Heavy duty, rugged bodies with extra heavy bore",
+   "No-leak, no-crush screen chambers"
   ],
   "specs": [
    [
@@ -2116,7 +2354,14 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Cleaning port available",
+   "Large element area for effective cleaning with less pressure drop",
+   "Proper alignment and accurate re-assembly after servicing",
+   "Single SS material for high reliability",
+   "Specifically designed for water conditioning"
+  ]
  },
  "wm-sample-cooler": {
   "name": "Sample Cooler (HBRIX)",
@@ -2124,12 +2369,12 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-sample-cooler.png",
   "overview": "The HBRIX Sample Cooler is a compact unit designed to ASME standards for high-pressure, high-temperature sampling. It uses a continuous SS 316 coil inside a removable shell to safely cool gas, water or steam samples drawn from boilers. The maintenance-free construction and flanged gasket design speed up assembly.",
   "features": [
-   "Corrosion-resistant materials",
-   "Safe, accurate sampling",
-   "Maintenance-free design",
+   "Corrosion resistant material",
+   "Safe and accurate sampling",
+   "Maintenance free design",
    "Removable shell",
    "Dual helical coil",
-   "Flange-and-gasket design cuts assembly time"
+   "Flange with gasket design to reduce assembly time"
   ],
   "specs": [
    [
@@ -2154,7 +2399,15 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Compact design",
+   "Minimum cooling water consumption",
+   "No leakage up to defined range",
+   "Wide range of operating temperature and pressure",
+   "Long life cycle",
+   "Cooler calculation provided for specific stream"
+  ]
  },
  "wm-sight-flow-indicator": {
   "name": "Sight Flow Indicator (SFI)",
@@ -2163,9 +2416,9 @@ window.PRODUCTS = {
   "overview": "AXIS sight flow indicators give a quick, reliable and economical way to confirm that fluid is moving through industrial process lines. They are typically used where flow is intermittent, lines are partially filled, or air is entrained. Robust construction supports pressures to 10 bar and temperatures to 80 C.",
   "features": [
    "High-quality robust design",
-   "Threaded or flanged connections",
-   "Handles pressure up to 10 bar",
-   "Operates up to 80 C",
+   "Threaded or flanged connections available",
+   "Handles pressures up to 10 bar",
+   "Operates at temperatures up to 80°C",
    "Short lead time"
   ],
   "specs": [
@@ -2191,7 +2444,14 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Ease of maintenance",
+   "Replaceable, removable glass for easy analysis",
+   "Durable construction",
+   "Stainless steel construction ensures reliability",
+   "Cost-effective option"
+  ]
  },
  "wm-direct-acting-prv": {
   "name": "Direct Acting Pressure Reducing Valve (APRV1)",
@@ -2199,12 +2459,12 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-direct-acting-prv.png",
   "overview": "The APRV1 conditions steam and water samples in power-plant analysis systems by reducing and regulating pressure. Its needle-in-chamber design allows adjustable pressure drop and flow, using dual needles in a large chamber for accurate reduction. It handles high pressures from 35 to 350 bar with minimal maintenance.",
   "features": [
-   "Economical design",
+   "Economical",
    "Compact construction",
-   "Fully mechanical operation",
-   "Low maintenance",
-   "Clamp-based installation",
-   "Suited to Steam & Water Analysis Systems"
+   "Completely mechanical design",
+   "Very less maintenance",
+   "Easy installation via clamp",
+   "Used in Steam and Water Analysis System"
   ],
   "specs": [
    [
@@ -2229,7 +2489,15 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Well-founded pressure reduction",
+   "Robust design",
+   "Highly reliable in continuous operation",
+   "Corrosion resistive material",
+   "Ergonomic design eliminates bent tubes",
+   "Long life performance"
+  ]
  },
  "wm-composite-manifold": {
   "name": "Miniature Header (MH1)",
@@ -2237,10 +2505,10 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-composite-manifold.png",
   "overview": "The MH1 Miniature Header combines several sample-conditioning components into a single horizontal manifold for Steam and Water Analysis Systems. NPT female threads simplify connection while integrated filtering, temperature control and pressure regulation protect against high sample temperatures. The rugged extra-heavy-bore body maintains back pressure with no-leak joints.",
   "features": [
-   "Designed for SWAS applications",
-   "Withstands high temperature and pressure",
-   "Easy NPT-thread installation",
-   "Heavy-duty extra-heavy-bore body",
+   "Designed for SWAS system application",
+   "Suitable for long service in high temperature and pressure",
+   "Easy to install with NPT thread",
+   "Heavy duty, rugged bodies with extra heavy bore",
    "No-leak joints"
   ],
   "specs": [
@@ -2266,7 +2534,16 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Integrated unit with strainer, header, needle valve, TI, PI, temp control",
+   "Reduces mounting plate size",
+   "Lowers tubing, fitting, space, component and labour costs",
+   "Maintenance free",
+   "Easy component replacement",
+   "Cleaning port available",
+   "Fewer joints reduce leakage risk"
+  ]
  },
  "wm-cation-column": {
   "name": "Cation Column (CTN1)",
@@ -2274,12 +2551,10 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-cation-column.png",
   "overview": "In power plants, accurate conductivity readings are skewed by treatment chemicals, and the CTN1 Cation Column removes that masking effect to restore true measurements. Its slim, high-velocity design minimizes dead volume, and end fittings reduce channeling. Resin can be replaced online without dismantling the transparent housing.",
   "features": [
-   "Dual-mode operation",
+   "Specially designed dual mode",
    "Easy to operate",
-   "Regenerative-type design",
-   "Low maintenance",
-   "Online resin replacement without dismantling",
-   "Transparent housing for easy inspection"
+   "Regenerative type",
+   "Ease of maintenance"
   ],
   "specs": [
    [
@@ -2304,7 +2579,15 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Online replacement of cation resin without dismantling",
+   "Transparent design for easy resin replacement identification",
+   "Accurate and reliable measurements",
+   "Uses high-grade resins",
+   "Extended operational lifespan",
+   "Slim design reduces dead volume and channeling effect"
+  ]
  },
  "wm-auto-shut-off-valve": {
   "name": "Auto Shut-off Valve (ASV1)",
@@ -2312,12 +2595,12 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-auto-shut-off-valve.png",
   "overview": "The ASV1 is a thermal shut-off device for Steam Water Analysis Systems in power plants. Working purely by thermal expansion, it needs no external power and closes when sample temperature exceeds a set point, holding samples at about 50 C. A manual reset safely restores operation after a shut-off.",
   "features": [
-   "Suited to high-temperature service",
-   "Easy installation",
-   "Fully mechanical, no power needed",
+   "Performs well in high temperature applications",
+   "Simple installation process",
+   "Fully mechanical operation",
    "Optional alarm contact",
-   "Fixed-temperature shut-off",
-   "Manual reset facility"
+   "Fixed temperature shut-off setting",
+   "Manual reset option"
   ],
   "specs": [
    [
@@ -2342,7 +2625,15 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Sturdy, space-efficient construction",
+   "Operates without external power",
+   "Dependable sealing performance",
+   "Minimal leakage within operational range",
+   "Corrosion resistant",
+   "Rapid shut-off response time"
+  ]
  },
  "wm-back-pressure-regulator": {
   "name": "Back Pressure Regulator (BPR)",
@@ -2350,12 +2641,8 @@ window.PRODUCTS = {
   "img": "images/products/water/wm-back-pressure-regulator.png",
   "overview": "The Back Pressure Regulator holds constant pressure and flow to an analyzer while acting as a relief valve to protect critical sampling components. It opens to pass extra flow as pressure rises and closes to restrict flow as pressure falls, keeping upstream velocity stable. A continuously open outlet port supports grab sampling.",
   "features": [
-   "Maintains constant flow through the analyzer",
-   "Flow adjustable via the pressure element",
-   "Fail-safe relief valve function",
-   "BPR1 for steam/water, BPR2 for air/gas/water",
-   "Compact wall mounting",
-   "Wetted parts suit challenging samples"
+   "Ensures constant flow through the analyzer",
+   "Flow adjustable via pressure element"
   ],
   "specs": [
    [
@@ -2380,7 +2667,14 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Water Monitoring",
-  "caturl": "water-monitoring.html"
+  "caturl": "water-monitoring.html",
+  "advantages": [
+   "Precise pressure reduction and control with pressure element",
+   "BPR1 for steam/water sampling, BPR2 for air/gas/water",
+   "Easy, compact installation",
+   "Wetted parts handle challenging liquid samples",
+   "Includes fail-safe relief valve function"
+  ]
  },
  "en-air-flow-switch-afs01": {
   "name": "Air Flow Switch (AFS01)",
@@ -2389,11 +2683,11 @@ window.PRODUCTS = {
   "overview": "This bi-directional monitor reliably tracks positive or negative airflow in compact and filter fans. When airflow through the fan falls below 0.8 m/s, it toggles an electrical contact to drive an optical LED or audible alarm, typically signalling a loss of airflow.",
   "features": [
    "Very economical",
-   "Compact reliable size",
-   "Dependable mechanical switch contact",
-   "Easy maintenance",
-   "Simple clip or clamp installation",
-   "Suits many applications"
+   "Reliable size",
+   "Reliable mechanical switch contact",
+   "Easy for maintenance",
+   "Easy installation via clip or clamp",
+   "Multipurpose fields of application"
   ],
   "specs": [
    [
@@ -2418,7 +2712,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": []
  },
  "en-led-tube-light-tl-led": {
   "name": "LED Tube light (TL-LED)",
@@ -2426,18 +2721,21 @@ window.PRODUCTS = {
   "img": "images/products/enclosures/en-led-tube-light-tl-led.png",
   "overview": "This LED tube light is built to illuminate all kinds of enclosures and panels, offering a long service life. It comes in 3W, 5W, 6W and 10W variants with 50Hz and 60Hz options, and CE approval available on request.",
   "features": [
-   "Long service life",
+   "Long life",
    "Highly reliable performance",
    "Wide beam angle",
    "Wide operating voltage range",
-   "Suited for indoor use",
-   "Built-in mounting clamp",
-   "Energy saving",
-   "High brightness"
+   "For indoor use"
   ],
   "specs": [],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": [
+   "Indirect energy saving",
+   "Easy for installation",
+   "Built-in clamp",
+   "High brightness"
+  ]
  },
  "en-enclosure-fan-heater": {
   "name": "Enclosure Fan Heater (EHT1S)",
@@ -2447,11 +2745,8 @@ window.PRODUCTS = {
   "features": [
    "Reliable components",
    "Cost-effective",
-   "Purpose-designed heat-dissipation profile",
-   "Suitable for indoor installation",
-   "Maintenance free",
-   "Large convection area",
-   "Simple installation"
+   "Special designed profile for more heat dissipation",
+   "Indoor installation"
   ],
   "specs": [
    [
@@ -2476,7 +2771,12 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": [
+   "Maintenance free",
+   "Huge convection area",
+   "Easy for installation"
+  ]
  },
  "en-flameproof-enclosure-heater": {
   "name": "Flameproof Enclosure Heater (ExHTR)",
@@ -2486,11 +2786,8 @@ window.PRODUCTS = {
   "features": [
    "Reliable components",
    "Cost-effective",
-   "Purpose-designed heat-dissipation profile",
-   "Suitable for indoor installation",
-   "Maintenance free",
-   "Large convection area",
-   "Simple installation"
+   "Special designed profile for more heat dissipation",
+   "Indoor installation"
   ],
   "specs": [
    [
@@ -2515,7 +2812,12 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": [
+   "Maintenance free",
+   "Huge convection area",
+   "Easy for installation"
+  ]
  },
  "en-enclosure-heater": {
   "name": "Enclosure Heater (EHT1)",
@@ -2525,11 +2827,8 @@ window.PRODUCTS = {
   "features": [
    "Reliable components",
    "Cost-effective",
-   "Purpose-designed heat-dissipation profile",
-   "Suitable for indoor installation",
-   "Maintenance free",
-   "Large convection area",
-   "Simple installation"
+   "Special designed profile for more heat dissipation",
+   "Indoor installation"
   ],
   "specs": [
    [
@@ -2554,7 +2853,12 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": [
+   "Maintenance free",
+   "Huge convection area",
+   "Easy for installation"
+  ]
  },
  "en-humidity-transmitter-controller": {
   "name": "Humidity Transmitter/Controller (HTC)",
@@ -2592,7 +2896,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": []
  },
  "en-multipurpose-junction-box": {
   "name": "Multi Purpose Junction Box (HJB01)",
@@ -2602,7 +2907,7 @@ window.PRODUCTS = {
   "features": [
    "ATEX, IECEx and PESO certified",
    "Cost-effective",
-   "Horizontal mounting capability",
+   "Horizontal installation / mounting",
    "PDB with multiple entries"
   ],
   "specs": [
@@ -2624,7 +2929,8 @@ window.PRODUCTS = {
    ]
   ],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": []
  },
  "en-smart-io-module": {
   "name": "Smart IO Module (ABSI Series)",
@@ -2633,17 +2939,22 @@ window.PRODUCTS = {
   "overview": "The ABSI Series Smart I/O Modules are flexible devices for monitoring and control in industrial and commercial settings. They gather data from analytical sensors such as pH, chlorine, turbidity and conductivity while delivering relay-based control outputs.",
   "features": [
    "Microcontroller-based I/O module",
-   "Configurable analog and digital I/O",
+   "Analog and digital I/O as per user requirement",
    "RS485 MODBUS communication",
-   "3G/4G GSM and Wi-Fi/BT connectivity",
-   "Cloud connectivity",
-   "Cost-effective",
-   "Easy installation",
-   "High reliability"
+   "3G/4G GSM, Wi-Fi/BT connectivity",
+   "No. of I/O as per application requirement",
+   "Cloud connectivity"
   ],
   "specs": [],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": [
+   "Multipurpose I/O module",
+   "Inputs/outputs as per customer requirement",
+   "Cost-effective",
+   "Easy installation",
+   "High reliability"
+  ]
  },
  "en-smart-temperature-and-humidity-transmitter": {
   "name": "Smart Temperature & Humidity Transmitter (THT)",
@@ -2651,17 +2962,20 @@ window.PRODUCTS = {
   "img": "images/products/enclosures/en-smart-temperature-and-humidity-transmitter.png",
   "overview": "The THT series transmitters measure temperature and humidity for environmental monitoring and control in industrial, commercial and general buildings. They convert readings into standard analog outputs and offer IoT-ready connectivity, making them suitable for labs, manufacturing plants and storage warehouses.",
   "features": [
-   "4-20mA output for temperature and humidity",
-   "RS485 Modbus RTU with optional Wi-Fi/GSM",
-   "Excellent linearity and stability",
-   "Wide sensing range, easy installation",
-   "IoT-ready with MQTT cloud connectivity",
-   "Supports multiple temperature probe types",
-   "Programmable for custom applications",
-   "Multiple control outputs"
+   "4-20mA for temperature",
+   "4-20mA for humidity",
+   "RS485 Modbus RTU / Wi-Fi / GSM output on request",
+   "Excellent linearity",
+   "Good long-term stability",
+   "High reliability",
+   "Wide sensing range",
+   "Easy installation",
+   "IoT ready with Wi-Fi and MQTT connectivity",
+   "Supports multiple probe types and control outputs"
   ],
   "specs": [],
   "cat": "Industrial Enclosures",
-  "caturl": "industrial-enclosures.html"
+  "caturl": "industrial-enclosures.html",
+  "advantages": []
  }
 };

@@ -1174,3 +1174,16 @@ body.pd-page { background: var(--bg) !important; }
 /* Products family: single flat base bg (no banding/seam), keep soft glow ambiance */
 body.flat-bg { background: var(--bg) !important; }
 body.flat-bg .page-hero { background: var(--bg) !important; }
+
+/* Advantages list — accent arrow marker to distinguish from features */
+.pdx-adv li::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23f2903a' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E");
+}
+/* Similar products section at bottom of product detail */
+.pdx-related { margin-top: 58px; padding-top: 40px; border-top: 1px solid var(--line); }
+.pdx-related .pd-grid { margin-top: 2px; }
+@media (max-width: 640px) { .pdx-related { margin-top: 40px; padding-top: 30px; } }
+
+/* Remove the right-side divider lines on section titles, and the Similar Products top line */
+.pdx-sec-label::after, .pdx-sec-head::after { content: none !important; display: none !important; }
+.pdx-related { border-top: none; padding-top: 0; margin-top: 50px; }
