@@ -7,7 +7,7 @@
   document.querySelectorAll('a[href]').forEach(a => {
     const href = a.getAttribute('href') || '';
     const isHtml = /\.html(\?|#|$)/i.test(href);
-    const isEnabled = /(^|\/)(index|about|products|process-analytics)\.html(\?|#|$)/i.test(href);
+    const isEnabled = /(^|\/)(index|about|products|process-analytics|product|industrial-hvac)\.html(\?|#|$)/i.test(href);
     if (isHtml && !isEnabled) {
       a.addEventListener('click', e => e.preventDefault());
       a.style.cursor = 'default';
@@ -185,6 +185,33 @@
     langButtons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang, true)));
     // Re-apply saved language on new page loads
     if (currentLang() === 'ar') setLang('ar', false);
+  }
+
+  // Product detail page — render from window.PRODUCTS[?p]
+  const pdBody = document.getElementById('pd-body');
+  if (pdBody && window.PRODUCTS) {
+    const key = new URLSearchParams(location.search).get('p');
+    const p = window.PRODUCTS[key];
+    if (p) {
+      document.title = p.name + ' — Axis';
+      const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+      set('pd-title', p.name); set('pd-crumb', p.name); set('pd-code', p.code || '');
+      const feats = (p.features || []).map(f => `<li>${f}</li>`).join('');
+      const specs = (p.specs && p.specs.length)
+        ? `<div class="pdx-specs"><h3>Technical Specifications</h3><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div>`
+        : '';
+      pdBody.innerHTML =
+        `<div class="pdx-grid">
+           <div class="pdx-media"><div class="pd-img"><img src="${p.img}" alt="${p.name}"></div></div>
+           <div class="pdx-info">
+             ${p.overview ? `<p class="pdx-overview">${p.overview}</p>` : ''}
+             ${feats ? `<h3>Key Features</h3><ul class="pdx-features">${feats}</ul>` : ''}
+             <div class="pdx-cta"><a href="contact.html" class="btn btn-primary">Request Quotation →</a><a href="contact.html" class="btn btn-outline">Request Datasheet</a></div>
+           </div>
+         </div>${specs}`;
+    } else {
+      pdBody.innerHTML = '<p style="color:var(--muted);font-size:16px">Product not found. <a href="process-analytics.html" style="color:var(--accent-deep);font-weight:600">Back to products →</a></p>';
+    }
   }
 
   // Product grid pagination (20 per page)
