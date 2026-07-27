@@ -1227,3 +1227,12 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 
 /* Technical Specifications: always expanded (not an accordion) */
 .pdx-specs .pdx-sec-label { margin-bottom: 14px; }
+
+/* Region tags on the global-presence globe */
+.globe-wrap { position: relative; }
+.globe-tag { position: absolute; transform: translate(-50%,-50%); white-space: nowrap; font-size: 12px; font-weight: 600;
+  color: #fff; background: rgba(23,29,35,.82); border: 1px solid rgba(255,255,255,.12); border-radius: 999px;
+  padding: 5px 12px 5px 24px; backdrop-filter: blur(4px); z-index: 2; box-shadow: 0 6px 20px -10px rgba(0,0,0,.6); }
+.globe-tag::before { content: ""; position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px rgba(245,130,31,.9); }
+@media (max-width: 640px) { .globe-tag { font-size: 10px; padding: 4px 8px 4px 19px; } .globe-tag::before { left: 7px; width: 6px; height: 6px; } }
