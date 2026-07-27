@@ -7,7 +7,7 @@
   document.querySelectorAll('a[href]').forEach(a => {
     const href = a.getAttribute('href') || '';
     const isHtml = /\.html(\?|#|$)/i.test(href);
-    const isEnabled = /(^|\/)(index|about|products|process-analytics|product|industrial-hvac)\.html(\?|#|$)/i.test(href);
+    const isEnabled = /(^|\/)(index|about|products|process-analytics|product|industrial-hvac|pressure-regulators|automation-systems|water-monitoring|industrial-enclosures)\.html(\?|#|$)/i.test(href);
     if (isHtml && !isEnabled) {
       a.addEventListener('click', e => e.preventDefault());
       a.style.cursor = 'default';
@@ -196,6 +196,8 @@
       document.title = p.name + ' — Axis';
       const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
       set('pd-title', p.name); set('pd-crumb', p.name); set('pd-code', p.code || '');
+      const catLink = document.getElementById('pd-cat-link');
+      if (catLink) { catLink.textContent = p.cat || 'Process Analytics'; catLink.href = p.caturl || 'process-analytics.html'; }
       const feats = (p.features || []).map(f => `<li>${f}</li>`).join('');
       const specs = (p.specs && p.specs.length)
         ? `<div class="pdx-specs"><h3>Technical Specifications</h3><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div>`
