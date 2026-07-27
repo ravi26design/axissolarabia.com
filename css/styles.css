@@ -1143,3 +1143,6 @@ a.pd-card { display: block; }
 .pdx-sec-head { margin-bottom: 18px; }
 .pdx-sec-head h2 { font-size: 22px; }
 .pdx-specs td { padding: 13px 20px; }
+
+/* Product detail: single uniform background (flatten hero to page bg) */
+.pd-hero { background: var(--bg); }
