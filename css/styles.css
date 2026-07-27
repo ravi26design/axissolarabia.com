@@ -1157,3 +1157,8 @@ a.pd-card { display: block; }
   bottom: -18%; height: 46%;
   background: radial-gradient(closest-side, rgba(245,130,31,.12), transparent 72%);
 }
+
+/* Product detail: truly single flat background — remove hero glow/grid overlays */
+.pd-hero .hero-glow, .pd-hero .hero-grid { display: none !important; }
+.pd-hero { background: var(--bg) !important; }
+body { background: var(--bg); }
