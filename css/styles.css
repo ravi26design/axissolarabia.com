@@ -1215,3 +1215,8 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 .pdx-specs .pdx-acc-head span { font-size: 12px; }
 .pdx-specs { margin-top: 8px; }
 .pdx-specs .pdx-acc { border-top: 1px solid var(--line); }
+
+/* Spacing fixes after accordion refactor */
+.pdx-info .pdx-cta { margin-top: 28px; margin-bottom: 14px; }
+.pdx-specs { margin-top: 26px; }
+.pdx-acc-head { padding: 17px 2px; }
