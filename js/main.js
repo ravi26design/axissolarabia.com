@@ -209,6 +209,8 @@
              <div class="pd-img">${p.code ? `<span class="pd-badge">${p.code}</span>` : ''}<img src="${p.img}" alt="${p.name}"></div>
            </div>
            <div class="pdx-info">
+             <h2 class="pdx-name">${p.name}</h2>
+             ${p.code ? `<div class="pdx-code">${p.code}</div>` : ''}
              ${p.overview ? `<div class="pdx-sec-label">Product Overview</div><p class="pdx-overview">${p.overview}</p>` : ''}
              ${feats ? `<div class="pdx-sec-label">Key Features</div><ul class="pdx-features">${feats}</ul>` : ''}
              <div class="pdx-cta"><button type="button" class="btn btn-primary" data-rfq="quote">Request Quotation →</button><button type="button" class="btn btn-outline" data-rfq="datasheet">Request Datasheet</button></div>
