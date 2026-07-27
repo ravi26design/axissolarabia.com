@@ -203,7 +203,7 @@
       const advs = (p.advantages || []).map(a => `<li>${a}</li>`).join('');
       const acc = (title, inner, open) => `<div class="pdx-acc${open ? ' open' : ''}"><button type="button" class="pdx-acc-head" aria-expanded="${open ? 'true' : 'false'}"><span>${title}</span><svg class="pdx-acc-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="pdx-acc-body"><div class="pdx-acc-inner">${inner}</div></div></div>`;
       const specs = (p.specs && p.specs.length)
-        ? `<div class="pdx-specs">${acc('Technical Specifications', `<div class="pdx-spec-wrap"><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div>`, false)}</div>`
+        ? `<div class="pdx-specs"><div class="pdx-sec-label">Technical Specifications</div><div class="pdx-spec-wrap"><table>${p.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div></div>`
         : '';
       const _cat = p.caturl || 'process-analytics.html';
       const relCards = Object.keys(window.PRODUCTS)

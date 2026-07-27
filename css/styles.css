@@ -1224,3 +1224,6 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 /* Remove accordion divider lines; show list items one per row */
 .pdx-acc, .pdx-specs .pdx-acc { border-top: none !important; }
 .pdx-features { grid-template-columns: 1fr !important; }
+
+/* Technical Specifications: always expanded (not an accordion) */
+.pdx-specs .pdx-sec-label { margin-bottom: 14px; }
