@@ -1146,3 +1146,14 @@ a.pd-card { display: block; }
 
 /* Product detail: single uniform background (flatten hero to page bg) */
 .pd-hero { background: var(--bg); }
+
+/* Product image: blend into single page bg (no visible panel) */
+.pdx-media .pd-img {
+  background: radial-gradient(135% 115% at 50% 32%, rgba(255,255,255,.045), rgba(255,255,255,0) 66%);
+  border: 1px solid transparent;
+  box-shadow: none;
+}
+.pdx-media .pd-img::after {
+  bottom: -18%; height: 46%;
+  background: radial-gradient(closest-side, rgba(245,130,31,.12), transparent 72%);
+}
