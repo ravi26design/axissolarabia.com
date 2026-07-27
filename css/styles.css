@@ -1114,3 +1114,8 @@ a.pd-card { display: block; }
 .pdx-code { display: inline-block; margin-top: 11px; padding: 5px 13px; font-size: 12.5px; font-weight: 700;
   letter-spacing: .12em; color: var(--accent); background: rgba(245,130,31,.12); border: 1px solid rgba(245,130,31,.32); border-radius: 999px; }
 .pdx-name + .pdx-sec-label, .pdx-code + .pdx-sec-label { margin-top: 28px; }
+
+/* Product hero now holds only the breadcrumb — tighten it */
+.pd-hero { padding-top: 130px; padding-bottom: 38px; }
+.pdx-name { margin: 0; }
+@media (max-width: 640px) { .pd-hero { padding-top: 104px; padding-bottom: 28px; } }
