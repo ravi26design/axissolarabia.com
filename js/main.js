@@ -206,7 +206,7 @@
       pdBody.innerHTML =
         `<div class="pdx-grid">
            <div class="pdx-media">
-             <div class="pd-img">${p.code ? `<span class="pd-badge">${p.code}</span>` : ''}<img src="${p.img}" alt="${p.name}"></div>
+             <div class="pd-img"><img src="${p.img}" alt="${p.name}"></div>
            </div>
            <div class="pdx-info">
              <h1 class="pdx-name">${p.name}</h1>
