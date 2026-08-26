@@ -1271,8 +1271,3 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
   .about-hero-grid { grid-template-columns: 1fr; gap: 30px; }
   .about-hero-media img { aspect-ratio: 16 / 9; }
 }
-
-/* Case studies: show full image (no crop) on a clean panel */
-.hscroll.cs .project .thumb { height: 230px; background: #eef1f3; }
-.hscroll.cs .project .thumb img { object-fit: contain; padding: 12px; box-sizing: border-box; }
-.hscroll.cs .project .thumb::after { display: none; }
