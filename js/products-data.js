@@ -1098,7 +1098,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Industrial HVAC",
+  "cat": "Thermal Components",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "Less space for installation",
@@ -1136,7 +1136,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Industrial HVAC",
+  "cat": "Thermal Components",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "Less space for installation",
@@ -1172,7 +1172,7 @@ window.PRODUCTS = {
     "As per customer requirement"
    ]
   ],
-  "cat": "Industrial HVAC",
+  "cat": "Thermal Components",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "100% performance-tested for onsite load conditions",
@@ -1213,7 +1213,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Industrial HVAC",
+  "cat": "Thermal Components",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "100% performance-tested for onsite load conditions",
@@ -1257,7 +1257,7 @@ window.PRODUCTS = {
     "Split (indoor + outdoor)"
    ]
   ],
-  "cat": "Industrial HVAC",
+  "cat": "Thermal Components",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "100% performance-tested",
@@ -1302,7 +1302,7 @@ window.PRODUCTS = {
     "Flameproof Ex d"
    ]
   ],
-  "cat": "Industrial HVAC",
+  "cat": "Thermal Components",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "Compressors comply with IEC standards",
@@ -1354,7 +1354,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Industrial HVAC",
+  "cat": "Thermal Components",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "100% performance-tested for onsite ambient conditions",
@@ -1406,7 +1406,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Used up to 20 bar and 220°C media temperature",
@@ -1455,7 +1455,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Less space occupied due to horizontal installation",
@@ -1505,7 +1505,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Used up to 413.6 bar and 170°C media temperature",
@@ -1554,7 +1554,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Used up to 10.3 bar and 170°C media temperature",
@@ -1599,7 +1599,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Direct install on cylinder",
@@ -1650,7 +1650,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Less space occupied due to horizontal installation",
@@ -1695,7 +1695,7 @@ window.PRODUCTS = {
     "SS"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Used up to 400 bar and 170°C media temperature",
@@ -1725,7 +1725,7 @@ window.PRODUCTS = {
     "-40 degC to 60 degC"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Designed for non-corrosive and filtered natural gas",
@@ -1775,7 +1775,7 @@ window.PRODUCTS = {
     "Up to 170 degC"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Less space occupied due to horizontal installation",
@@ -1825,7 +1825,7 @@ window.PRODUCTS = {
     "170 degC"
    ]
   ],
-  "cat": "Pressure Regulator Series",
+  "cat": "Pressure Regulators",
   "caturl": "pressure-regulators.html",
   "advantages": [
    "Less space occupied due to horizontal installation",
@@ -1848,7 +1848,7 @@ window.PRODUCTS = {
    "Suited to industrial automation networks"
   ],
   "specs": [],
-  "cat": "Automation Systems",
+  "cat": "Automation Products",
   "caturl": "automation-systems.html"
  },
  "au-modbus-gateway": {
@@ -1865,7 +1865,7 @@ window.PRODUCTS = {
    "Industrial-grade gateway design"
   ],
   "specs": [],
-  "cat": "Automation Systems",
+  "cat": "Automation Products",
   "caturl": "automation-systems.html"
  },
  "wm-oil-in-water-sensor": {
@@ -1908,7 +1908,7 @@ window.PRODUCTS = {
     "4 to 20 mA"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Reliable, low-maintenance UV fluorescence measurement",
@@ -1948,7 +1948,7 @@ window.PRODUCTS = {
     "Stainless Steel"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -1982,7 +1982,7 @@ window.PRODUCTS = {
     "Glass & PP"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -2019,7 +2019,7 @@ window.PRODUCTS = {
     "SS316, PVDF, PTFE, Glass"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -2053,7 +2053,7 @@ window.PRODUCTS = {
     "Glass"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -2091,7 +2091,7 @@ window.PRODUCTS = {
     "1 kg with SS housing and 33ft cable"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Optical sensor resists ambient light damage",
@@ -2134,7 +2134,7 @@ window.PRODUCTS = {
     "PVC, Stainless Steel"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -2166,7 +2166,7 @@ window.PRODUCTS = {
     "SS 316L"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -2202,7 +2202,7 @@ window.PRODUCTS = {
     "IP 67"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -2238,7 +2238,7 @@ window.PRODUCTS = {
     "IP 67"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -2276,7 +2276,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": []
  },
@@ -2311,7 +2311,7 @@ window.PRODUCTS = {
     "Panel Mounting"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Supports 6 sample streams",
@@ -2353,7 +2353,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Cleaning port available",
@@ -2398,7 +2398,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Compact design",
@@ -2443,7 +2443,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Ease of maintenance",
@@ -2488,7 +2488,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Well-founded pressure reduction",
@@ -2533,7 +2533,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Integrated unit with strainer, header, needle valve, TI, PI, temp control",
@@ -2578,7 +2578,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Online replacement of cation resin without dismantling",
@@ -2624,7 +2624,7 @@ window.PRODUCTS = {
     "1/8\" NPT (F)"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Sturdy, space-efficient construction",
@@ -2666,7 +2666,7 @@ window.PRODUCTS = {
     "Water / Steam"
    ]
   ],
-  "cat": "Water Monitoring",
+  "cat": "Water & Instrumentation",
   "caturl": "water-monitoring.html",
   "advantages": [
    "Precise pressure reduction and control with pressure element",

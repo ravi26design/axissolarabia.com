@@ -187,7 +187,7 @@
       set('pd-title', p.name); set('pd-crumb', p.name); set('pd-code', p.code || '');
       { const codeEl = document.getElementById('pd-code'); if (codeEl && !p.code) codeEl.style.display = 'none'; }
       const catLink = document.getElementById('pd-cat-link');
-      if (catLink) { catLink.textContent = p.cat || 'Process Analytics'; catLink.href = p.caturl || 'process-analytics.html'; }
+      if (catLink) { catLink.textContent = p.cat || 'Gas Analyzers'; catLink.href = p.caturl || 'process-analytics.html'; }
       const feats = (p.features || []).map(f => `<li>${f}</li>`).join('');
       const advs = (p.advantages || []).map(a => `<li>${a}</li>`).join('');
       const acc = (title, inner, open) => `<div class="pdx-acc${open ? ' open' : ''}"><button type="button" class="pdx-acc-head" aria-expanded="${open ? 'true' : 'false'}"><span>${title}</span><svg class="pdx-acc-chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="pdx-acc-body"><div class="pdx-acc-inner">${inner}</div></div></div>`;
