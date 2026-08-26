@@ -3,17 +3,6 @@
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const finePointer = window.matchMedia('(pointer: fine)').matches;
 
-  // TEMP: disable navigation to other pages (home + about enabled; keep #anchors, mailto, tel)
-  document.querySelectorAll('a[href]').forEach(a => {
-    const href = a.getAttribute('href') || '';
-    const isHtml = /\.html(\?|#|$)/i.test(href);
-    const isEnabled = /(^|\/)(index|about|products|process-analytics|product|industrial-hvac|pressure-regulators|automation-systems|water-monitoring|industrial-enclosures)\.html(\?|#|$)/i.test(href);
-    if (isHtml && !isEnabled) {
-      a.addEventListener('click', e => e.preventDefault());
-      a.style.cursor = 'default';
-    }
-  });
-
   // Preloader — hide once the page has loaded
   const preloader = document.getElementById('preloader');
   if (preloader) {
