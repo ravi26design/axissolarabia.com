@@ -1276,3 +1276,10 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 .hscroll.cs .project .thumb { height: 230px; background: #eef1f3; }
 .hscroll.cs .project .thumb img { object-fit: contain; padding: 12px; box-sizing: border-box; }
 .hscroll.cs .project .thumb::after { display: none; }
+
+/* Industries page grid */
+.ind-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.ind-grid .icard { width: auto; flex: none; }
+.ind-grid .icard-body p { font-size: 13.5px; line-height: 1.6; }
+@media (max-width: 940px) { .ind-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .ind-grid { grid-template-columns: 1fr; } }
