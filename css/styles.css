@@ -1333,3 +1333,8 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 /* Solution detail page */
 #sol-title { font-size: clamp(26px, 3vw, 40px); font-weight: 800; letter-spacing: -.02em; color: #fff; }
 .sol-variants .pd-card { cursor: default; }
+
+/* Solution detail: bring the overview right below the title */
+body.sol-page .pd-hero { padding-bottom: 6px; }
+body.sol-page .pd-hero + .section-pad { padding-top: 16px; }
+body.sol-page #sol-title { margin-top: 6px; }
