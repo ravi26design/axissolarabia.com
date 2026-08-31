@@ -271,13 +271,18 @@
       setS('sol-title', so.name); setS('sol-crumb', so.name);
       let info = '';
       if (so.overview) info += `<p class="pdx-overview">${so.overview}</p>`;
-      if (so.features && so.features.length) info += `<div class="pdx-sec-label" style="margin-top:30px">Key Features</div><ul class="pdx-features">${so.features.map(f => `<li>${f}</li>`).join('')}</ul>`;
+      if (so.features && so.features.length) info += `<div class="pdx-sec-label" style="margin-top:30px">Features</div><ul class="pdx-features">${so.features.map(f => `<li>${f}</li>`).join('')}</ul>`;
+      if (so.advantages && so.advantages.length) info += `<div class="pdx-sec-label" style="margin-top:30px">Advantages</div><ul class="pdx-features pdx-adv">${so.advantages.map(a => `<li>${a}</li>`).join('')}</ul>`;
       info += `<div class="pdx-cta"><a href="contact.html" class="btn btn-primary">Request a Proposal →</a><a href="contact.html" class="btn btn-outline">Talk to an Engineer</a></div>`;
       let out = so.hero
         ? `<div class="pdx-grid"><div class="pdx-media"><div class="pd-img"><img src="${so.hero}" alt="${so.name}"></div></div><div class="pdx-info">${info}</div></div>`
         : `<div class="pdx-info" style="max-width:900px">${info}</div>`;
       if (so.specs && so.specs.length) out += `<div class="pdx-specs"><div class="pdx-sec-label">Technical Specifications</div><div class="pdx-spec-wrap"><table>${so.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div></div>`;
       if (so.variants && so.variants.length) out += `<div class="pdx-sec-head" style="margin-top:56px"><h2>Configurations</h2></div><div class="pd-grid sol-variants">${so.variants.map(v => `<a class="pd-card" href="solution.html?s=${v.slug}"><div class="pd-img"><img src="${v.img}" alt="${v.name}" loading="lazy"></div><div class="pd-body"><h3>${v.name}</h3></div></a>`).join('')}</div>`;
+      // See Related Products
+      const relImg = k => window.SOLUTIONS[k].hero || (window.SOLUTIONS[k].variants && window.SOLUTIONS[k].variants[0] && window.SOLUTIONS[k].variants[0].img) || '';
+      const relKeys = Object.keys(window.SOLUTIONS).filter(k => k !== skey && relImg(k)).slice(0, 4);
+      if (relKeys.length) out += `<div class="pdx-related"><div class="pdx-sec-head"><h2>See Related Products</h2></div><div class="pd-grid">${relKeys.map(k => { const r = window.SOLUTIONS[k]; return `<a class="pd-card" href="solution.html?s=${k}"><div class="pd-img"><img src="${relImg(k)}" alt="${r.name}" loading="lazy"></div><div class="pd-body"><h3>${r.name}</h3></div></a>`; }).join('')}</div></div>`;
       solBody.innerHTML = out;
     } else {
       solBody.innerHTML = '<p style="color:var(--muted);font-size:16px">Solution not found. <a href="solutions.html" style="color:var(--accent-deep);font-weight:600">Back to solutions →</a></p>';

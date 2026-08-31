@@ -225,9 +225,9 @@ window.SOLUTIONS = {
   "name": "Passive Cooled Shelter",
   "overview": "A shelter that uses passive cooling to maintain indoor thermal comfort without consuming energy, well suited to desert areas with large day-to-night temperature swings. It relies on a memory heat unit and two heat exchangers that absorb heat during the day and release it at night, and it needs no supervision.",
   "features": [
-   "Runs 10-15°C cooler than the environment",
+   "10-15°C cooler than the environment (depends on day/night temperature difference)",
    "No bacterial growth inside the system",
-   "No supervisor required",
+   "No supervisor needed",
    "Plug-and-play installation",
    "No extra cost for hazardous areas",
    "15-year guarantee",
@@ -240,7 +240,13 @@ window.SOLUTIONS = {
    ]
   ],
   "hero": "images/solutions/hero/passive-cooled-shelter.jpg",
-  "variants": []
+  "variants": [],
+  "advantages": [
+   "No moving parts",
+   "Zero maintenance cost",
+   "Zero power",
+   "Zero running cost"
+  ]
  },
  "fire-rated-e-house": {
   "name": "Fire Rated E-House",
