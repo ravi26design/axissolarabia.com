@@ -1286,3 +1286,7 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 
 /* Manufacturing Excellence: remove the outline on the process card */
 .proc-stage { border: none; }
+
+/* Manufacturing Excellence: remove the process card background */
+.proc-stage { background: transparent; }
+.proc-stage::before { display: none; }
