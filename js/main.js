@@ -269,11 +269,14 @@
     if (so) {
       document.title = so.name + ' — AxisSol Arabia';
       setS('sol-title', so.name); setS('sol-crumb', so.name);
-      let out = '';
-      if (so.overview) out += `<p class="pdx-overview" style="max-width:880px">${so.overview}</p>`;
-      if (so.variants && so.variants.length) out += `<div class="pd-grid sol-variants" style="margin-top:36px">${so.variants.map(v => `<div class="pd-card"><div class="pd-img"><img src="${v.img}" alt="${v.name}" loading="lazy"></div><div class="pd-body"><h3>${v.name}</h3></div></div>`).join('')}</div>`;
-      if (so.features && so.features.length) out += `<div class="pdx-sec-label" style="margin-top:44px">Key Features</div><ul class="pdx-features">${so.features.map(f => `<li>${f}</li>`).join('')}</ul>`;
-      out += `<div class="pdx-cta" style="margin-top:40px"><a href="contact.html" class="btn btn-primary">Request a Proposal →</a><a href="contact.html" class="btn btn-outline">Talk to an Engineer</a></div>`;
+      let info = '';
+      if (so.overview) info += `<div class="pdx-sec-label">Overview</div><p class="pdx-overview">${so.overview}</p>`;
+      if (so.features && so.features.length) info += `<div class="pdx-sec-label" style="margin-top:30px">Key Features</div><ul class="pdx-features">${so.features.map(f => `<li>${f}</li>`).join('')}</ul>`;
+      info += `<div class="pdx-cta"><a href="contact.html" class="btn btn-primary">Request a Proposal →</a><a href="contact.html" class="btn btn-outline">Talk to an Engineer</a></div>`;
+      let out = so.hero
+        ? `<div class="pdx-grid"><div class="pdx-media"><div class="pd-img"><img src="${so.hero}" alt="${so.name}"></div></div><div class="pdx-info">${info}</div></div>`
+        : `<div class="pdx-info" style="max-width:900px">${info}</div>`;
+      if (so.variants && so.variants.length) out += `<div class="pdx-sec-head" style="margin-top:56px"><h2>Configurations</h2></div><div class="pd-grid sol-variants">${so.variants.map(v => `<div class="pd-card"><div class="pd-img"><img src="${v.img}" alt="${v.name}" loading="lazy"></div><div class="pd-body"><h3>${v.name}</h3></div></div>`).join('')}</div>`;
       solBody.innerHTML = out;
     } else {
       solBody.innerHTML = '<p style="color:var(--muted);font-size:16px">Solution not found. <a href="solutions.html" style="color:var(--accent-deep);font-weight:600">Back to solutions →</a></p>';
