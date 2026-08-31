@@ -1313,3 +1313,9 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 .sol-cat { display: none; margin-top: 0; }
 .sol-cat.active { display: block; }
 .sol-cat-head { display: none; }
+
+/* Solutions: remove card container background/border — keep image tiles + labels */
+.sol-card { background: transparent; border: none; box-shadow: none; overflow: visible; }
+.sol-card:hover { box-shadow: none; }
+.sol-img { border-radius: 14px; overflow: hidden; }
+.sol-card h3 { padding: 13px 4px 0; }
