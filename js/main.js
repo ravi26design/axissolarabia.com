@@ -276,7 +276,8 @@
       let out = so.hero
         ? `<div class="pdx-grid"><div class="pdx-media"><div class="pd-img"><img src="${so.hero}" alt="${so.name}"></div></div><div class="pdx-info">${info}</div></div>`
         : `<div class="pdx-info" style="max-width:900px">${info}</div>`;
-      if (so.variants && so.variants.length) out += `<div class="pdx-sec-head" style="margin-top:56px"><h2>Configurations</h2></div><div class="pd-grid sol-variants">${so.variants.map(v => `<div class="pd-card"><div class="pd-img"><img src="${v.img}" alt="${v.name}" loading="lazy"></div><div class="pd-body"><h3>${v.name}</h3></div></div>`).join('')}</div>`;
+      if (so.specs && so.specs.length) out += `<div class="pdx-specs"><div class="pdx-sec-label">Technical Specifications</div><div class="pdx-spec-wrap"><table>${so.specs.map(s => `<tr><td>${s[0]}</td><td>${s[1]}</td></tr>`).join('')}</table></div></div>`;
+      if (so.variants && so.variants.length) out += `<div class="pdx-sec-head" style="margin-top:56px"><h2>Configurations</h2></div><div class="pd-grid sol-variants">${so.variants.map(v => `<a class="pd-card" href="solution.html?s=${v.slug}"><div class="pd-img"><img src="${v.img}" alt="${v.name}" loading="lazy"></div><div class="pd-body"><h3>${v.name}</h3></div></a>`).join('')}</div>`;
       solBody.innerHTML = out;
     } else {
       solBody.innerHTML = '<p style="color:var(--muted);font-size:16px">Solution not found. <a href="solutions.html" style="color:var(--accent-deep);font-weight:600">Back to solutions →</a></p>';

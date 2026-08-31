@@ -7,19 +7,23 @@ window.SOLUTIONS = {
   "variants": [
    {
     "name": "Passive Cooled Shelter",
-    "img": "images/solutions/variants/passive-cooled-shelter.jpg"
+    "img": "images/solutions/variants/passive-cooled-shelter.jpg",
+    "slug": "passive-cooled-shelter"
    },
    {
     "name": "Fire Rated E-House",
-    "img": "images/solutions/variants/fire-rated-e-house.jpg"
+    "img": "images/solutions/variants/fire-rated-e-house.jpg",
+    "slug": "fire-rated-e-house"
    },
    {
     "name": "Single / Modular E-House",
-    "img": "images/solutions/variants/single-modular-e-house.jpg"
+    "img": "images/solutions/variants/single-modular-e-house.jpg",
+    "slug": "single-modular-e-house"
    },
    {
     "name": "FRP Shelter",
-    "img": "images/solutions/variants/frp-shelter.jpg"
+    "img": "images/solutions/variants/frp-shelter.jpg",
+    "slug": "frp-shelter"
    }
   ]
  },
@@ -215,6 +219,134 @@ window.SOLUTIONS = {
    "Compact design"
   ],
   "hero": "images/solutions/hero/single-stream-swas.jpg",
+  "variants": []
+ },
+ "passive-cooled-shelter": {
+  "name": "Passive Cooled Shelter",
+  "overview": "A shelter that uses passive cooling to maintain indoor thermal comfort without consuming energy, well suited to desert areas with large day-to-night temperature swings. It relies on a memory heat unit and two heat exchangers that absorb heat during the day and release it at night, and it needs no supervision.",
+  "features": [
+   "Runs 10-15°C cooler than the environment",
+   "No bacterial growth inside the system",
+   "No supervisor required",
+   "Plug-and-play installation",
+   "No extra cost for hazardous areas",
+   "15-year guarantee",
+   "More efficient than traditional passive cooling"
+  ],
+  "specs": [
+   [
+    "Specifications",
+    "As per Customer's Requirement"
+   ]
+  ],
+  "hero": "images/solutions/hero/passive-cooled-shelter.jpg",
+  "variants": []
+ },
+ "fire-rated-e-house": {
+  "name": "Fire Rated E-House",
+  "overview": "A prefabricated, walk-in modular electrical building designed to house medium- and low-voltage switchgear along with auxiliary equipment such as UPS, communication and data panels. Every unit is developed, manufactured, assembled and pre-tested in the factory; smaller units ship fully assembled while larger E-Houses are split into sections and joined on site. It adds two-way passive fire protection rated to BS 476.",
+  "features": [
+   "Suitable for safe areas",
+   "Interlock rib structure possible",
+   "2-way passive fire protection (2hr, BS 476)",
+   "Optional corrugated sheet for aesthetics",
+   "High roof pitch with robust, transportable structure"
+  ],
+  "specs": [
+   [
+    "Width",
+    "Up to 7 meters (in two parts)"
+   ],
+   [
+    "IP Rating",
+    "IP65"
+   ],
+   [
+    "False Floor",
+    "Available"
+   ],
+   [
+    "Fire Protection",
+    "2-hour rating to BS 476"
+   ],
+   [
+    "Load Capacity",
+    "Dead, live, dynamic, wind, erection and seismic loads"
+   ],
+   [
+    "Other",
+    "As per customer requirement"
+   ]
+  ],
+  "hero": "images/solutions/hero/fire-rated-e-house.jpg",
+  "variants": []
+ },
+ "single-modular-e-house": {
+  "name": "Single / Modular E-House",
+  "overview": "A prefabricated, walk-in modular enclosure that houses medium- and low-voltage switchgear plus auxiliary gear such as VFDs, dry-type transformers, control and relay panels, SCADA, UPS and communication systems. Fully factory-built and pre-tested, with larger builds split for shipping and reassembled on site — supporting fast installation, flexible customization and efficient use of space.",
+  "features": [
+   "Suitable for safe areas",
+   "Interlock rib structure available",
+   "Optional corrugated sheet for aesthetics",
+   "High roof pitch, robust weather-resistant structure",
+   "Transport width up to 7 meters (in two parts)",
+   "Supports dead, live, dynamic, wind and seismic loads",
+   "Optional raised (false) floor",
+   "IP65 rating"
+  ],
+  "specs": [
+   [
+    "Specifications",
+    "As per Customer's Requirement"
+   ]
+  ],
+  "hero": "images/solutions/hero/single-modular-e-house.jpg",
+  "variants": []
+ },
+ "frp-shelter": {
+  "name": "FRP Shelter",
+  "overview": "A modular fiber-reinforced polymer (FRP) shelter built for desert deployment and sensitive, critical environments that need controlled conditions such as stable temperature and low moisture. It uses a sandwich-panel construction (FRP + PUF + FRP) on a metallic ISMC-channel frame with a gel-coat finish that extends service life to 20-25 years.",
+  "features": [
+   "Modular design",
+   "Long-term durability",
+   "IP protected",
+   "UV protected",
+   "Weather protected",
+   "Withstands extreme weather",
+   "Leak-proof",
+   "High seismic and wind resistance"
+  ],
+  "specs": [
+   [
+    "Lifespan",
+    "20-25 years"
+   ],
+   [
+    "Panel Dimensions",
+    "1m (W) x 3m (H)"
+   ],
+   [
+    "Panel Thickness",
+    "40mm to 100mm"
+   ],
+   [
+    "Roof Slope",
+    "1 inch from longer side"
+   ],
+   [
+    "Construction",
+    "FRP sandwich (FRP + PUF + FRP)"
+   ],
+   [
+    "Frame Material",
+    "ISMC channels"
+   ],
+   [
+    "Base Covering",
+    "Aluminum or steel checkered plate"
+   ]
+  ],
+  "hero": "images/solutions/hero/frp-shelter.jpg",
   "variants": []
  }
 };
