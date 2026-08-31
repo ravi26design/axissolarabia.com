@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Engineering Solutions — Axis</title>
 <meta name="description" content="Axis delivers end-to-end industrial solutions — analyzer shelters, e-houses, process buildings, HVAC, environmental monitoring and skid packages — engineered for harsh environments and mission-critical operations." />
-<link rel="stylesheet" href="css/styles.css?v=20260728p" />
+<link rel="stylesheet" href="css/styles.css?v=20260728q" />
 </head>
 <body>
 <div class="preloader" id="preloader"><div class="pl-inner"><img src="images/logo.png" alt="AxisSol Arabia" class="pl-logo"><div class="pl-bar"><span></span></div></div></div>
@@ -53,7 +53,13 @@
 <!-- Solutions catalog -->
 <section class="section-pad">
   <div class="wrap">
-  <div class="sol-cat">
+    <div class="sol-tabs">
+      <button type="button" class="sol-tab active" data-i="0">Analytical Package Solutions</button>
+      <button type="button" class="sol-tab" data-i="1">System Solutions</button>
+      <button type="button" class="sol-tab" data-i="2">Automation Package Solutions</button>
+      <button type="button" class="sol-tab" data-i="3">Turnkey Packages</button>
+    </div>
+  <div class="sol-cat active" data-i="0">
     <div class="sol-cat-head">Analytical Package Solutions</div>
     <div class="sol-grid">
       <a class="sol-card reveal" href="contact.html"><div class="sol-img"><img src="images/solutions/e-house-systems-7ugeeyt.png" alt="Equipment House (E-House)" loading="lazy"></div><h3>Equipment House (E-House)</h3></a>
@@ -70,7 +76,7 @@
       <a class="sol-card reveal" href="contact.html"><div class="sol-img"><img src="images/solutions/sulphar-recovery-unit.png" alt="Sulphur Recovery Unit (SRU)" loading="lazy"></div><h3>Sulphur Recovery Unit (SRU)</h3></a>
     </div>
   </div>
-  <div class="sol-cat">
+  <div class="sol-cat" data-i="1">
     <div class="sol-cat-head">System Solutions</div>
     <div class="sol-grid">
       <a class="sol-card reveal" href="contact.html"><div class="sol-img"><img src="images/solutions/e-house-systems-7ugeeyt.png" alt="Equipment House (E-House)" loading="lazy"></div><h3>Equipment House (E-House)</h3></a>
@@ -90,7 +96,7 @@
       <a class="sol-card reveal" href="contact.html"><div class="sol-img"><img src="images/solutions/validation-system-for-hc-liquid-rc3pydi.png" alt="Validation System for HC Liquid" loading="lazy"></div><h3>Validation System for HC Liquid</h3></a>
     </div>
   </div>
-  <div class="sol-cat">
+  <div class="sol-cat" data-i="2">
     <div class="sol-cat-head">Automation Package Solutions</div>
     <div class="sol-grid">
       <a class="sol-card reveal" href="contact.html"><div class="sol-img"><img src="images/solutions/analyser-data-system-tnk-hglcaxk.png" alt="Analyser Data System - TNK" loading="lazy"></div><h3>Analyser Data System - TNK</h3></a>
@@ -115,7 +121,7 @@
       <a class="sol-card reveal" href="contact.html"><div class="sol-img"><img src="images/solutions/tenant-management-and-bill-generation-ql.png" alt="Tenant Management and Bill Generation" loading="lazy"></div><h3>Tenant Management and Bill Generation</h3></a>
     </div>
   </div>
-  <div class="sol-cat">
+  <div class="sol-cat" data-i="3">
     <div class="sol-cat-head">Turnkey Packages</div>
     <div class="sol-grid">
       <a class="sol-card reveal" href="contact.html"><div class="sol-img"><img src="images/solutions/cetp-monitoring.jpg" alt="CETP Monitoring" loading="lazy"></div><h3>CETP Monitoring</h3></a>
@@ -190,6 +196,17 @@
   </div>
 </footer>
 
-<script src="js/main.js?v=20260728p"></script>
+<script src="js/main.js?v=20260728q"></script>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.sol-tab'));
+  var cats=[].slice.call(document.querySelectorAll('.sol-cat'));
+  tabs.forEach(function(t){ t.addEventListener('click',function(){
+    tabs.forEach(function(x){ x.classList.toggle('active', x===t); });
+    cats.forEach(function(c){ c.classList.toggle('active', c.dataset.i===t.dataset.i); });
+    window.scrollTo({top: window.scrollY}); 
+  });});
+})();
+</script>
 </body>
 </html>

@@ -1304,3 +1304,12 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 .sol-card h3 { font-size: 14px; font-weight: 600; color: var(--ink); padding: 14px 16px; line-height: 1.35; }
 @media (max-width: 1000px) { .sol-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 680px) { .sol-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* Solutions category tabs */
+.sol-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
+.sol-tab { padding: 11px 20px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font-weight: 600; font-size: 14px; cursor: pointer; font-family: inherit; transition: color .2s, background .2s, border-color .2s; }
+.sol-tab:hover { color: #fff; border-color: rgba(245,130,31,.4); }
+.sol-tab.active { background: var(--accent); color: #10151a; border-color: var(--accent); }
+.sol-cat { display: none; margin-top: 0; }
+.sol-cat.active { display: block; }
+.sol-cat-head { display: none; }
