@@ -273,6 +273,7 @@
       if (so.overview) info += `<p class="pdx-overview">${so.overview}</p>`;
       if (so.features && so.features.length) info += `<div class="pdx-sec-label" style="margin-top:30px">Features</div><ul class="pdx-features">${so.features.map(f => `<li>${f}</li>`).join('')}</ul>`;
       if (so.advantages && so.advantages.length) info += `<div class="pdx-sec-label" style="margin-top:30px">Advantages</div><ul class="pdx-features pdx-adv">${so.advantages.map(a => `<li>${a}</li>`).join('')}</ul>`;
+      if (so.applications && so.applications.length) info += `<div class="pdx-sec-label" style="margin-top:30px">Applications</div><ul class="pdx-features">${so.applications.map(a => `<li>${a}</li>`).join('')}</ul>`;
       info += `<div class="pdx-cta"><a href="contact.html" class="btn btn-primary">Request a Proposal →</a><a href="contact.html" class="btn btn-outline">Talk to an Engineer</a></div>`;
       let out = so.hero
         ? `<div class="pdx-grid"><div class="pdx-media"><div class="pd-img"><img src="${so.hero}" alt="${so.name}"></div></div><div class="pdx-info">${info}</div></div>`

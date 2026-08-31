@@ -51,7 +51,13 @@ window.SOLUTIONS = {
    "Rugged shelter-based design for outdoor deployment"
   ],
   "hero": "images/solutions/hero/aaqms.jpg",
-  "variants": []
+  "variants": [],
+  "applications": [
+   "Smart Cities & Urban Monitoring",
+   "Industrial Zones",
+   "Environmental Monitoring Agencies",
+   "Infrastructure & Government Projects"
+  ]
  },
  "eqms": {
   "name": "EQMS - Effluent Quality Monitoring System",
