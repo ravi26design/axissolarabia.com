@@ -290,6 +290,24 @@
     }
   }
 
+  // Case study detail page — render from window.CASESTUDIES[?c]
+  const csBody = document.getElementById('cs-body');
+  if (csBody && window.CASESTUDIES) {
+    const ckey = new URLSearchParams(location.search).get('c');
+    const cs = window.CASESTUDIES[ckey];
+    const setC = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+    if (cs) {
+      document.title = cs.title + ' — AxisSol Arabia';
+      setC('cs-title', cs.title); setC('cs-crumb', cs.title);
+      const tag = cs.industry ? `<span class="cs-tag">${cs.industry}</span>` : '';
+      const hero = cs.image ? `<div class="cs-hero-img"><img src="${cs.image}" alt="${cs.title}"></div>` : '';
+      const secs = (cs.sections || []).map(s => `<div class="cs-sec"><h2>${s.heading}</h2>${String(s.body).split('\n').filter(Boolean).map(p => `<p>${p}</p>`).join('')}</div>`).join('');
+      csBody.innerHTML = `${tag}${hero}<div class="cs-article">${secs}</div><div class="pdx-cta" style="margin-top:40px"><a href="contact.html" class="btn btn-primary">Discuss a Similar Project →</a><a href="resources.html" class="btn btn-outline">Back to Case Studies</a></div>`;
+    } else {
+      csBody.innerHTML = '<p style="color:var(--muted);font-size:16px">Case study not found. <a href="resources.html" style="color:var(--accent-deep);font-weight:600">Back to case studies →</a></p>';
+    }
+  }
+
   // Product grid pagination (20 per page)
   document.querySelectorAll('.pd-grid').forEach(grid => {
     const cards = Array.from(grid.children).filter(c => c.classList.contains('pd-card'));
