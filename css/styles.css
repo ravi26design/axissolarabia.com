@@ -1319,3 +1319,13 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 .sol-card:hover { box-shadow: none; }
 .sol-img { border-radius: 14px; overflow: hidden; }
 .sol-card h3 { padding: 13px 4px 0; }
+
+/* Manufacturing page — full process listing */
+.mfg-steps { display: flex; flex-direction: column; gap: 44px; margin-top: 12px; }
+.mstep { display: grid; grid-template-columns: 1.05fr 1fr; gap: 46px; align-items: center; }
+.mstep:nth-child(even) .mstep-media { order: 2; }
+.mstep-media img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 16px; border: 1px solid var(--line); display: block; box-shadow: 0 30px 60px -40px rgba(0,0,0,.8); }
+.mstep-num { font-size: 13px; font-weight: 700; letter-spacing: .16em; color: var(--accent-deep); }
+.mstep-body h3 { font-size: clamp(21px, 2.3vw, 29px); font-weight: 800; letter-spacing: -.02em; color: #fff; margin: 8px 0 12px; }
+.mstep-body p { color: rgba(255,255,255,.72); font-size: 16px; line-height: 1.72; }
+@media (max-width: 820px) { .mstep { grid-template-columns: 1fr; gap: 18px; } .mstep:nth-child(even) .mstep-media { order: 0; } }
