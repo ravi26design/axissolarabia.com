@@ -260,6 +260,26 @@
     }
   }
 
+  // Solution detail page — render from window.SOLUTIONS[?s]
+  const solBody = document.getElementById('sol-body');
+  if (solBody && window.SOLUTIONS) {
+    const skey = new URLSearchParams(location.search).get('s');
+    const so = window.SOLUTIONS[skey];
+    const setS = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+    if (so) {
+      document.title = so.name + ' — AxisSol Arabia';
+      setS('sol-title', so.name); setS('sol-crumb', so.name);
+      let out = '';
+      if (so.overview) out += `<p class="pdx-overview" style="max-width:880px">${so.overview}</p>`;
+      if (so.variants && so.variants.length) out += `<div class="pd-grid sol-variants" style="margin-top:36px">${so.variants.map(v => `<div class="pd-card"><div class="pd-img"><img src="${v.img}" alt="${v.name}" loading="lazy"></div><div class="pd-body"><h3>${v.name}</h3></div></div>`).join('')}</div>`;
+      if (so.features && so.features.length) out += `<div class="pdx-sec-label" style="margin-top:44px">Key Features</div><ul class="pdx-features">${so.features.map(f => `<li>${f}</li>`).join('')}</ul>`;
+      out += `<div class="pdx-cta" style="margin-top:40px"><a href="contact.html" class="btn btn-primary">Request a Proposal →</a><a href="contact.html" class="btn btn-outline">Talk to an Engineer</a></div>`;
+      solBody.innerHTML = out;
+    } else {
+      solBody.innerHTML = '<p style="color:var(--muted);font-size:16px">Solution not found. <a href="solutions.html" style="color:var(--accent-deep);font-weight:600">Back to solutions →</a></p>';
+    }
+  }
+
   // Product grid pagination (20 per page)
   document.querySelectorAll('.pd-grid').forEach(grid => {
     const cards = Array.from(grid.children).filter(c => c.classList.contains('pd-card'));

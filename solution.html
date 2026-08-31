@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Automation Products — Axis</title>
-<meta name="description" content="Automation Products by AxisSol Arabia — industrial Ethernet, media converters and Modbus gateways connecting field instrumentation to modern networked control systems." />
+<title>Solution — AxisSol Arabia</title>
+<meta name="description" content="Amison gas analysis components by Axis — sample gas probes, filters, scrubbers and coolers for reliable process and emissions measurement." />
 <link rel="stylesheet" href="css/styles.css?v=20260728x" />
 </head>
-<body class="flat-bg">
+<body class="pd-page">
 <div class="preloader" id="preloader"><div class="pl-inner"><img src="images/logo.png" alt="AxisSol Arabia" class="pl-logo"><div class="pl-bar"><span></span></div></div></div>
 
 <!-- Header -->
@@ -16,8 +16,8 @@
     <a href="index.html" class="logo"><img src="images/logo.png" alt="Axissol Arabia" /></a>
     <nav class="nav-links">
       <a href="about.html">About</a>
-      <a href="products.html" class="active">Products</a>
-      <a href="solutions.html">Solutions</a>
+      <a href="products.html">Products</a>
+      <a href="solutions.html" class="active">Solutions</a>
       <a href="industries.html">Industries</a>
       <a href="manufacturing.html">Manufacturing</a>
       <a href="resources.html">Resources</a>
@@ -32,35 +32,59 @@
 <div class="mobile-menu" id="mobileMenu">
   <button class="close" aria-label="Close menu"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   <a href="about.html">About</a>
-  <a href="products.html" class="active">Products</a>
-  <a href="solutions.html">Solutions</a>
+  <a href="products.html">Products</a>
+  <a href="solutions.html" class="active">Solutions</a>
   <a href="industries.html">Industries</a>
   <a href="manufacturing.html">Manufacturing</a>
   <a href="resources.html">Resources</a>
 </div>
 
 <!-- Page hero -->
-<section class="page-hero">
+<section class="page-hero pd-hero">
   <div class="hero-glow"></div>
   <div class="hero-grid"></div>
   <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="products.html">Products</a> / <span>Automation Products</span></div>
-    <h1>Automation Products</h1>
-    <p>e-Brix automation &mdash; industrial Ethernet, media converters and Modbus gateways that connect field instrumentation to modern networked control systems.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="solutions.html">Solutions</a> / <span id="sol-crumb">Solution</span></div>
+    <h1 id="sol-title" style="margin-top:12px">Solution</h1>
   </div>
 </section>
 
-<!-- Products -->
+<!-- Product detail -->
 <section class="section-pad">
   <div class="wrap">
-    <div class="pd-grid">
-      <a class="pd-card reveal" href="product.html?p=au-interface-media-converter"><div class="pd-img"><img src="images/products/automation/au-interface-media-converter.png" alt="Interface &amp; Media Converter" loading="lazy"></div><div class="pd-body"><h3>Interface &amp; Media Converter</h3><span></span></div></a>
-      <a class="pd-card reveal" href="product.html?p=au-modbus-gateway"><div class="pd-img"><img src="images/products/automation/au-modbus-gateway.png" alt="Modbus Gateway" loading="lazy"></div><div class="pd-body"><h3>Modbus Gateway</h3><span>EB-100-MG / EB-200-MG / EB-300-MG</span></div></a>
-    </div>
+    <div id="sol-body"></div>
   </div>
 </section>
 
-<!-- Footer -->
+<!-- Request form modal -->
+<div class="modal-overlay" id="rfqModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="rfqTitle">
+    <button class="modal-close" data-close aria-label="Close">&times;</button>
+    <form id="rfqForm" class="rfq-form">
+      <h3 id="rfqTitle">Request Quotation</h3>
+      <p class="modal-sub" id="rfqSub"></p>
+      <div class="rfq-row">
+        <label>Full Name <span>*</span><input type="text" name="name" required></label>
+        <label>Company<input type="text" name="company"></label>
+      </div>
+      <div class="rfq-row">
+        <label>Email <span>*</span><input type="email" name="email" required></label>
+        <label>Phone<input type="tel" name="phone"></label>
+      </div>
+      <label>Requirement / Message<textarea name="message" rows="3" placeholder="Quantity, application, specifications…"></textarea></label>
+      <input type="hidden" name="product" id="rfqProduct">
+      <input type="hidden" name="reqtype" id="rfqType">
+      <button type="submit" class="btn btn-primary rfq-submit">Submit Request →</button>
+    </form>
+    <div class="rfq-success" id="rfqSuccess" hidden>
+      <div class="rfq-check"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+      <h3>Thank you!</h3>
+      <p>Your request has been received. Our team will get back to you shortly.</p>
+      <button type="button" class="btn btn-outline" data-close>Close</button>
+    </div>
+  </div>
+</div>
+
 <footer>
   <div class="wrap">
     <div class="foot-top">
@@ -75,7 +99,7 @@
       <div class="foot-col">
         <h4>Quick Links</h4>
         <a href="products.html">Products</a>
-        <a href="solutions.html">Solutions</a>
+        <a href="solutions.html" class="active">Solutions</a>
         <a href="industries.html">Industries</a>
         <a href="projects.html">Projects</a>
         <a href="manufacturing.html">Manufacturing</a>
@@ -108,6 +132,7 @@
   </div>
 </footer>
 
+<script src="js/solutions-data.js?v=20260728x"></script>
 <script src="js/main.js?v=20260728x"></script>
 </body>
 </html>
