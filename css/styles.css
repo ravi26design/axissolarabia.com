@@ -1290,3 +1290,17 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 /* Manufacturing Excellence: remove the process card background */
 .proc-stage { background: transparent; }
 .proc-stage::before { display: none; }
+
+/* Solutions catalog — categorized cards */
+.sol-cat { margin-top: 52px; }
+.sol-cat:first-child { margin-top: 0; }
+.sol-cat-head { font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-deep); margin-bottom: 22px; display: flex; align-items: center; gap: 14px; }
+.sol-cat-head::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, var(--line), transparent); }
+.sol-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.sol-card { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--surface); display: block; transition: transform .25s, border-color .25s, box-shadow .25s; }
+.sol-card:hover { transform: translateY(-4px); border-color: rgba(245,130,31,.42); box-shadow: 0 22px 46px -28px rgba(245,130,31,.45); }
+.sol-img { aspect-ratio: 1 / 1; background: #eef1f3; display: grid; place-items: center; }
+.sol-img img { width: 100%; height: 100%; object-fit: contain; padding: 14px; box-sizing: border-box; }
+.sol-card h3 { font-size: 14px; font-weight: 600; color: var(--ink); padding: 14px 16px; line-height: 1.35; }
+@media (max-width: 1000px) { .sol-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 680px) { .sol-grid { grid-template-columns: repeat(2, 1fr); } }
