@@ -1283,3 +1283,6 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 .ind-grid .icard-body p { font-size: 13.5px; line-height: 1.6; }
 @media (max-width: 940px) { .ind-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .ind-grid { grid-template-columns: 1fr; } }
+
+/* Manufacturing Excellence: remove the outline on the process card */
+.proc-stage { border: none; }
