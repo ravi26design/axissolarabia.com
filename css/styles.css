@@ -1338,3 +1338,11 @@ body.flat-bg .page-hero { background: var(--bg) !important; }
 body.sol-page .pd-hero { padding-bottom: 6px; }
 body.sol-page .pd-hero + .section-pad { padding-top: 16px; }
 body.sol-page #sol-title { margin-top: 6px; }
+
+/* Resources — case studies grid */
+.cs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.cs-grid .project .thumb { height: 210px; background: #eef1f3; }
+.cs-grid .project .thumb img { object-fit: contain; padding: 12px; box-sizing: border-box; }
+.cs-grid .project .thumb::after { display: none; }
+@media (max-width: 940px) { .cs-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .cs-grid { grid-template-columns: 1fr; } }
