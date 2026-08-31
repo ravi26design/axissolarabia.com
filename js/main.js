@@ -270,7 +270,7 @@
       document.title = so.name + ' — AxisSol Arabia';
       setS('sol-title', so.name); setS('sol-crumb', so.name);
       let info = '';
-      if (so.overview) info += `<div class="pdx-sec-label">Overview</div><p class="pdx-overview">${so.overview}</p>`;
+      if (so.overview) info += `<p class="pdx-overview">${so.overview}</p>`;
       if (so.features && so.features.length) info += `<div class="pdx-sec-label" style="margin-top:30px">Key Features</div><ul class="pdx-features">${so.features.map(f => `<li>${f}</li>`).join('')}</ul>`;
       info += `<div class="pdx-cta"><a href="contact.html" class="btn btn-primary">Request a Proposal →</a><a href="contact.html" class="btn btn-outline">Talk to an Engineer</a></div>`;
       let out = so.hero
