@@ -1098,7 +1098,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Thermal Components",
+  "cat": "Thermal Management",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "Less space for installation",
@@ -1136,7 +1136,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Thermal Components",
+  "cat": "Thermal Management",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "Less space for installation",
@@ -1172,7 +1172,7 @@ window.PRODUCTS = {
     "As per customer requirement"
    ]
   ],
-  "cat": "Thermal Components",
+  "cat": "Thermal Management",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "100% performance-tested for onsite load conditions",
@@ -1213,7 +1213,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Thermal Components",
+  "cat": "Thermal Management",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "100% performance-tested for onsite load conditions",
@@ -1257,7 +1257,7 @@ window.PRODUCTS = {
     "Split (indoor + outdoor)"
    ]
   ],
-  "cat": "Thermal Components",
+  "cat": "Thermal Management",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "100% performance-tested",
@@ -1302,7 +1302,7 @@ window.PRODUCTS = {
     "Flameproof Ex d"
    ]
   ],
-  "cat": "Thermal Components",
+  "cat": "Thermal Management",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "Compressors comply with IEC standards",
@@ -1354,7 +1354,7 @@ window.PRODUCTS = {
     "Refer Datasheet"
    ]
   ],
-  "cat": "Thermal Components",
+  "cat": "Thermal Management",
   "caturl": "industrial-hvac.html",
   "advantages": [
    "100% performance-tested for onsite ambient conditions",
