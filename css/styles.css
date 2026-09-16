@@ -376,6 +376,17 @@ body.custom-cursor, body.custom-cursor a, body.custom-cursor button, body.custom
 .trust-row.marquee:hover { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
+/* Client logo strip (Esteemed Clients) */
+.trust-row.logos { opacity: 1; gap: 22px; }
+.trust-logo { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; width: 158px; height: 78px; background: #fff; border-radius: 12px; padding: 14px 20px; box-shadow: 0 3px 14px rgba(0,0,0,.16); }
+.trust-logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block; }
+.trust-row.logos.marquee { gap: 0; animation-duration: 55s; }
+.trust-row.logos.marquee .trust-logo { padding: 14px 20px; margin: 0 11px; }
+@media (max-width: 640px) {
+  .trust-logo { width: 132px; height: 64px; padding: 11px 15px; }
+  .trust-row.logos.marquee .trust-logo { padding: 11px 15px; margin: 0 8px; }
+}
+
 /* Section-head heading: subtle in-view scale for h2 (kept minimal) */
 .section-head h2 { transition: none; }
 
